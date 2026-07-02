@@ -1,0 +1,30 @@
+name: Update HDD Prices
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 6am UTC
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  update-hdd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run HDD update pipeline
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+        run: node hdd/update-data.js --full
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add hdd/index.html hdd/products-db.json
+          git diff --staged --quiet || git commit -m "Auto: update HDD prices $(date '+%Y-%m-%d')"
+          git push

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storage Price Tracker — CMR Hard Drive & External SSD $/TB Comparison 2026</title>
+<meta name="description" content="Compare price per TB for internal CMR hard drives (NAS, enterprise) and external SSDs. Know your CMR from SMR. Updated Amazon prices with RAID-safe and speed labels.">
+<link rel="canonical" href="https://storage-price-tracker.pages.dev/">
+<meta property="og:title" content="Storage Price Tracker — HDD & SSD $/TB Comparison">
+<meta property="og:description" content="CMR vs SMR hard drives. External SSD speed comparison. Real $/TB from Amazon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://storage-price-tracker.pages.dev/">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Storage Price Tracker",
+  "url": "https://storage-price-tracker.pages.dev/",
+  "description": "Track $/TB for CMR hard drives and external SSDs. Know which drives are RAID-safe, NAS-ready, and fastest per dollar."
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg-base:#080b11;--bg-surface:#0f1420;--bg-elevated:#161d2e;--brand:#6366f1;--brand-light:#818cf8;--brand-glow:rgba(99,102,241,.12);--success:#10b981;--warn:#f59e0b;--text:#f1f5f9;--text-sec:#94a3b8;--text-muted:#475569;--border:#1e2d45;--radius:10px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg-base);color:var(--text);min-height:100vh;font-size:14px;line-height:1.6}
+a{color:var(--brand-light);text-decoration:none}
+a:hover{color:var(--brand);text-decoration:underline}
+
+.nav-bar{position:sticky;top:0;z-index:100;background:rgba(8,11,17,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:.55rem 1.25rem;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-weight:700;font-size:.9rem;color:var(--brand-light)}
+
+header{background:linear-gradient(135deg,#0e1628 0%,#14195c 50%,#0e1628 100%);padding:3.5rem 1.25rem 3rem;text-align:center;border-bottom:1px solid var(--border)}
+header h1{font-size:clamp(1.6rem,4vw,2.6rem);font-weight:800;background:linear-gradient(135deg,var(--brand-light),#a5b4fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.75rem}
+.hero-sub{font-size:.95rem;color:var(--text-sec);max-width:620px;margin:.75rem auto 0;line-height:1.7}
+
+.page-wrap{max-width:960px;margin:0 auto;padding:2.5rem 1.25rem}
+
+.silos{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+@media(max-width:620px){.silos{grid-template-columns:1fr}}
+
+.silo-card{background:var(--bg-surface);border:1px solid var(--border);border-radius:14px;padding:2rem;text-align:center;transition:transform .2s,border-color .2s;display:block;color:var(--text);text-decoration:none}
+.silo-card:hover{transform:translateY(-4px);border-color:var(--brand);text-decoration:none;color:var(--text)}
+.silo-icon{font-size:2.8rem;margin-bottom:1rem;display:block}
+.silo-card h2{font-size:1.2rem;font-weight:700;margin-bottom:.6rem}
+.silo-card p{font-size:.83rem;color:var(--text-sec);line-height:1.65;margin-bottom:1rem}
+.silo-tags{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin-bottom:1.2rem}
+.silo-tag{padding:.2rem .55rem;border-radius:12px;font-size:.68rem;font-weight:600;background:var(--bg-elevated);border:1px solid var(--border);color:var(--text-sec)}
+.silo-cta{display:inline-block;padding:.6rem 1.4rem;border-radius:8px;font-weight:700;font-size:.85rem;background:var(--brand);color:#fff;transition:filter .15s;text-decoration:none}
+.silo-cta:hover{filter:brightness(1.15);color:#fff;text-decoration:none}
+
+.why-section{background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem;margin-bottom:1.5rem}
+.why-section h2{font-size:1.1rem;font-weight:700;margin-bottom:.75rem;padding-left:.75rem;border-left:3px solid var(--brand)}
+.why-section p{color:var(--text-sec);font-size:.87rem;line-height:1.75;margin-bottom:.6rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+@media(max-width:560px){.grid-2{grid-template-columns:1fr}}
+.metric-block{background:var(--bg-elevated);border:1px solid var(--border);border-radius:8px;padding:1rem}
+.metric-block h3{font-size:.85rem;font-weight:700;margin-bottom:.4rem}
+.metric-block p{font-size:.78rem;color:var(--text-sec);line-height:1.65}
+
+footer{background:var(--bg-surface);border-top:1px solid var(--border);padding:1.75rem 1.25rem;margin-top:2rem;text-align:center}
+footer p{font-size:.75rem;color:var(--text-muted);line-height:1.65;max-width:700px;margin:0 auto}
+</style>
+</head>
+<body>
+
+<nav class="nav-bar">
+  <span class="nav-brand">💾 Storage Price Tracker</span>
+</nav>
+
+<header>
+  <h1>Storage Price Tracker</h1>
+  <p class="hero-sub">Real $/TB for internal hard drives and external SSDs — with CMR/SMR labels, RAID-safe indicators, and speed ratings. Built for NAS builders, homelab enthusiasts, and smart storage buyers.</p>
+</header>
+
+<div class="page-wrap">
+
+  <div class="silos">
+    <a href="hdd/" class="silo-card">
+      <span class="silo-icon">🗄️</span>
+      <h2>Internal HDD Tracker</h2>
+      <p>CMR vs SMR comparison. RAID-safe NAS drives. $/TB sorted. WD Red Plus, IronWolf, Exos, WD Gold — every drive labeled.</p>
+      <div class="silo-tags">
+        <span class="silo-tag">CMR / SMR</span>
+        <span class="silo-tag">RAID Safe</span>
+        <span class="silo-tag">NAS Ready</span>
+        <span class="silo-tag">Enterprise</span>
+        <span class="silo-tag">$/TB</span>
+      </div>
+      <span class="silo-cta">Browse NAS HDDs →</span>
+    </a>
+
+    <a href="ssd/" class="silo-card">
+      <span class="silo-icon">⚡</span>
+      <h2>External SSD Tracker</h2>
+      <p>Speed (MB/s) vs price. USB4, Thunderbolt, USB 3.2 Gen2. PS5 / Xbox / Mac compatible. Samsung T7, SanDisk Extreme, Crucial X9.</p>
+      <div class="silo-tags">
+        <span class="silo-tag">USB4 / TB</span>
+        <span class="silo-tag">1000+ MB/s</span>
+        <span class="silo-tag">PS5 Ready</span>
+        <span class="silo-tag">Mac Compatible</span>
+        <span class="silo-tag">$/TB</span>
+      </div>
+      <span class="silo-cta" style="background:var(--success)">Browse External SSDs →</span>
+    </a>
+  </div>
+
+  <div class="why-section">
+    <h2>Why We Built This Tracker</h2>
+    <p>Amazon product listings are notoriously bad at disclosing what matters most for storage buyers. CMR vs SMR? Hidden in model number suffixes. USB interface speed limit? Buried in the spec table. Actual $/TB? You have to calculate it yourself — and the capacity listed in the title is often wrong.</p>
+    <p>This tracker does the work for you: parses capacity from titles, calculates $/TB, labels every drive's technology and interface, and flags warranty and condition on every listing.</p>
+    <div class="grid-2">
+      <div class="metric-block">
+        <h3>🗄️ For Hard Drives: CMR vs SMR</h3>
+        <p>CMR (Conventional Magnetic Recording) = RAID-safe, NAS-safe, sustained write performance. SMR (Shingled Magnetic Recording) = cheaper, but causes RAID rebuild failures and NAS warnings. This tracker labels every drive.</p>
+      </div>
+      <div class="metric-block">
+        <h3>⚡ For External SSDs: MB/s vs Interface</h3>
+        <p>Advertised "1000 MB/s read" is meaningless if your port only supports 500 MB/s. This tracker shows both the drive's rated speed and the interface's theoretical max — so you know what you'll actually get.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-section">
+    <h2>What's Tracked</h2>
+    <div class="grid-2">
+      <div class="metric-block">
+        <h3>Internal HDD (NAS & Desktop)</h3>
+        <p>WD Red Plus · Seagate IronWolf · IronWolf Pro · WD Gold · Seagate Exos · Toshiba N300 · WD Purple Pro · Seagate Barracuda · WD Blue</p>
+        <p style="margin-top:.5rem;color:var(--brand-light)">→ <a href="hdd/">Open HDD Tracker</a></p>
+      </div>
+      <div class="metric-block">
+        <h3>External SSD (Portable)</h3>
+        <p>Samsung T7 · Samsung T9 · SanDisk Extreme · SanDisk Extreme Pro · Crucial X8 · Crucial X9 · Crucial X10 Pro · WD My Passport SSD · Seagate Fast SSD · OWC Envoy · LaCie Rugged</p>
+        <p style="margin-top:.5rem;color:var(--success)">→ <a href="ssd/" style="color:var(--success)">Open SSD Tracker</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Storage Price Tracker. Prices shown are from Amazon and may change at any time. Some links are affiliate links — we may earn a commission at no extra cost to you. Western Digital, Seagate, Samsung, SanDisk, and all brand names are trademarks of their respective owners. We are an independent price comparison service and are not affiliated with Amazon or any manufacturer.</p>
+</footer>
+
+</body>
+</html>

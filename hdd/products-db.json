@@ -1,0 +1,496 @@
+[
+  {
+    "id": "B0BXRNWCDY",
+    "title": "Seagate IronWolf 16TB NAS Internal Hard Drive CMR 7200 RPM SATA 6Gb/s 256MB Cache - Renewed",
+    "brand": "Seagate",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg",
+    "price": 179.99,
+    "capacityTB": 16,
+    "pricePerTB": 11.25,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": true,
+    "condition": "Renewed",
+    "techTags": [
+      "CMR",
+      "7200 RPM",
+      "Helium"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Renewed",
+      "Best $/TB"
+    ],
+    "rating": 4.4,
+    "reviewCount": 340,
+    "trustScore": 70
+  },
+  {
+    "id": "B01LYVX0H5",
+    "title": "Seagate Exos X18 18TB Enterprise HDD CMR Internal Hard Drive – 3.5 Inch Hyperscale SATA 6Gb/s 7200 RPM 256MB Cache",
+    "brand": "Seagate",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/51-3BQ5i0ZL._AC_SL300_.jpg",
+    "price": 279.99,
+    "capacityTB": 18,
+    "pricePerTB": 15.56,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "Enterprise",
+    "helium": true,
+    "condition": "Third-Party",
+    "techTags": [
+      "CMR",
+      "7200 RPM",
+      "Helium"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe",
+      "Enterprise"
+    ],
+    "condTags": [
+      "Best $/TB"
+    ],
+    "rating": 4.5,
+    "reviewCount": 1240,
+    "trustScore": 70
+  },
+  {
+    "id": "B08WK1KZSP",
+    "title": "WD Red Plus 8TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, CMR, 256 MB Cache, 3.5\"",
+    "brand": "WD",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg",
+    "price": 129.99,
+    "capacityTB": 8,
+    "pricePerTB": 16.25,
+    "cmrSmr": "CMR",
+    "rpm": 5400,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "5400 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.6,
+    "reviewCount": 8420,
+    "trustScore": 90
+  },
+  {
+    "id": "B07H5HDJBX",
+    "title": "Seagate Barracuda 4TB Internal Hard Drive HDD – 3.5 Inch SATA 6 Gb/s 5400 RPM 256MB Cache",
+    "brand": "Seagate",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg",
+    "price": 64.99,
+    "capacityTB": 4,
+    "pricePerTB": 16.25,
+    "cmrSmr": "Unknown",
+    "rpm": 5400,
+    "cache": 256,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "5400 RPM"
+    ],
+    "useTags": [
+      "Desktop"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.4,
+    "reviewCount": 31200,
+    "trustScore": 55
+  },
+  {
+    "id": "B07H5MD2GK",
+    "title": "Seagate IronWolf 12TB NAS Internal Hard Drive CMR 7200RPM 256MB Cache SATA 6 Gb/s 3.5\"",
+    "brand": "Seagate",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg",
+    "price": 199.99,
+    "capacityTB": 12,
+    "pricePerTB": 16.67,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.6,
+    "reviewCount": 5430,
+    "trustScore": 90
+  },
+  {
+    "id": "B08VM17BSJ",
+    "title": "WD Red 4TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, SMR, 256 MB Cache, 3.5\"",
+    "brand": "WD",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg",
+    "price": 69.99,
+    "capacityTB": 4,
+    "pricePerTB": 17.5,
+    "cmrSmr": "SMR",
+    "rpm": 5400,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [
+      "SMR",
+      "5400 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready"
+    ],
+    "condTags": [
+      "Best $/TB"
+    ],
+    "rating": 4.3,
+    "reviewCount": 9800,
+    "trustScore": 45
+  },
+  {
+    "id": "B09ZP4MJGX",
+    "title": "Seagate Exos 12TB Enterprise HDD CMR Internal Hard Drive 7200 RPM 256MB Cache SATA 6Gb/s",
+    "brand": "Seagate",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/51-3BQ5i0ZL._AC_SL300_.jpg",
+    "price": 209.99,
+    "capacityTB": 12,
+    "pricePerTB": 17.5,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "Enterprise",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe",
+      "Enterprise"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.6,
+    "reviewCount": 890,
+    "trustScore": 80
+  },
+  {
+    "id": "B07XWP5BK5",
+    "title": "WD Blue 4TB PC Hard Drive - 5400 RPM, CMR, SATA 6 Gb/s, 256 MB Cache, 3.5\"",
+    "brand": "WD",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/61HQIxPRriL._AC_SL300_.jpg",
+    "price": 69.99,
+    "capacityTB": 4,
+    "pricePerTB": 17.5,
+    "cmrSmr": "CMR",
+    "rpm": 5400,
+    "cache": 256,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "5400 RPM"
+    ],
+    "useTags": [
+      "RAID Safe",
+      "Desktop"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.5,
+    "reviewCount": 18900,
+    "trustScore": 80
+  },
+  {
+    "id": "B08TNT7H3T",
+    "title": "WD Red Plus 12TB NAS Internal Hard Drive CMR - 7200 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5\" - WD120EFBX",
+    "brand": "WD",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg",
+    "price": 214.99,
+    "capacityTB": 12,
+    "pricePerTB": 17.92,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.5,
+    "reviewCount": 3210,
+    "trustScore": 90
+  },
+  {
+    "id": "B0812G55GS",
+    "title": "Toshiba N300 8TB NAS 3.5-Inch Internal Hard Drive - CMR SATA 6.0 GB/s 7200 RPM 256 MB Cache",
+    "brand": "Toshiba",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/61ZGQ8FXHQL._AC_SL300_.jpg",
+    "price": 144.99,
+    "capacityTB": 8,
+    "pricePerTB": 18.12,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.5,
+    "reviewCount": 4120,
+    "trustScore": 90
+  },
+  {
+    "id": "B0B2RHJJGH",
+    "title": "WD Purple Pro 8TB Surveillance Internal Hard Drive CMR - 7200 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5\"",
+    "brand": "WD",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/51Wg-zLgfzL._AC_SL300_.jpg",
+    "price": 149.99,
+    "capacityTB": 8,
+    "pricePerTB": 18.75,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "RAID Safe",
+      "Surveillance"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.5,
+    "reviewCount": 1560,
+    "trustScore": 80
+  },
+  {
+    "id": "B084ZV4DXB",
+    "title": "Seagate IronWolf 8TB NAS Internal Hard Drive HDD – CMR 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache for RAID Network Attached Storage",
+    "brand": "Seagate",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg",
+    "price": 154.99,
+    "capacityTB": 8,
+    "pricePerTB": 19.37,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.6,
+    "reviewCount": 15600,
+    "trustScore": 90
+  },
+  {
+    "id": "B07H289S7C",
+    "title": "WD Red Plus 4TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, CMR, 128 MB Cache",
+    "brand": "WD",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg",
+    "price": 79.99,
+    "capacityTB": 4,
+    "pricePerTB": 20,
+    "cmrSmr": "CMR",
+    "rpm": 5400,
+    "cache": 128,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "5400 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "Best $/TB"
+    ],
+    "rating": 4.6,
+    "reviewCount": 12350,
+    "trustScore": 90
+  },
+  {
+    "id": "B07999WTNT",
+    "title": "Seagate IronWolf 4TB NAS Internal Hard Drive CMR HDD – 3.5 Inch SATA 6Gb/s 5900 RPM 64MB Cache",
+    "brand": "Seagate",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg",
+    "price": 84.99,
+    "capacityTB": 4,
+    "pricePerTB": 21.25,
+    "cmrSmr": "CMR",
+    "rpm": 5900,
+    "cache": 64,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "5900 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [
+      "Amazon Retail"
+    ],
+    "rating": 4.6,
+    "reviewCount": 22100,
+    "trustScore": 90
+  },
+  {
+    "id": "B07FP4Q3HB",
+    "title": "WD Gold 8TB Enterprise Class Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 256 MB Cache, CMR, 5 Year Warranty",
+    "brand": "WD",
+    "asin": "",
+    "asinUrl": "#",
+    "image": "https://m.media-amazon.com/images/I/51Wg-zLgfzL._AC_SL300_.jpg",
+    "price": 189.99,
+    "capacityTB": 8,
+    "pricePerTB": 23.75,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": "5yr",
+    "category": "Enterprise",
+    "helium": false,
+    "condition": "Amazon Retail",
+    "techTags": [
+      "CMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe",
+      "Enterprise"
+    ],
+    "condTags": [
+      "5yr Warranty",
+      "Amazon Retail"
+    ],
+    "rating": 4.7,
+    "reviewCount": 2890,
+    "trustScore": 95
+  }
+]

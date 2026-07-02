@@ -1,0 +1,30 @@
+name: Update SSD Prices
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'  # Every Monday at 7am UTC (1h after HDD)
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  update-ssd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run SSD update pipeline
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+        run: node ssd/update-data.js --full
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ssd/index.html ssd/products-db.json
+          git diff --staged --quiet || git commit -m "Auto: update SSD prices $(date '+%Y-%m-%d')"
+          git push
