@@ -198,7 +198,7 @@ function normalizeItem(raw) {
     title,
     brand:       raw.brand || (title.split(' ')[0]),
     asin:        raw.asin || '',
-    asinUrl:     raw.product_url || raw.url || (raw.asin ? `https://www.amazon.com/dp/${raw.asin}` : '#'),
+    asinUrl:     raw.product_url || raw.url || (() => { const id = raw.asin || raw.id || ''; return id.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${id}` : '#'; })(),
     image:       raw.image || raw.main_image || '',
     price,
     capacityTB,
@@ -277,7 +277,7 @@ function buildStaticRow(item) {
 
   return `<tr data-id="${item.id}" data-cat="${item.category}" data-tags="${allTags}"
     data-cmr="${item.cmrSmr}" data-ptb="${item.pricePerTB || 9999}" data-rating="${item.rating}">
-  <td class="col-essential col-img"><img src="${item.image}" alt="${item.brand}" loading="lazy" class="product-thumb"></td>
+  <td class="col-essential col-img"><img src="${item.image}" alt="${item.brand}" loading="lazy" class="product-thumb" onerror="this.style.display='none'"></td>
   <td class="col-essential col-name">
     <a href="${item.asinUrl}" target="_blank" rel="nofollow sponsored" class="prod-link">${shortName}</a>
     <div class="prod-brand">${item.brand}</div>
@@ -392,6 +392,11 @@ async function main() {
   // Re-enrichment pass — backfill existing DB entries
   let enriched = 0;
   for (const p of db) {
+    // Fix broken asinUrl (e.g. '#' from mock data using id field)
+    if (!p.asinUrl || p.asinUrl === '#') {
+      const aid = p.asin || p.id || '';
+      p.asinUrl = aid.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${aid}` : '#';
+    }
     const freshCMR = detectCMRSMR(p.title, p.asin);
     if (freshCMR !== p.cmrSmr) { p.cmrSmr = freshCMR; enriched++; }
     const freshCap = parseCapacityTB(p.title);
