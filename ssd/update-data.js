@@ -445,6 +445,7 @@ async function main() {
     if (!raw.title && !raw.name) continue;
     const item = normalizeItem(raw);
     if (!item.capacityTB) continue; // skip if we can't determine capacity
+    if (!item.price || item.price === 0) continue; // skip unavailable / no-price listings
     const existing = byId[item.id];
     if (existing) {
       Object.assign(existing, item, { lastSeen: item.lastSeen });

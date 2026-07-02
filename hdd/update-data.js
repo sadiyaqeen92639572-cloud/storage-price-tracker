@@ -416,6 +416,8 @@ async function main() {
             const t = (raw.name || raw.title || '').toLowerCase();
             if (!/internal hard drive|internal hdd/i.test(t) && !/\b(nas|sata).*(hdd|hard drive)/i.test(t)) continue;
             if (/external|portable|usb|ssd|solid state/i.test(t)) continue;
+            const rawPrice = parseFloat(raw.price) || 0;
+            if (rawPrice === 0) continue; // skip unavailable / no-price listings
             knownIds.add(id);
             db.push(normalizeItem(raw));
             added++;
@@ -462,6 +464,11 @@ async function main() {
     p.trustScore = trustScore(p);
   }
   if (enriched) console.log(`🔄 Re-enriched ${enriched} fields`);
+
+  // Purge no-price entries
+  const before = db.length;
+  db = db.filter(p => p.price && p.price > 0);
+  if (db.length < before) console.log(`🗑️  Removed ${before - db.length} no-price entries`);
 
   // Sort by $/TB ascending (best value first)
   db.sort((a,b) => (a.pricePerTB||9999) - (b.pricePerTB||9999));
