@@ -97,8 +97,30 @@ function detectCMRSMR(title, asin) {
   }
   // Seagate Desktop / Pipeline
   if (/seagate desktop hdd|pipeline/i.test(t)) return 'SMR';
-  // WD DC HC series (enterprise CMR)
-  if (/\bdc hc[45]\d\d\b/i.test(t)) return 'CMR';
+  // WD DC HC series + HGST Ultrastar (all enterprise CMR)
+  if (/\bdc hc[2-7][0-9][0-9]\b/i.test(t)) return 'CMR'; // HC310/HC520/HC550/HC650/HC310
+  if (/\bultrastar\b/i.test(t))  return 'CMR';
+  if (/\bhgst\b/i.test(t))       return 'CMR';
+  if (/\b7k[0-9]/i.test(t))      return 'CMR'; // HGST 7K6000 etc.
+  // Seagate surveillance/enterprise lines (all CMR)
+  if (/skyhawk/i.test(t))                  return 'CMR';
+  if (/enterprise capacity/i.test(t))      return 'CMR';
+  if (/seagate.*enterprise|enterprise.*seagate/i.test(t)) return 'CMR';
+  // Barracuda Pro (always CMR, 7200RPM)
+  if (/barracuda pro/i.test(t))            return 'CMR';
+  // WD Black (always CMR), WD Gold standalone patterns
+  if (/wd.?black|wd_black/i.test(t))       return 'CMR';
+  if (/western digital.*gold|wd.*\bgold\b/i.test(t)) return 'CMR';
+  // Toshiba N300 standalone (catches "TOSHIBA 10TB N300")
+  if (/\bn300\b/i.test(t))                 return 'CMR';
+  if (/toshiba x300/i.test(t))             return 'CMR';
+  // MDD / MaxDigitalData — rebranded enterprise CMR (7200RPM, large cap)
+  if (/\bmdd\b|maxdigitaldata/i.test(t)) {
+    const cap = parseCapacityTB(title);
+    if (cap >= 4) return 'CMR'; // MDD only sells 4TB+ enterprise-sourced drives
+  }
+  // Basicnology — rebranded enterprise/NAS, 14TB+ 7200RPM
+  if (/basicnology/i.test(t) && parseCapacityTB(title) >= 8) return 'CMR';
   return 'Unknown';
 }
 
@@ -258,7 +280,7 @@ const MOCK_PRODUCTS = [
 // ── STATIC ROW BUILDER ───────────────────────────────────────────────────────
 function cmrBadge(v) {
   if (v === 'CMR')     return '<span class="badge badge-cmr">✅ CMR</span>';
-  if (v === 'SMR')     return '<span class="badge badge-smr">⚠️ SMR</span>';
+  if (v === 'SMR')     return '<span class="badge badge-smr">SMR</span>';
   return '<span class="badge badge-unk">❓ Unknown</span>';
 }
 function raidBadge(cmr) {

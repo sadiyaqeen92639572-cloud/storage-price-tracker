@@ -9,7 +9,7 @@
     "price": 319.99,
     "capacityTB": 14,
     "pricePerTB": 22.86,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": "3yr",
@@ -17,10 +17,12 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [
@@ -29,7 +31,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 43
+    "trustScore": 63
   },
   {
     "id": "B0DJHLFF5J",
@@ -41,7 +43,7 @@
     "price": 319.99,
     "capacityTB": 14,
     "pricePerTB": 22.86,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": "3yr",
@@ -49,11 +51,13 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [
       "3yr Warranty",
@@ -61,7 +65,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 53
+    "trustScore": 73
   },
   {
     "id": "B0BWMLCWZ7",
@@ -73,7 +77,7 @@
     "price": 369.99,
     "capacityTB": 16,
     "pricePerTB": 23.12,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "3yr",
@@ -81,10 +85,12 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [
@@ -93,7 +99,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 43
+    "trustScore": 63
   },
   {
     "id": "B0GSH25PZ7",
@@ -139,7 +145,7 @@
     "price": 329.99,
     "capacityTB": 14,
     "pricePerTB": 23.57,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "5yr",
@@ -147,11 +153,13 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -160,7 +168,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 50
+    "trustScore": 70
   },
   {
     "id": "B0GJ6Z1WVC",
@@ -206,7 +214,7 @@
     "price": 329.99,
     "capacityTB": 14,
     "pricePerTB": 23.57,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -214,10 +222,12 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [
@@ -225,7 +235,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0BYTZWX7C",
@@ -237,7 +247,7 @@
     "price": 379.99,
     "capacityTB": 16,
     "pricePerTB": 23.75,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "5yr",
@@ -245,11 +255,13 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [
       "5yr Warranty",
@@ -257,7 +269,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 60
+    "trustScore": 80
   },
   {
     "id": "B0H27B3ZDS",
@@ -405,7 +417,7 @@
     "price": 309.99,
     "capacityTB": 12,
     "pricePerTB": 25.83,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -413,9 +425,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [
@@ -423,7 +437,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0CFFKHZCR",
@@ -467,7 +481,7 @@
     "price": 309.99,
     "capacityTB": 12,
     "pricePerTB": 25.83,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -475,9 +489,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [
@@ -485,7 +501,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0DNNKNKS4",
@@ -596,7 +612,7 @@
     "price": 319.95,
     "capacityTB": 12,
     "pricePerTB": 26.66,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -604,10 +620,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -615,7 +633,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B09DJC5J6P",
@@ -627,7 +645,7 @@
     "price": 159.99,
     "capacityTB": 6,
     "pricePerTB": 26.67,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": "3yr",
@@ -635,10 +653,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [
       "3yr Warranty",
@@ -646,7 +666,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 53
+    "trustScore": 73
   },
   {
     "id": "B0D9RMZHYM",
@@ -658,7 +678,7 @@
     "price": 268.99,
     "capacityTB": 10,
     "pricePerTB": 26.9,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -666,17 +686,19 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [
       "Renewed"
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 45
+    "trustScore": 65
   },
   {
     "id": "B07RSFX96W",
@@ -722,7 +744,7 @@
     "price": 328.99,
     "capacityTB": 12,
     "pricePerTB": 27.42,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -730,15 +752,17 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B0BS8PRSYJ",
@@ -750,7 +774,7 @@
     "price": 329.99,
     "capacityTB": 12,
     "pricePerTB": 27.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "3yr",
@@ -758,9 +782,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [
@@ -769,7 +795,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 43
+    "trustScore": 63
   },
   {
     "id": "B0BGYV6B9V",
@@ -781,7 +807,7 @@
     "price": 329.99,
     "capacityTB": 12,
     "pricePerTB": 27.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "3yr",
@@ -789,9 +815,11 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [
@@ -799,7 +827,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 48
+    "trustScore": 68
   },
   {
     "id": "B07W869RZ3",
@@ -844,7 +872,7 @@
     "price": 329.99,
     "capacityTB": 12,
     "pricePerTB": 27.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "5yr",
@@ -852,10 +880,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [
       "5yr Warranty",
@@ -863,7 +893,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 60
+    "trustScore": 80
   },
   {
     "id": "B097Z7RD87",
@@ -875,7 +905,7 @@
     "price": 169.99,
     "capacityTB": 6,
     "pricePerTB": 28.33,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": "3yr",
@@ -883,10 +913,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -895,7 +927,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 43
+    "trustScore": 63
   },
   {
     "id": "B07JJK7S37",
@@ -1036,7 +1068,7 @@
     "price": 235,
     "capacityTB": 8,
     "pricePerTB": 29.38,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -1044,10 +1076,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -1055,7 +1089,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B09DDGWSN3",
@@ -1067,7 +1101,7 @@
     "price": 239.99,
     "capacityTB": 8,
     "pricePerTB": 30,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "3yr",
@@ -1075,10 +1109,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [
       "3yr Warranty",
@@ -1086,7 +1122,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 53
+    "trustScore": 73
   },
   {
     "id": "B07WDV1R8K",
@@ -1130,7 +1166,7 @@
     "price": 179.99,
     "capacityTB": 6,
     "pricePerTB": 30,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": "3yr",
@@ -1138,10 +1174,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [
       "3yr Warranty",
@@ -1149,7 +1187,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 53
+    "trustScore": 73
   },
   {
     "id": "B0F9PH69CK",
@@ -1257,7 +1295,7 @@
     "price": 249.99,
     "capacityTB": 8,
     "pricePerTB": 31.25,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": "3yr",
@@ -1265,10 +1303,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -1277,7 +1317,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 43
+    "trustScore": 63
   },
   {
     "id": "B075WYBQXJ",
@@ -1318,7 +1358,7 @@
     "price": 189.99,
     "capacityTB": 6,
     "pricePerTB": 31.67,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": null,
     "warranty": null,
@@ -1326,9 +1366,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [
@@ -1336,7 +1378,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0DC28SGQ7",
@@ -1348,7 +1390,7 @@
     "price": 129.99,
     "capacityTB": 4,
     "pricePerTB": 32.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 64,
     "warranty": null,
@@ -1356,16 +1398,18 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B097CY9Z6G",
@@ -1377,7 +1421,7 @@
     "price": 259.99,
     "capacityTB": 8,
     "pricePerTB": 32.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -1385,15 +1429,17 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 50
+    "trustScore": 70
   },
   {
     "id": "B07Y1K2Q7T",
@@ -1405,7 +1451,7 @@
     "price": 129.99,
     "capacityTB": 4,
     "pricePerTB": 32.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 64,
     "warranty": "2yr",
@@ -1413,9 +1459,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [
@@ -1423,7 +1471,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0856X57Z9",
@@ -1435,7 +1483,7 @@
     "price": 129.99,
     "capacityTB": 4,
     "pricePerTB": 32.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": null,
@@ -1443,10 +1491,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -1454,7 +1504,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0CX5LX5GJ",
@@ -1498,7 +1548,7 @@
     "price": 129.99,
     "capacityTB": 4,
     "pricePerTB": 32.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 5900,
     "cache": 64,
     "warranty": "2yr",
@@ -1506,9 +1556,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "5900 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [
@@ -1516,7 +1568,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B07GSFC4VT",
@@ -1559,7 +1611,7 @@
     "price": 135.99,
     "capacityTB": 4,
     "pricePerTB": 34,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 64,
     "warranty": null,
@@ -1567,9 +1619,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [
@@ -1577,7 +1631,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B07ND69ZVP",
@@ -1621,7 +1675,7 @@
     "price": 139.99,
     "capacityTB": 4,
     "pricePerTB": 35,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": null,
     "warranty": null,
@@ -1629,9 +1683,11 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [
@@ -1639,7 +1695,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0B94KSFTH",
@@ -1927,21 +1983,24 @@
     "price": 459.99,
     "capacityTB": 12,
     "pricePerTB": 38.33,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 256,
     "warranty": null,
     "category": "Desktop",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B0F4R3YCL6",
@@ -2102,7 +2161,7 @@
     "price": 399.99,
     "capacityTB": 10,
     "pricePerTB": 40,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -2110,10 +2169,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -2121,7 +2182,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0CN5LNQSC",
@@ -2654,7 +2715,7 @@
     "price": 457.5,
     "capacityTB": 10,
     "pricePerTB": 45.75,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 512,
     "warranty": null,
@@ -2662,13 +2723,16 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
-    "useTags": [],
+    "useTags": [
+      "RAID Safe"
+    ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B01LXCE9W9",
@@ -2768,7 +2832,7 @@
     "price": 93.99,
     "capacityTB": 2,
     "pricePerTB": 47,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": null,
@@ -2776,10 +2840,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -2787,7 +2853,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0FY2N485X",
@@ -2829,7 +2895,7 @@
     "price": 379.99,
     "capacityTB": 8,
     "pricePerTB": 47.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -2837,13 +2903,16 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
-    "useTags": [],
+    "useTags": [
+      "RAID Safe"
+    ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B01M1BUBSO",
@@ -3177,7 +3246,7 @@
     "price": 542.39,
     "capacityTB": 10,
     "pricePerTB": 54.24,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 512,
     "warranty": null,
@@ -3185,16 +3254,18 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B083JXTH5L",
@@ -3589,21 +3660,24 @@
     "price": 158.39,
     "capacityTB": 2,
     "pricePerTB": 79.19,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 64,
     "warranty": null,
     "category": "Surveillance",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B0DXT5LRLS",
@@ -3674,21 +3748,24 @@
     "price": 170.45,
     "capacityTB": 2,
     "pricePerTB": 85.23,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 256,
     "warranty": null,
     "category": "Surveillance",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B07D99KFPK",
@@ -3879,7 +3956,7 @@
     "price": 120,
     "capacityTB": 1,
     "pricePerTB": 120,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 128,
     "warranty": null,
@@ -3887,15 +3964,17 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B01LYNQXCP",
@@ -4088,7 +4167,7 @@
     "price": 0,
     "capacityTB": 10,
     "pricePerTB": null,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -4096,16 +4175,18 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B0DSPKQX4C",
@@ -4184,21 +4265,24 @@
     "price": 0,
     "capacityTB": 8,
     "pricePerTB": null,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 256,
     "warranty": null,
     "category": "Desktop",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B07D9C7SQH",
