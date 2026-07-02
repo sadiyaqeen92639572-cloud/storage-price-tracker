@@ -31,6 +31,9 @@ const QUERIES = [
   'Amazon renewed internal hard drive nas',
   'WD Blue internal hard drive',
   'Seagate Barracuda internal hard drive',
+  'WD Red 2TB 4TB NAS hard drive SMR',
+  'Seagate Barracuda 2TB 4TB desktop hard drive',
+  'SMR internal hard drive desktop cheap',
 ];
 
 // ── CMR/SMR DATABASE ────────────────────────────────────────────────────────
@@ -72,18 +75,30 @@ function detectCMRSMR(title, asin) {
   if (/\bCMR\b/i.test(title) || /conventional magnetic/i.test(t)) return 'CMR';
   if (/\bSMR\b/i.test(title) || /shingled magnetic/i.test(t)) return 'SMR';
   // Name-based (reliable)
-  if (/wd red plus/i.test(t))   return 'CMR';
+  if (/wd red plus/i.test(t))        return 'CMR';
   if (/wd red\b(?!\s*plus)/i.test(t)) return 'SMR';
-  if (/wd gold/i.test(t))       return 'CMR';
-  if (/wd purple pro/i.test(t)) return 'CMR';
-  if (/ironwolf\b/i.test(t))    return 'CMR';
-  if (/ironwolf pro/i.test(t))  return 'CMR';
-  if (/seagate exos/i.test(t))  return 'CMR';
-  if (/toshiba n300/i.test(t))  return 'CMR';
-  if (/toshiba mg\d/i.test(t))  return 'CMR';
-  if (/wd blue/i.test(t))       return 'CMR'; // most WD Blue are CMR
-  if (/wd green/i.test(t))      return 'SMR';
-  if (/barracuda\b(?!\s*pro)/i.test(t)) return 'Unknown';
+  if (/wd gold/i.test(t))            return 'CMR';
+  if (/wd purple pro/i.test(t))      return 'CMR';
+  if (/wd purple(?!\s*pro)/i.test(t)) return 'CMR'; // WD Purple (surveillance CMR)
+  if (/ironwolf\b/i.test(t))         return 'CMR';
+  if (/\bexos\b/i.test(t))           return 'CMR'; // catches "Seagate 16TB Exos X16"
+  if (/toshiba n300/i.test(t))       return 'CMR';
+  if (/toshiba mg\d/i.test(t))       return 'CMR';
+  if (/toshiba x300/i.test(t))       return 'CMR';
+  if (/wd blue/i.test(t))            return 'CMR';
+  if (/wd green/i.test(t))           return 'SMR';
+  if (/wd elements/i.test(t))        return 'SMR';
+  // Seagate Barracuda: 2TB/3TB/4TB/6TB = SMR; 8TB+ = CMR
+  if (/barracuda\b(?!\s*pro)/i.test(t)) {
+    const cap = parseCapacityTB(title);
+    if (cap > 0 && cap <= 6) return 'SMR';
+    if (cap >= 8) return 'CMR';
+    return 'Unknown';
+  }
+  // Seagate Desktop / Pipeline
+  if (/seagate desktop hdd|pipeline/i.test(t)) return 'SMR';
+  // WD DC HC series (enterprise CMR)
+  if (/\bdc hc[45]\d\d\b/i.test(t)) return 'CMR';
   return 'Unknown';
 }
 

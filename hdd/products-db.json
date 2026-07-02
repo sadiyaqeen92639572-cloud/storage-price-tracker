@@ -197,6 +197,37 @@
     "trustScore": 55
   },
   {
+    "id": "B0DBGQN8QZ",
+    "title": "MDD MAXDIGITALDATA MDD 14TB 7200RPM SATA 6Gb/s 256MB Cache 3.5-inch Internal Desktop Hard Drive (Renewed)",
+    "brand": "MDD",
+    "asin": "B0DBGQN8QZ",
+    "asinUrl": "https://www.amazon.com/dp/B0DBGQN8QZ",
+    "image": "https://m.media-amazon.com/images/I/71Mxvg7KD3L.jpg",
+    "price": 329.99,
+    "capacityTB": 14,
+    "pricePerTB": 23.57,
+    "cmrSmr": "Unknown",
+    "rpm": 7200,
+    "cache": 256,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": true,
+    "condition": "Renewed",
+    "techTags": [
+      "7200 RPM",
+      "Helium"
+    ],
+    "useTags": [
+      "Desktop"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 35
+  },
+  {
     "id": "B0BYTZWX7C",
     "title": "MDD (MD16TSATA25672NAS) 16TB 7200RPM 256MB Cache SATA 6.0Gb/s 3.5-inch NAS Hard Drive - 5 Years Warranty (Renewed)",
     "brand": "MDD",
@@ -340,7 +371,7 @@
     "price": 359.99,
     "capacityTB": 14,
     "pricePerTB": 25.71,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -348,11 +379,13 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -360,7 +393,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0BCTVC62R",
@@ -498,7 +531,7 @@
     "price": 469.99,
     "capacityTB": 18,
     "pricePerTB": 26.11,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 512,
     "warranty": null,
@@ -506,16 +539,18 @@
     "helium": true,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
-      "NAS-Ready"
+      "NAS-Ready",
+      "RAID Safe"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 50
+    "trustScore": 70
   },
   {
     "id": "B08T2VRV29",
@@ -527,7 +562,7 @@
     "price": 419.99,
     "capacityTB": 16,
     "pricePerTB": 26.25,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -535,11 +570,13 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -547,7 +584,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0CMK6CP7L",
@@ -651,7 +688,7 @@
     "price": 379.99,
     "capacityTB": 14,
     "pricePerTB": 27.14,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": null,
     "warranty": null,
@@ -659,11 +696,13 @@
     "helium": true,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -671,7 +710,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0BCVNP2D7",
@@ -772,7 +811,7 @@
     "price": 329.99,
     "capacityTB": 12,
     "pricePerTB": 27.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": null,
     "warranty": null,
@@ -780,10 +819,12 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "CMR",
       "7200 RPM"
     ],
     "useTags": [
       "NAS-Ready",
+      "RAID Safe",
       "Enterprise"
     ],
     "condTags": [
@@ -791,7 +832,7 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 35
+    "trustScore": 55
   },
   {
     "id": "B0CMKWMNCP",
@@ -964,7 +1005,7 @@
     "price": 699.95,
     "capacityTB": 24,
     "pricePerTB": 29.16,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": 7200,
     "cache": 512,
     "warranty": null,
@@ -972,16 +1013,18 @@
     "helium": true,
     "condition": "Third-Party",
     "techTags": [
+      "CMR",
       "7200 RPM",
       "Helium"
     ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B091GJLGRM",
@@ -1152,21 +1195,24 @@
     "price": 250,
     "capacityTB": 8,
     "pricePerTB": 31.25,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 256,
     "warranty": null,
     "category": "Desktop",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B09G8JLRZ5",
@@ -1243,21 +1289,24 @@
     "price": 251.75,
     "capacityTB": 8,
     "pricePerTB": 31.47,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 256,
     "warranty": null,
     "category": "Desktop",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
     "useTags": [
+      "RAID Safe",
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B0845SMQJJ",
@@ -1438,6 +1487,67 @@
     "rating": 0,
     "reviewCount": 0,
     "trustScore": 55
+  },
+  {
+    "id": "B07DB1FLLK",
+    "title": "MDD 4TB 64MB Cache 5900PM SATA 6.0Gb/s 3.5-inch Internal Surveillance CCTV DVR Hard Drive (MD4000GSA6459DVR) - 2 Year Warranty (Renewed)",
+    "brand": "MDD",
+    "asin": "B07DB1FLLK",
+    "asinUrl": "https://www.amazon.com/dp/B07DB1FLLK",
+    "image": "https://m.media-amazon.com/images/I/61y9UTDichL.jpg",
+    "price": 129.99,
+    "capacityTB": 4,
+    "pricePerTB": 32.5,
+    "cmrSmr": "Unknown",
+    "rpm": 5900,
+    "cache": 64,
+    "warranty": "2yr",
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "5900 RPM"
+    ],
+    "useTags": [
+      "Surveillance"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 35
+  },
+  {
+    "id": "B07GSFC4VT",
+    "title": "Seagate Barracuda St2000dm001 2 Tb 3.5 Internal Hard Drive - Sata - 7200 Rpm - 64 Mb Buffer (Renewed)",
+    "brand": "Seagate",
+    "asin": "B07GSFC4VT",
+    "asinUrl": "https://www.amazon.com/dp/B07GSFC4VT",
+    "image": "https://m.media-amazon.com/images/I/51G3+sD4ocL.jpg",
+    "price": 65,
+    "capacityTB": 2,
+    "pricePerTB": 32.5,
+    "cmrSmr": "SMR",
+    "rpm": 7200,
+    "cache": null,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "SMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "Desktop"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 25
   },
   {
     "id": "B0BS8K1P6W",
@@ -1717,6 +1827,36 @@
     "trustScore": 55
   },
   {
+    "id": "B07MWC6P2L",
+    "title": "Seagate BarraCuda Internal Hard Drive 4TB SATA 6Gb/s 128MB Cache 2.5-Inch 15mm (ST4000LM024) (Renewed),Mechanical Hard Disk",
+    "brand": "Seagate",
+    "asin": "B07MWC6P2L",
+    "asinUrl": "https://www.amazon.com/dp/B07MWC6P2L",
+    "image": "https://m.media-amazon.com/images/I/51mJ4jPdjYL.jpg",
+    "price": 149.99,
+    "capacityTB": 4,
+    "pricePerTB": 37.5,
+    "cmrSmr": "SMR",
+    "rpm": null,
+    "cache": 128,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "SMR"
+    ],
+    "useTags": [
+      "Desktop"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 25
+  },
+  {
     "id": "B0CYQHWXT4",
     "title": "TOSHIBA N300 20TB NAS 3.5-Inch Internal Hard Drive - CMR SATA 6 GB/s 7200 RPM 512 MB Cache - HDWG62AXZSTA",
     "brand": "TOSHIBA",
@@ -1873,7 +2013,7 @@
     "price": 237,
     "capacityTB": 6,
     "pricePerTB": 39.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 5400,
     "cache": 256,
     "warranty": null,
@@ -1881,6 +2021,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "5400 RPM"
     ],
     "useTags": [
@@ -1889,7 +2030,67 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
+  },
+  {
+    "id": "B07FXWRX6L",
+    "title": "MDD MAXDIGITALDATA 500GB 8MB Cache 5900RPM SATA 3Gb/s 3.5-inch Internal Desktop Hard Drive (Renewed)",
+    "brand": "MDD",
+    "asin": "B07FXWRX6L",
+    "asinUrl": "https://www.amazon.com/dp/B07FXWRX6L",
+    "image": "https://m.media-amazon.com/images/I/61QiRN+RP9L.jpg",
+    "price": 19.99,
+    "capacityTB": 0.5,
+    "pricePerTB": 39.98,
+    "cmrSmr": "Unknown",
+    "rpm": 5900,
+    "cache": 8,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "5900 RPM"
+    ],
+    "useTags": [
+      "Desktop"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 35
+  },
+  {
+    "id": "B081NVPYJB",
+    "title": "MDD MaxDigitalData 500GB 8MB Cache 5900PM SATA 6.0Gb/s 3.5 Internal Surveillance CCTV DVR Hard Drive - 2 Year Warranty (Renewed)",
+    "brand": "MDD",
+    "asin": "B081NVPYJB",
+    "asinUrl": "https://www.amazon.com/dp/B081NVPYJB",
+    "image": "https://m.media-amazon.com/images/I/61GefokUiXL.jpg",
+    "price": 19.99,
+    "capacityTB": 0.5,
+    "pricePerTB": 39.98,
+    "cmrSmr": "Unknown",
+    "rpm": 5900,
+    "cache": 8,
+    "warranty": "2yr",
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "5900 RPM"
+    ],
+    "useTags": [
+      "Surveillance"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 35
   },
   {
     "id": "B08FLY91BS",
@@ -2047,6 +2248,37 @@
     "rating": 0,
     "reviewCount": 0,
     "trustScore": 60
+  },
+  {
+    "id": "B0DYQH22PW",
+    "title": "Western Digital 20TB WD Red Pro NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, CMR, 512 MB Cache, 3.5\" - WD202KFGX",
+    "brand": "Western",
+    "asin": "B0DYQH22PW",
+    "asinUrl": "https://www.amazon.com/dp/B0DYQH22PW",
+    "image": "https://m.media-amazon.com/images/I/61uK0a6RQQL.jpg",
+    "price": 814.99,
+    "capacityTB": 20,
+    "pricePerTB": 40.75,
+    "cmrSmr": "CMR",
+    "rpm": 7200,
+    "cache": 512,
+    "warranty": null,
+    "category": "NAS",
+    "helium": true,
+    "condition": "Third-Party",
+    "techTags": [
+      "CMR",
+      "7200 RPM",
+      "Helium"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 70
   },
   {
     "id": "B07H4VBRKW",
@@ -2242,7 +2474,7 @@
     "price": 215,
     "capacityTB": 5,
     "pricePerTB": 43,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 5400,
     "cache": 128,
     "warranty": null,
@@ -2250,6 +2482,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "5400 RPM"
     ],
     "useTags": [
@@ -2258,7 +2491,7 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B07SGGWYC1",
@@ -2447,21 +2680,23 @@
     "price": 186,
     "capacityTB": 4,
     "pricePerTB": 46.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": null,
     "cache": null,
     "warranty": null,
     "category": "Desktop",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "SMR"
+    ],
     "useTags": [
       "Desktop"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B0DF9C8D8Y",
@@ -2737,16 +2972,108 @@
     "price": 399.36,
     "capacityTB": 8,
     "pricePerTB": 49.92,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 256,
     "warranty": null,
     "category": "Surveillance",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
+    "useTags": [
+      "RAID Safe",
+      "Surveillance"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 60
+  },
+  {
+    "id": "B01IJIQ36O",
+    "title": "Western Digital (WD5000AVVS) 500GB 8MB Cache 5400RPM SATA II 3.0Gb/s 3.5in Internal Hard Drive (CCTV DVR, PC, Mac) [Renewed]- w/ 1 Year Warranty",
+    "brand": "Western",
+    "asin": "B01IJIQ36O",
+    "asinUrl": "https://www.amazon.com/dp/B01IJIQ36O",
+    "image": "https://m.media-amazon.com/images/I/614kjVdgK1L.jpg",
+    "price": 24.99,
+    "capacityTB": 0.5,
+    "pricePerTB": 49.98,
+    "cmrSmr": "Unknown",
+    "rpm": 5400,
+    "cache": 8,
+    "warranty": "1yr",
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "5400 RPM"
+    ],
     "useTags": [
       "Surveillance"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 35
+  },
+  {
+    "id": "B0D3T3LLD1",
+    "title": "MDD MAXDIGITALDATA 500GB 5900RPM 16MB Cache SATA 3.0Gb/s 3.5-inch Surveillance Hard Drive - 3 Year Warranty (Renewed)",
+    "brand": "MDD",
+    "asin": "B0D3T3LLD1",
+    "asinUrl": "https://www.amazon.com/dp/B0D3T3LLD1",
+    "image": "https://m.media-amazon.com/images/I/717xUXW2FOL.jpg",
+    "price": 24.99,
+    "capacityTB": 0.5,
+    "pricePerTB": 49.98,
+    "cmrSmr": "Unknown",
+    "rpm": 5900,
+    "cache": 16,
+    "warranty": "3yr",
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "5900 RPM"
+    ],
+    "useTags": [
+      "Surveillance"
+    ],
+    "condTags": [
+      "3yr Warranty",
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 43
+  },
+  {
+    "id": "B00AAKF8HK",
+    "title": "500 GB 500GB 2.5 Inch Sata Laptop Internal Hard drive 5400 RPM for Laptop/Mac/PS3 (500 GB)",
+    "brand": "500",
+    "asin": "B00AAKF8HK",
+    "asinUrl": "https://www.amazon.com/dp/B00AAKF8HK",
+    "image": "https://m.media-amazon.com/images/I/51rIDShM4PS.jpg",
+    "price": 24.99,
+    "capacityTB": 0.5,
+    "pricePerTB": 49.98,
+    "cmrSmr": "Unknown",
+    "rpm": 5400,
+    "cache": null,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [
+      "5400 RPM"
+    ],
+    "useTags": [
+      "Desktop"
     ],
     "condTags": [],
     "rating": 0,
@@ -2763,21 +3090,24 @@
     "price": 407.9,
     "capacityTB": 8,
     "pricePerTB": 50.99,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "CMR",
     "rpm": null,
     "cache": 128,
     "warranty": null,
     "category": "Surveillance",
     "helium": false,
     "condition": "Third-Party",
-    "techTags": [],
+    "techTags": [
+      "CMR"
+    ],
     "useTags": [
+      "RAID Safe",
       "Surveillance"
     ],
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 60
   },
   {
     "id": "B07RQBBRSN",
@@ -2986,6 +3316,34 @@
     "trustScore": 48
   },
   {
+    "id": "B07D9ZFYKX",
+    "title": "MaxDigitalData 500GB 8MB Cache 5900PM SATA 6.0Gb/s 3.5\" Internal Surveillance CCTV DVR Hard Drive (MD500GSA859DVR) - w/ 2 Year Warranty",
+    "brand": "MaxDigitalData",
+    "asin": "B07D9ZFYKX",
+    "asinUrl": "https://www.amazon.com/dp/B07D9ZFYKX",
+    "image": "https://m.media-amazon.com/images/I/61GefokUiXL.jpg",
+    "price": 29.99,
+    "capacityTB": 0.5,
+    "pricePerTB": 59.98,
+    "cmrSmr": "Unknown",
+    "rpm": 5900,
+    "cache": 8,
+    "warranty": "2yr",
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [
+      "5900 RPM"
+    ],
+    "useTags": [
+      "Surveillance"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 40
+  },
+  {
     "id": "B07H2RR55Q",
     "title": "Seagate BarraCuda 2TB Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache – Frustration Free Packaging (ST2000DM008/ST2000DMZ08)",
     "brand": "Seagate",
@@ -2995,7 +3353,7 @@
     "price": 119.99,
     "capacityTB": 2,
     "pricePerTB": 60,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 7200,
     "cache": 256,
     "warranty": null,
@@ -3003,6 +3361,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "7200 RPM"
     ],
     "useTags": [
@@ -3011,7 +3370,7 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B07H289S79",
@@ -3074,6 +3433,34 @@
     "trustScore": 70
   },
   {
+    "id": "B01LNJBA50",
+    "title": "Seagate BarraCuda Internal Hard Drive 4TB SATA 6Gb/s 256MB Cache 3.5-Inch (ST4000DM005)",
+    "brand": "Seagate",
+    "asin": "B01LNJBA50",
+    "asinUrl": "https://www.amazon.com/dp/B01LNJBA50",
+    "image": "https://m.media-amazon.com/images/I/81vk0OXibEL.jpg",
+    "price": 259.99,
+    "capacityTB": 4,
+    "pricePerTB": 65,
+    "cmrSmr": "SMR",
+    "rpm": null,
+    "cache": 256,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [
+      "SMR"
+    ],
+    "useTags": [
+      "Desktop"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 30
+  },
+  {
     "id": "B00EHBERSE",
     "title": "Western Digital 4TB WD Red Plus NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, CMR, 64 MB Cache, 3.5\" - WD40EFRX",
     "brand": "Western",
@@ -3102,6 +3489,35 @@
     "rating": 0,
     "reviewCount": 0,
     "trustScore": 70
+  },
+  {
+    "id": "B01IEKG402",
+    "title": "Seagate BarraCuda 2TB Internal Hard Drive HDD – 3.5 Inch SATA 6 Gb/s 7200 RPM 64MB Cache for Computer Desktop PC Laptop (ST2000DM006)",
+    "brand": "Seagate",
+    "asin": "B01IEKG402",
+    "asinUrl": "https://www.amazon.com/dp/B01IEKG402",
+    "image": "https://m.media-amazon.com/images/I/71Czt9ypIbL.jpg",
+    "price": 136,
+    "capacityTB": 2,
+    "pricePerTB": 68,
+    "cmrSmr": "SMR",
+    "rpm": 7200,
+    "cache": 64,
+    "warranty": null,
+    "category": "Desktop",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [
+      "SMR",
+      "7200 RPM"
+    ],
+    "useTags": [
+      "Desktop"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 30
   },
   {
     "id": "B0F2H16VZW",
@@ -3142,7 +3558,7 @@
     "price": 36.99,
     "capacityTB": 0.5,
     "pricePerTB": 73.98,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 5900,
     "cache": 8,
     "warranty": "1yr",
@@ -3150,6 +3566,7 @@
     "helium": false,
     "condition": "Renewed",
     "techTags": [
+      "SMR",
       "5900 RPM"
     ],
     "useTags": [
@@ -3160,7 +3577,33 @@
     ],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 45
+    "trustScore": 35
+  },
+  {
+    "id": "B01LOOJ8QM",
+    "title": "Seagate SkyHawk 2TB Surveillance Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 64MB Cache for DVR NVR Security Camera System with Drive Health Management (ST2000VX008)",
+    "brand": "Seagate",
+    "asin": "B01LOOJ8QM",
+    "asinUrl": "https://www.amazon.com/dp/B01LOOJ8QM",
+    "image": "https://m.media-amazon.com/images/I/512l7eE6MIL.jpg",
+    "price": 158.39,
+    "capacityTB": 2,
+    "pricePerTB": 79.19,
+    "cmrSmr": "Unknown",
+    "rpm": null,
+    "cache": 64,
+    "warranty": null,
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [],
+    "useTags": [
+      "Surveillance"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 40
   },
   {
     "id": "B0DXT5LRLS",
@@ -3202,7 +3645,7 @@
     "price": 165,
     "capacityTB": 2,
     "pricePerTB": 82.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 5400,
     "cache": 128,
     "warranty": null,
@@ -3210,10 +3653,37 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "5400 RPM"
     ],
     "useTags": [
       "Desktop"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 30
+  },
+  {
+    "id": "B08T8J1K6M",
+    "title": "Seagate Skyhawk 2 TB Surveillance(SV) Internal Hard Drive HDD – 3.5 Inch SATA 6 Gb/s 256 MB Cache for DVR NVR Security Camera System CCTV (ST2000VX015)",
+    "brand": "Seagate",
+    "asin": "B08T8J1K6M",
+    "asinUrl": "https://www.amazon.com/dp/B08T8J1K6M",
+    "image": "https://m.media-amazon.com/images/I/51ftdg64bML.jpg",
+    "price": 170.45,
+    "capacityTB": 2,
+    "pricePerTB": 85.23,
+    "cmrSmr": "Unknown",
+    "rpm": null,
+    "cache": 256,
+    "warranty": null,
+    "category": "Surveillance",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [],
+    "useTags": [
+      "Surveillance"
     ],
     "condTags": [],
     "rating": 0,
@@ -3230,7 +3700,7 @@
     "price": 86.5,
     "capacityTB": 1,
     "pricePerTB": 86.5,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 7200,
     "cache": 64,
     "warranty": null,
@@ -3238,6 +3708,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "7200 RPM"
     ],
     "useTags": [
@@ -3246,7 +3717,7 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B01LNJBA2I",
@@ -3258,7 +3729,7 @@
     "price": 87.95,
     "capacityTB": 1,
     "pricePerTB": 87.95,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 7200,
     "cache": 64,
     "warranty": null,
@@ -3266,6 +3737,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "7200 RPM"
     ],
     "useTags": [
@@ -3274,7 +3746,7 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B0088PUEPK",
@@ -3338,6 +3810,35 @@
     "rating": 0,
     "reviewCount": 0,
     "trustScore": 55
+  },
+  {
+    "id": "B07PGWXQCM",
+    "title": "Western Digital 2TB WD NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, SMR, 256MB Cache, 3.5\" - WD20EFAX, Red",
+    "brand": "Western",
+    "asin": "B07PGWXQCM",
+    "asinUrl": "https://www.amazon.com/dp/B07PGWXQCM",
+    "image": "https://m.media-amazon.com/images/I/612wec8CdML.jpg",
+    "price": 219.9,
+    "capacityTB": 2,
+    "pricePerTB": 109.95,
+    "cmrSmr": "SMR",
+    "rpm": 5400,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [
+      "SMR",
+      "5400 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 40
   },
   {
     "id": "B0BW9NQY1J",
@@ -3406,7 +3907,7 @@
     "price": 120,
     "capacityTB": 1,
     "pricePerTB": 120,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 5400,
     "cache": 128,
     "warranty": null,
@@ -3414,6 +3915,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "5400 RPM"
     ],
     "useTags": [
@@ -3422,7 +3924,7 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B01IW1VYDA",
@@ -3434,7 +3936,7 @@
     "price": 69.99,
     "capacityTB": 0.5,
     "pricePerTB": 139.98,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 7200,
     "cache": null,
     "warranty": null,
@@ -3442,6 +3944,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "7200 RPM"
     ],
     "useTags": [
@@ -3450,7 +3953,7 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B081H91CSM",
@@ -3482,6 +3985,37 @@
     "rating": 0,
     "reviewCount": 0,
     "trustScore": 60
+  },
+  {
+    "id": "B0CJZ68M6N",
+    "title": "Western Digital 2TB WD NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, SMR, 256MB Cache, 3.5\" - WD20EFAX, Red (Renewed)",
+    "brand": "Western",
+    "asin": "B0CJZ68M6N",
+    "asinUrl": "https://www.amazon.com/dp/B0CJZ68M6N",
+    "image": "https://m.media-amazon.com/images/I/412BbkMWMyL.jpg",
+    "price": 309,
+    "capacityTB": 2,
+    "pricePerTB": 154.5,
+    "cmrSmr": "SMR",
+    "rpm": 5400,
+    "cache": 256,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Renewed",
+    "techTags": [
+      "SMR",
+      "5400 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready"
+    ],
+    "condTags": [
+      "Renewed"
+    ],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 35
   },
   {
     "id": "B085ZB51HW",
@@ -3676,7 +4210,7 @@
     "price": 0,
     "capacityTB": 4,
     "pricePerTB": null,
-    "cmrSmr": "Unknown",
+    "cmrSmr": "SMR",
     "rpm": 5400,
     "cache": 256,
     "warranty": null,
@@ -3684,6 +4218,7 @@
     "helium": false,
     "condition": "Third-Party",
     "techTags": [
+      "SMR",
       "5400 RPM"
     ],
     "useTags": [
@@ -3692,7 +4227,7 @@
     "condTags": [],
     "rating": 0,
     "reviewCount": 0,
-    "trustScore": 40
+    "trustScore": 30
   },
   {
     "id": "B07B1WK3N5",
@@ -3783,5 +4318,35 @@
     "rating": 0,
     "reviewCount": 0,
     "trustScore": 60
+  },
+  {
+    "id": "B008JJLZ7G",
+    "title": "Western Digital 2TB WD Red Plus NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, CMR, 64 MB Cache, 3.5\" - WD20EFRX",
+    "brand": "Western",
+    "asin": "B008JJLZ7G",
+    "asinUrl": "https://www.amazon.com/dp/B008JJLZ7G",
+    "image": "https://m.media-amazon.com/images/I/71Z8kfqA8GL.jpg",
+    "price": 0,
+    "capacityTB": 2,
+    "pricePerTB": null,
+    "cmrSmr": "CMR",
+    "rpm": 5400,
+    "cache": 64,
+    "warranty": null,
+    "category": "NAS",
+    "helium": false,
+    "condition": "Third-Party",
+    "techTags": [
+      "CMR",
+      "5400 RPM"
+    ],
+    "useTags": [
+      "NAS-Ready",
+      "RAID Safe"
+    ],
+    "condTags": [],
+    "rating": 0,
+    "reviewCount": 0,
+    "trustScore": 70
   }
 ]
