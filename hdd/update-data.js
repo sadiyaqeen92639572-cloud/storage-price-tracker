@@ -198,7 +198,7 @@ function normalizeItem(raw) {
     title,
     brand:       raw.brand || (title.split(' ')[0]),
     asin:        raw.asin || '',
-    asinUrl:     raw.product_url || raw.url || (() => { const id = raw.asin || raw.id || ''; return id.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${id}` : '#'; })(),
+    asinUrl:     (() => { const id = raw.asin || raw.id || ''; const cleanUrl = id.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${id}` : (raw.product_url || raw.url || '#'); return (cleanUrl.includes('sspa/click') || cleanUrl === '#') && id.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${id}` : cleanUrl; })(),
     image:       raw.image || raw.main_image || '',
     price,
     capacityTB,
@@ -376,7 +376,7 @@ async function main() {
             const id = raw.asin || raw.product_id;
             if (!id || knownIds.has(id)) continue;
             // Filter: must be internal HDD (not external, not SSD)
-            const t = (raw.title || '').toLowerCase();
+            const t = (raw.name || raw.title || '').toLowerCase();
             if (!/internal hard drive|internal hdd/i.test(t) && !/\b(nas|sata).*(hdd|hard drive)/i.test(t)) continue;
             if (/external|portable|usb|ssd|solid state/i.test(t)) continue;
             knownIds.add(id);
@@ -392,8 +392,8 @@ async function main() {
   // Re-enrichment pass — backfill existing DB entries
   let enriched = 0;
   for (const p of db) {
-    // Fix broken asinUrl (e.g. '#' from mock data using id field)
-    if (!p.asinUrl || p.asinUrl === '#') {
+    // Fix broken/sspa asinUrl
+    if (!p.asinUrl || p.asinUrl === '#' || p.asinUrl.includes('sspa/click')) {
       const aid = p.asin || p.id || '';
       p.asinUrl = aid.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${aid}` : '#';
     }

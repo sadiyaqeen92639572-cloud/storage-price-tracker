@@ -1,265 +1,215 @@
 [
   {
-    "id": "B09FVVPFJJ",
-    "title": "Crucial X9 Pro 4TB Portable SSD for Mac — Up to 1050MB/s 3yr Warranty USB-C USB 3.2 CTMACP4000X9PRO",
-    "brand": "Crucial",
+    "id": "B0CRYY9THJ",
+    "title": "PAIYULE Carrying Case for Samsung T9/T7/T7 Shield Portable SSD 4TB 2TB 1TB, Hard Travel Storage Holder for USB External Solid State Drive, for Photo, Office and Gaming-Blue, Case Only Global Recycled Standard Global Recycled Standard Global Recycled Standard",
+    "brand": "Samsung",
     "capacityTB": 4,
-    "price": 139.99,
-    "pricePerTB": 35,
-    "readSpeedMBs": 1050,
+    "price": 9.99,
+    "pricePerTB": 2.5,
+    "readSpeedMBs": 0,
+    "interface": "",
+    "maxSpeedMBs": 0,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/81UoGiVDpuL.jpg",
+    "amazonUrl": "https://www.amazon.com/Carrying-Compatible-Portable-External-Cable%EF%BC%88Blue%EF%BC%89/dp/B0CRYY9THJ/ref=sr_1_9?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-9",
+    "techTags": [],
+    "useTags": [
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty",
+      "Best $/TB"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 83
+  },
+  {
+    "id": "B0BBYP662X",
+    "title": "ProCase Carrying Case for Samsung T7 Shield External SSD with 2 Cable Ties, Hard EVA Shockproof Storage Travel Organizer for T7 Shield Portable Solid State Drive USB 3.2 1TB 2TB -Black",
+    "brand": "Samsung",
+    "capacityTB": 1,
+    "price": 9.99,
+    "pricePerTB": 9.99,
+    "readSpeedMBs": 0,
     "interface": "USB 3.0",
     "maxSpeedMBs": 400,
     "connector": "USB-C",
     "formFactor": "Portable",
-    "warrantyYears": "5yr",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.8,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/81v527X--PL.jpg",
+    "amazonUrl": "https://www.amazon.com/ProCase-Carrying-External-Shockproof-Organizer/dp/B0BBYP662X/ref=sr_1_7?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-7",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty",
+      "Best $/TB"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 83
+  },
+  {
+    "id": "B07VP5X239",
+    "title": "WD 5TB My Passport, Portable External Hard Drive, Black, backup software with defense against ransomware, and password protection, USB 3.1/USB 3.0 compatible - WDBPKJ0050BBK-WESN",
+    "brand": "WD",
+    "capacityTB": 5,
+    "price": 217.99,
+    "pricePerTB": 43.6,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/51tXR09l5qL.jpg",
+    "amazonUrl": "https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VP5X239/ref=sr_1_4?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-4",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B07VTW2LPX",
+    "title": "WD 4TB My Passport, Portable External Hard Drive, Black, backup software with defense against ransomware, and password protection, USB 3.1/USB 3.0 compatible - WDBPKJ0040BBK-WESN",
+    "brand": "WD",
+    "capacityTB": 4,
+    "price": 199.95,
+    "pricePerTB": 49.99,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/51CDEElxPFL.jpg",
+    "amazonUrl": "https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTW2LPX/ref=sr_1_9?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-9",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B07X46C64N",
+    "title": "WD 5TB My Passport Ultra, Blue, Portable External Hard Drive, backup software with defense against ransomware, and password protection, USB-C and USB 3.1 - WDBFTM0050BBL-WESN",
+    "brand": "WD",
+    "capacityTB": 5,
+    "price": 294.99,
+    "pricePerTB": 59,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/A14DWcn1AlL.jpg",
+    "amazonUrl": "https://www.amazon.com/WD-5Tb-My-Passport-Ultra-Portable-External-Drive/dp/B07X46C64N/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-8",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B07VTFN6HM",
+    "title": "WD 2TB My Passport, Portable External Hard Drive, Black, backup software with defense against ransomware, and password protection, USB 3.1/USB 3.0 compatible - WDBYVG0020BBK-WESN",
+    "brand": "WD",
+    "capacityTB": 2,
+    "price": 144.32,
+    "pricePerTB": 72.16,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/510+J06fz0L.jpg",
+    "amazonUrl": "https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTFN6HM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-5",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B07VSPL8FJ",
+    "title": "WD 2TB My Passport for Mac, Navy, Portable External Hard Drive with backup software and password protection, USB 3.1/USB 3.0 compatible - WDBA2D0020BBL-WESN",
+    "brand": "WD",
+    "capacityTB": 2,
+    "price": 174.99,
+    "pricePerTB": 87.5,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
     "condition": "Amazon Retail",
     "compatibility": [
       "Mac"
     ],
-    "rating": 4.5,
-    "reviews": 8912,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B09FVVPFJJ",
+    "rating": 4.4,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/618VbHZAaOL.jpg",
+    "amazonUrl": "https://www.amazon.com/Passport-Portable-External-Drive-WDBA2D0020BBL-WESN/dp/B07VSPL8FJ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-7",
     "techTags": [
-      "1000+ MB/s",
       "USB 3.0"
-    ],
-    "useTags": [
-      "Mac Compatible",
-      "4TB+"
-    ],
-    "condTags": [
-      "Amazon Retail",
-      "5yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.026Z",
-    "trustScore": 95
-  },
-  {
-    "id": "B09BKBP939",
-    "title": "Samsung T7 Shield 4TB Portable External SSD USB 3.2 Gen 2 (10Gbps) Ruggedized Case Beige MU-PE4T0K/AM",
-    "brand": "Samsung",
-    "capacityTB": 4,
-    "price": 149.99,
-    "pricePerTB": 37.5,
-    "readSpeedMBs": 0,
-    "interface": "USB 3.2 Gen2",
-    "maxSpeedMBs": 1000,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "3yr",
-    "condition": "Amazon Retail",
-    "compatibility": [],
-    "rating": 4.7,
-    "reviews": 45231,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B09BKBP939",
-    "techTags": [
-      "USB 3.2 Gen2"
-    ],
-    "useTags": [
-      "4TB+"
-    ],
-    "condTags": [
-      "Amazon Retail",
-      "3yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.024Z",
-    "trustScore": 78
-  },
-  {
-    "id": "B08F7L33MH",
-    "title": "Crucial X8 2TB Portable SSD — Up to 1050MB/s — PS4, Xbox & PlayStation Compatible USB 3.2 CT2000X8SSD9",
-    "brand": "Crucial",
-    "capacityTB": 2,
-    "price": 84.99,
-    "pricePerTB": 42.5,
-    "readSpeedMBs": 1050,
-    "interface": "USB 3.0",
-    "maxSpeedMBs": 400,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "5yr",
-    "condition": "Amazon Retail",
-    "compatibility": [
-      "Xbox"
-    ],
-    "rating": 4.6,
-    "reviews": 67890,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B08F7L33MH",
-    "techTags": [
-      "1000+ MB/s",
-      "USB 3.0"
-    ],
-    "useTags": [
-      "Xbox Ready"
-    ],
-    "condTags": [
-      "Amazon Retail",
-      "5yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.025Z",
-    "trustScore": 95
-  },
-  {
-    "id": "B09HW8G3PZ",
-    "title": "WD My Passport SSD 4TB External Solid State Drive 1050MB/s USB-C Windows Mac 3yr Warranty WDBB9G0040BBL-WESN",
-    "brand": "WD",
-    "capacityTB": 4,
-    "price": 169.99,
-    "pricePerTB": 42.5,
-    "readSpeedMBs": 1050,
-    "interface": "USB 3.2 Gen2",
-    "maxSpeedMBs": 1000,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "3yr",
-    "condition": "Amazon Retail",
-    "compatibility": [
-      "Mac",
-      "Windows"
-    ],
-    "rating": 4.5,
-    "reviews": 18432,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B09HW8G3PZ",
-    "techTags": [
-      "1000+ MB/s",
-      "USB 3.2 Gen2"
-    ],
-    "useTags": [
-      "Mac Compatible",
-      "4TB+"
-    ],
-    "condTags": [
-      "Amazon Retail",
-      "3yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.026Z",
-    "trustScore": 88
-  },
-  {
-    "id": "B09B398QCX",
-    "title": "Samsung T7 Shield 2TB Portable External Solid State Drive USB 3.2 Gen 2 (10Gbps) — Beige MU-PE2T0K/AM",
-    "brand": "Samsung",
-    "capacityTB": 2,
-    "price": 99.99,
-    "pricePerTB": 50,
-    "readSpeedMBs": 0,
-    "interface": "USB 3.2 Gen2",
-    "maxSpeedMBs": 1000,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "3yr",
-    "condition": "Amazon Retail",
-    "compatibility": [],
-    "rating": 4.7,
-    "reviews": 45231,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B09B398QCX",
-    "techTags": [
-      "USB 3.2 Gen2"
-    ],
-    "useTags": [],
-    "condTags": [
-      "Amazon Retail",
-      "3yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.023Z",
-    "trustScore": 78
-  },
-  {
-    "id": "B08KNLQ2JF",
-    "title": "SanDisk 4TB Extreme Portable SSD — 1050MB/s 5yr Warranty USB-C USB 3.2 Gen 2 Rugged SDSSDE61-4T00-G25",
-    "brand": "SanDisk",
-    "capacityTB": 4,
-    "price": 199.99,
-    "pricePerTB": 50,
-    "readSpeedMBs": 1050,
-    "interface": "USB 3.2 Gen2",
-    "maxSpeedMBs": 1000,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "3yr",
-    "condition": "Amazon Retail",
-    "compatibility": [],
-    "rating": 4.6,
-    "reviews": 15023,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B08KNLQ2JF",
-    "techTags": [
-      "1000+ MB/s",
-      "USB 3.2 Gen2"
-    ],
-    "useTags": [
-      "4TB+"
-    ],
-    "condTags": [
-      "Amazon Retail",
-      "3yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.025Z",
-    "trustScore": 88
-  },
-  {
-    "id": "B0BZ8QZW2J",
-    "title": "Crucial X10 Pro 2TB Portable SSD — Up to 2100MB/s USB 3.2 Gen 2x2 Compact External Storage 5yr Warranty CT2000X10PROSSD9",
-    "brand": "Crucial",
-    "capacityTB": 2,
-    "price": 109.99,
-    "pricePerTB": 55,
-    "readSpeedMBs": 2100,
-    "interface": "USB 3.2 Gen2x2",
-    "maxSpeedMBs": 2000,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "5yr",
-    "condition": "Amazon Retail",
-    "compatibility": [],
-    "rating": 4.6,
-    "reviews": 7834,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B0BZ8QZW2J",
-    "techTags": [
-      "2000+ MB/s",
-      "USB 3.2 Gen2x2"
-    ],
-    "useTags": [],
-    "condTags": [
-      "Amazon Retail",
-      "5yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.027Z",
-    "trustScore": 100
-  },
-  {
-    "id": "B08MJY4FXL",
-    "title": "Samsung 2TB T9 Portable SSD 2000MB/s External Solid State Drive USB4 20Gbps Type-C PC Mac iPad MU-PG2T0B/AM",
-    "brand": "Samsung",
-    "capacityTB": 2,
-    "price": 129.99,
-    "pricePerTB": 65,
-    "readSpeedMBs": 2000,
-    "interface": "USB4 20Gbps",
-    "maxSpeedMBs": 2500,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "3yr",
-    "condition": "Amazon Retail",
-    "compatibility": [
-      "Mac",
-      "iPad",
-      "Windows"
-    ],
-    "rating": 4.6,
-    "reviews": 5923,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B08MJY4FXL",
-    "techTags": [
-      "USB4/TB",
-      "2000+ MB/s",
-      "USB4 20Gbps"
     ],
     "useTags": [
       "Mac Compatible"
@@ -268,22 +218,479 @@
       "Amazon Retail",
       "3yr Warranty"
     ],
-    "lastSeen": "2026-07-02T21:09:14.026Z",
-    "trustScore": 93
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 73
   },
   {
-    "id": "B08MFCCCQX",
-    "title": "Seagate Fast SSD 1TB External Solid State Drive Portable PC Mac PS5 Xbox USB-C USB-A 3yr Warranty STCM1000400",
-    "brand": "Seagate",
+    "id": "B0CGVZL1M1",
+    "title": "Crucial X9 4TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Compatible with Windows, Mac, & Android, Reliable Storage for Games, Files, & Backups, Black - CT4000X9SSD902",
+    "brand": "Crucial",
+    "capacityTB": 4,
+    "price": 377.56,
+    "pricePerTB": 94.39,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41n+bV47yGL.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-4TB-Portable-SSD-CT4000X9SSD902/dp/B0CGVZL1M1/ref=sr_1_3?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-3",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [
+      "Mac Compatible",
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 95
+  },
+  {
+    "id": "B0F336NLC7",
+    "title": "Crucial X10 8TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, Compatible with Windows, Mac & Android, Durable Storage for Games, Photos & Files, Blue - CT8000X10SSD9-02",
+    "brand": "Crucial",
+    "capacityTB": 8,
+    "price": 845.99,
+    "pricePerTB": 105.75,
+    "readSpeedMBs": 2100,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41rI1J9FcZL.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F336NLC7/ref=sr_1_1?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-1",
+    "techTags": [
+      "2000+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [
+      "Mac Compatible",
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 100
+  },
+  {
+    "id": "B0F3368QFL",
+    "title": "Crucial X10 6TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, Compatible with Windows, Mac & Android, Durable Storage for Games, Photos & Files, Blue - CT6000X10SSD9-02",
+    "brand": "Crucial",
+    "capacityTB": 6,
+    "price": 643.99,
+    "pricePerTB": 107.33,
+    "readSpeedMBs": 2100,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41rI1J9FcZL.jpg",
+    "amazonUrl": "https://www.amazon.com/Portable-External-Compatible-Mac-OS-X/dp/B0F3368QFL/ref=sr_1_4?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-4",
+    "techTags": [
+      "2000+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [
+      "Mac Compatible",
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.280Z",
+    "trustScore": 100
+  },
+  {
+    "id": "B07VTWX8MN",
+    "title": "WD 1TB My Passport, Portable External Hard Drive, Black, backup software with defense against ransomware, and password protection, USB 3.1/USB 3.0 compatible - WDBYVG0010BBK-WESN",
+    "brand": "WD",
     "capacityTB": 1,
-    "price": 69.99,
-    "pricePerTB": 69.99,
+    "price": 120.46,
+    "pricePerTB": 120.46,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/510+J06fz0L.jpg",
+    "amazonUrl": "https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTWX8MN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-6",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B0DK6VR4JM",
+    "title": "Vansuny 1TB USB Solid State Drive Up to 1000MB/s 3.2 Gen 2 Dual SSD USB A + Type C Portable External SSD for Android Phone Tablet Laptop MacBook PC",
+    "brand": "",
+    "capacityTB": 1,
+    "price": 129.99,
+    "pricePerTB": 129.99,
+    "readSpeedMBs": 1000,
+    "interface": "",
+    "maxSpeedMBs": 0,
+    "connector": "USB-A",
+    "formFactor": "Portable",
+    "warrantyYears": "1yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.2,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/516pCxEu70L.jpg",
+    "amazonUrl": "https://aax-us-east-retail-direct.amazon.com/x/c/JDObeE-uaYX_wMhm1TfxKwcAAAGfJLf0IwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDnYwZR/clv1c_ek-YBfHXEsTW3uLbE-9UGoKaSpmRYqTSgZEgO8Xy7TDGvsTvM2MaAqUOKhyyDAiqdHboSQQnJV_Mba_y8eo6tpOLcjuCOCsLI3WsfLSj1K-6m0Pb-n8he2fKrrm0IHyS0Z6brSxz89Gvs33jSE_eTUGwMNybmld6EnLY31erSYgrMQvdZk3pw5szY0rec0dfSHDNItgOhxeolGOg9EvYhiEJCUY7MHqz2xZycXjvHskeyKB8asVZFhlsPV3AAvV_WLkSBFAwsymcSO962-elKFMBIHvJZVEp8ulGiOJR9CG2RtPtuwfRlOTihYTNlBfgDEm0pGFrd8v-zBC7HOXZJsiv-5Lel5qYh_i0p9MiJIGGY4KBiRIDxe59TDuujhQdwzjmVyL-XqvngciRJrh2aO41RIgHPbNgh5sesCV-UmjBwAxhQ6izQE0Cgqv6xyxh3Xg7HMsyXQMr7DEMIV8Fh4MKm7mCbTE1nhtKSQQdYekGezI_5zkMpj12MKB653RUZ21nux939_b4lj8qSk217vgW_yOccE8pH0S2EAW--XcNdp8HKX3mXBNvSN47pe5EV5f9nrAvvdiIzYZmxetAIsDvHVJErG42kksE1SSwRWOgXYGD6-VfIp70_0dcByQWMo5llnBmfnLvWJUhnsnXM10DLU7Gw6B9s2iQQWt9T6lt5eCOd8buyYNxsX9msp2X4zL6hh7TYxtgqj95MZqTYBWQnV1jD80hvF0fQ75jeo2HqSXt6AUUiTrbEkcFae6_a1fCSuiG_IoWugXvA6FQrfotuBmMOYo6YVqbckBG73_SyYmTCFjDKDyiTu4rquDIfrVrekEWpd-TPb_OuGkfhAi1mtPgFfVXMyIR90yrxD0mOlQlgPDMeBYEFmQ09A5Y8TlfULk20pn-eB7MMp0n9DoMdSQVA5iwhq_L7D_9tfALjRNXMf2-l5YkonvBo5CblhIiryTJlRL8_2Q8WES84MREGpZ7V3aaozObyaBLRWKEfx2Nk3hux7NuOg7IhPBFFGywAYF3w2L80DPJ9Rn0R5rGwLfWdF5vQlHf3ShO8dHH-gEScfXDJJma_C49V3I5N8GJYOcA28oGWHLIRN_R5Gqt3TdDwiE5jOwtTMRhcC2yqSIOFSEQI5U4MbqmXzFOHbU3KSFDn4vIIxna9FpCvaUtUz_Lvw52NuU2ORXo19-tL37f5tzz5JMUn1ZOa_VorMDHDPUdGGj0Sf3KTe0wuWlashxEcRv-MdAvq4sZrVnuF8R1gKkv_DC8P40xwhiJuQhRelQWvVPCO8J9jKuos-OOz_t4I1-BsO-QZ7-U-Y4raioW3lksOSRQyJZRyrTEkDDaSi-UY1Qb6PYwzOpcOJNWYH3ADctndr9fgsHVSVpKyLtLv2eIRNLzzAGR6-YLzc6XcT4G-wB2l2mv6R3JDVCZn2QYnDGAxxURjx7rHbxyQ1E8o8xzNDOHPMZsSjmv50gkOkKNg501gpuZqbfAXEA14q2rfZMex_UegZ3fh9a98JjH632kKpo0SjO821FxAmbSIMpcrvTQ2oq1MBCjEi_i7ex68CEYtnNgxxFDMH2un1Ir_ru22LQzKKYPJBDkeIHIQOxoXXba-MG7t8eusE-Xyik3AaxyekbcpEZ2d7wE230l/https://www.amazon.com/Vansuny-USB-3-2-Portable-External/dp/B0DK6VR4JM/ref=sxin_19_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=best+external+SSD+speed+MB%2Fs+comparison&keywords=best+external+SSD+speed+MB%2Fs+comparison&pd_rd_i=B0DK6VR4JM&pd_rd_r=8d21f97c-1a24-4b2b-82eb-34d67b4e4c7a&pd_rd_w=t4SPm&pd_rd_wg=BMmlT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9ME1GHM7Z2N83VXGQK9A&qid=1783027462&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776",
+    "techTags": [
+      "1000+ MB/s"
+    ],
+    "useTags": [
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.277Z",
+    "trustScore": 75
+  },
+  {
+    "id": "B0CGW18S6Y",
+    "title": "Crucial X9 2TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Compatible with Windows, Mac, & Android, Reliable Storage for Games, Files, & Backups, Black - CT2000X9SSD902",
+    "brand": "Crucial",
+    "capacityTB": 2,
+    "price": 268.99,
+    "pricePerTB": 134.5,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41n+bV47yGL.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-2TB-Portable-SSD-CT2000X9SSD902/dp/B0CGW18S6Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-3",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.276Z",
+    "trustScore": 95
+  },
+  {
+    "id": "B0C5JNWF58",
+    "title": "SANDISK 2TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - External Solid State Drive - SDSSDE30-2T00-G26",
+    "brand": "SanDisk",
+    "capacityTB": 2,
+    "price": 269.99,
+    "pricePerTB": 135,
+    "readSpeedMBs": 800,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/71bBCTIvIIL.jpg",
+    "amazonUrl": "https://www.amazon.com/SanDisk-2TB-Portable-SSD-SDSSDE30-2T00-G26/dp/B0C5JNWF58/ref=sr_1_2?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-2",
+    "techTags": [
+      "500+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.275Z",
+    "trustScore": 83
+  },
+  {
+    "id": "B0F332MNX7",
+    "title": "Crucial X10 2TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, Compatible with Windows, Mac & Android, Durable Storage for Games, Photos & Files, Blue - CT2000X10SSD9-02",
+    "brand": "Crucial",
+    "capacityTB": 2,
+    "price": 274.21,
+    "pricePerTB": 137.1,
+    "readSpeedMBs": 2100,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41rI1J9FcZL.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F332MNX7/ref=sr_1_5?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-5",
+    "techTags": [
+      "2000+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.280Z",
+    "trustScore": 100
+  },
+  {
+    "id": "B08HN37XC1",
+    "title": "SANDISK 2TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25",
+    "brand": "SanDisk",
+    "capacityTB": 2,
+    "price": 280.49,
+    "pricePerTB": 140.25,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/61zuR3UMnWL.jpg",
+    "amazonUrl": "https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=sr_1_1?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-1",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.274Z",
+    "trustScore": 88
+  },
+  {
+    "id": "B0CGW1FQV4",
+    "title": "Crucial X9 1TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Compatible with Windows, Mac, & Android, Reliable Storage for Games, Files, & Backups, Black - CT1000X9SSD902",
+    "brand": "Crucial",
+    "capacityTB": 1,
+    "price": 142.03,
+    "pricePerTB": 142.03,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41n+bV47yGL.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X9SSD902/dp/B0CGW1FQV4/ref=sr_1_2?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-2",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 95
+  },
+  {
+    "id": "B08GQ611G4",
+    "title": "Samsung T7 2TB External USB 3.2 Gen 2 Portable SSD w/ Hardware Encryption - Gray (Renewed)",
+    "brand": "Samsung",
+    "capacityTB": 2,
+    "price": 299,
+    "pricePerTB": 149.5,
     "readSpeedMBs": 0,
     "interface": "USB 3.2 Gen2",
     "maxSpeedMBs": 1000,
-    "connector": "USB-C+USB-A",
+    "connector": "USB-C",
     "formFactor": "Portable",
     "warrantyYears": "3yr",
+    "condition": "Renewed",
+    "compatibility": [],
+    "rating": 5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/61ABYVLTsiL.jpg",
+    "amazonUrl": "https://www.amazon.com/Samsung-External-Portable-Hardware-Encryption/dp/B08GQ611G4/ref=sr_1_5?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-5",
+    "techTags": [
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "3yr Warranty",
+      "Renewed"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 58
+  },
+  {
+    "id": "B0G2RDTVK1",
+    "title": "KingSpec MemoStone ZS301 2TB Portable SSD, USB-C External Solid State Drive with 1900MB/s, USB 3.2 Gen 2x2,Zinc Alloy Battery Body Design, for PC/Laptops / PS5 / Xbox/Mac",
+    "brand": "",
+    "capacityTB": 2,
+    "price": 299.97,
+    "pricePerTB": 149.99,
+    "readSpeedMBs": 1900,
+    "interface": "USB 3.2 Gen2x2",
+    "maxSpeedMBs": 2000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "1yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "PS5",
+      "Xbox",
+      "Mac",
+      "Windows"
+    ],
+    "rating": 4.2,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/51mCQmESv+L.jpg",
+    "amazonUrl": "https://aax-us-east-retail-direct.amazon.com/x/c/JIWD1e7Sy4WrnGaitSDwVkgAAAGfJLfp_wEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDEgICBIHxqh/clv1c_ek-ABfHXbcbWXixXZBshmoDaPoteDoPLal4DJ5NzPYPOjkQA6IQ8wJpwtRn8FQi8SQG1RePMcl95E3l2m2KOEKip82qJiYA4V2MnfsPHUPzwqMG7bW_VDk6MYjjwrL_z9jnw6MPNET3NDAWhM-LhG3f7ItqQikVqoORzTDaO5ta_2W3QR0iql-s6OwhFgD_22WXDO7NBJT_QhYWr50jBJzuPUFqxzZpW5ZANXShLA87dl_jc0teavh4MDZFDcvjLz07LTqs6WsE-1oNMvwvjn7PSo06d2c-OBXznDiDb33x5rcmD86zwqP69gtMa7nT81ZoV3lOSwPtAu0yHey_sGhhcAIxSmxhylggwk9beU_dvC0tf6ajDA-kLxYm6-LiuH1ABOLdFRSR19ovdzy_-VAhRFwVEkvFp0R9NTEXKRscFBF0c1eyvebnGvJJZFQrZ6I9mjplocbxSQ2Jws2MnrhhLk9TcshTip5hAqvnvT_Skd33eTuYFA9Lns-bawXtVtL8JEIYP5KIvBEAXetlARpUaA4FEgoVRxh8JSg3va1vAUhHxozIWRytlhh6PxH5G8GSQrGOE7u5RzJUUgZIau6-MTNlQ6GVUgASeJpHD8OMPZZGYw6z2llLg_4BDDCw6jPbDa64OQzhj9XZ9xOP5c6Nn9gfR5v5Yz5h6C2PQ6b4xnSHUeXoM4AKpqV_AIEkDca16dMGH2CGcUlIwvpY4unGxqdX6i4z9iQqPdTJ376k15VcmrQdJmnFiFgTbbVyvql12IYP8iKhWsZR2mbGfU3HBXAKsaP2URDBsv0rZwpIras3siwsg2Tm3R9jfr8uVb34qeTC-0JfdlFLMhcGmua5HfYYQ4VEuUZORHI89AhqHrhkUYKBqq3Sr76Hf1QcPrwP89JXojvKk9lqAV3BbLLQJZboldz3iiv1dOAxgSGEN3c0Ee73lLHBriyAuovnBMb98vrclDQaMftGEeSntgykD5MX-gcvp1R-c14vw7LYlgG8k9OrAAg6kVOSCKDRDgvFHJGSL0Gw-JSdD0BZB1v05lZPEcefcm908OUu62z62Pwe_hp3yvIQi_GBNPUPvaBntjPXp9wO8DEBlHlR9TEKZ7-ticdMaEmqc-oaVnnTeYH8MU1r50SIFLpHFD0hKZeJ3bpox-ZL3iMKx5TbeaxfnnCRWz_XQPNebUvePIfe0t4DzcltYTEX3ifMwzEBxqfWr7fCcqPMEo2NSZpDV1mOFKRMDEJmuTHTD4WUiLT4SQ8lFzxSD6dDnOppgP-BvijHF5iKzwnWg9TomRc2i0GI_4jnsZFsM0CQGtgvbSq-fassaXEBGRxZ7JMBcUtJgEVpbGEzUj2BiGJRJ8kLrL1bf8nH1Z2QaSOSCgL9hY7WtJ1SpTTOReLxpuw61d6aDnWXBXNIifvTmx5vN8W8w90djcvfcYZf2fXIDNSNlFxRPnKQl6BUJr6CcHEvrTTQQi8IGO9V0EJwAyCZVn2phwuwAAZAML2AWsAYEFSApm0jbYLe5eHd1ouzhb_sdy_zldXXpsrFpE6JM2CSLJePHpfFkcllUQ38cXSeCw5gCQBZ7KPosuvdN9q610iC_NHPmDVHmquMDARrKG2eQRvsteQmvHiGvH85at3-Bta7WlF4/https://www.amazon.com/KingSpec-MemoStone-Portable-External-Battery/dp/B0G2RDTVK1/ref=sxin_28_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=portable+external+SSD+USB-C+2TB&keywords=portable+external+SSD+USB-C+2TB&pd_rd_i=B0G2RDTVK1&pd_rd_r=cd58d5f4-3507-40c7-841a-78a1c214e85f&pd_rd_w=8ExzF&pd_rd_wg=P0nVd&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=A0FNE5M601Y3NHP1BBYW&qid=1783027460&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2x2"
+    ],
+    "useTags": [
+      "PS5 Ready",
+      "Xbox Ready",
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.276Z",
+    "trustScore": 75
+  },
+  {
+    "id": "B0C9WHSZZN",
+    "title": "Crucial X9 Pro 2TB Portable SSD, Up to 1050MB/s Read & Write, 3.2 USB-C, External Solid State Drive, Durable Storage for PC & Mac, for Content Creators & Videogaphers, Silver - ‎CT2000X9PROSSD902",
+    "brand": "Crucial",
+    "capacityTB": 2,
+    "price": 299.99,
+    "pricePerTB": 150,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows"
+    ],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/51NUoSidCbL.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-Pro-2TB-Portable-CT2000X9PROSSD902/dp/B0C9WHSZZN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-6",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.280Z",
+    "trustScore": 95
+  },
+  {
+    "id": "B0F37WWYY4",
+    "title": "Lexar ES3 1TB External SSD, USB 3.2 Gen2 Portable SSD, PSSD Up to 1050MB/s Read, 1000MB/s Write, External Solid State Drive Compatible with iPhone 17 Series/Mac/PS5/XBOX/Laptop/PC, Blue",
+    "brand": "Lexar",
+    "capacityTB": 1,
+    "price": 152.99,
+    "pricePerTB": 152.99,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "1yr",
     "condition": "Amazon Retail",
     "compatibility": [
       "PS5",
@@ -292,10 +699,11 @@
       "Windows"
     ],
     "rating": 4.4,
-    "reviews": 23456,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B08MFCCCQX",
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/51er2gFUVkL.jpg",
+    "amazonUrl": "https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0F37WWYY4/ref=sr_1_7?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-7",
     "techTags": [
+      "1000+ MB/s",
       "USB 3.2 Gen2"
     ],
     "useTags": [
@@ -304,64 +712,71 @@
       "Mac Compatible"
     ],
     "condTags": [
-      "Amazon Retail",
-      "3yr Warranty"
+      "Amazon Retail"
     ],
-    "lastSeen": "2026-07-02T21:09:14.026Z",
-    "trustScore": 73
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 75
   },
   {
-    "id": "B09DGQ5GDZ",
-    "title": "SanDisk 2TB Extreme Pro Portable SSD — Solid State Drive 5yr Warranty 2000MB/s USB-C USB 3.2 Gen 2x2 — SDSSDE81-2T00-G25",
+    "id": "B0DYDHLN81",
+    "title": "Lexar ES3 1TB External SSD, USB 3.2 Gen2 Portable SSD, PSSD Up to 1050MB/s Read, 1000MB/s Write, External Solid State Drive Compatible with iPhone 17 Series/Mac/PS5/XBOX/Laptop/PC, Silver",
+    "brand": "Lexar",
+    "capacityTB": 1,
+    "price": 152.99,
+    "pricePerTB": 152.99,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "1yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "PS5",
+      "Xbox",
+      "Mac",
+      "Windows"
+    ],
+    "rating": 4.4,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/51xD2RTskKL.jpg",
+    "amazonUrl": "https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0DYDHLN81/ref=sr_1_9?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-9",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [
+      "PS5 Ready",
+      "Xbox Ready",
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.280Z",
+    "trustScore": 75
+  },
+  {
+    "id": "B0C5JQ68FY",
+    "title": "SANDISK 1TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - External Solid State Drive - SDSSDE30-1T00-G26",
     "brand": "SanDisk",
-    "capacityTB": 2,
-    "price": 149,
-    "pricePerTB": 74.5,
-    "readSpeedMBs": 2000,
-    "interface": "USB 3.2 Gen2x2",
-    "maxSpeedMBs": 2000,
+    "capacityTB": 1,
+    "price": 169.06,
+    "pricePerTB": 169.06,
+    "readSpeedMBs": 800,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
     "connector": "USB-C",
     "formFactor": "Portable",
     "warrantyYears": "3yr",
     "condition": "Amazon Retail",
     "compatibility": [],
     "rating": 4.6,
-    "reviews": 28540,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B09DGQ5GDZ",
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/71bBCTIvIIL.jpg",
+    "amazonUrl": "https://www.amazon.com/SanDisk-1TB-Portable-SSD-SDSSDE30-1T00-G26/dp/B0C5JQ68FY/ref=sr_1_4?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-4",
     "techTags": [
-      "2000+ MB/s",
-      "USB 3.2 Gen2x2"
-    ],
-    "useTags": [],
-    "condTags": [
-      "Amazon Retail",
-      "3yr Warranty"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.025Z",
-    "trustScore": 93
-  },
-  {
-    "id": "B07H4DR7QS",
-    "title": "WD My Passport SSD 1TB — Portable External Solid State Drive 1050MB/s USB-C & USB-A 3yr Warranty WDBAGF0010BBL-WESN",
-    "brand": "WD",
-    "capacityTB": 1,
-    "price": 79.99,
-    "pricePerTB": 79.99,
-    "readSpeedMBs": 1050,
-    "interface": "USB 3.2 Gen2",
-    "maxSpeedMBs": 1000,
-    "connector": "USB-C+USB-A",
-    "formFactor": "Portable",
-    "warrantyYears": "3yr",
-    "condition": "Amazon Retail",
-    "compatibility": [],
-    "rating": 4.5,
-    "reviews": 42110,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B07H4DR7QS",
-    "techTags": [
-      "1000+ MB/s",
+      "500+ MB/s",
       "USB 3.2 Gen2"
     ],
     "useTags": [],
@@ -369,17 +784,121 @@
       "Amazon Retail",
       "3yr Warranty"
     ],
-    "lastSeen": "2026-07-02T21:09:14.026Z",
-    "trustScore": 88
+    "lastSeen": "2026-07-02T21:26:19.277Z",
+    "trustScore": 83
   },
   {
-    "id": "B08GTYFC37",
-    "title": "Samsung T7 1TB Portable External SSD USB 3.2 Gen 2 (10Gbps) 1000 MB/s Gray MU-PC1T0T/AM",
-    "brand": "Samsung",
-    "capacityTB": 1,
+    "id": "B08F1VVBL9",
+    "title": "Western Digital 2TB My Passport SSD Portable External Solid State Drive, Gray, Sturdy and Blazing Fast, Password Protection with Hardware Encryption - WDBAGF0020BGY-WESN",
+    "brand": "Western Digital",
+    "capacityTB": 2,
+    "price": 350.99,
+    "pricePerTB": 175.5,
+    "readSpeedMBs": 0,
+    "interface": "",
+    "maxSpeedMBs": 0,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/81y8P1up-PL.jpg",
+    "amazonUrl": "https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F1VVBL9/ref=sr_1_2?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-2",
+    "techTags": [],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B0BGKXX9TK",
+    "title": "SSK Portable SSD 500GB External Solid State Drives, up to 1050MB/s USB C SSD External Hard Drive USB 3.2 Gen2 for iPhone 15/16/17Pro, Windows, Mac, Android Phones and Tablets",
+    "brand": "",
+    "capacityTB": 0.5,
     "price": 89.99,
-    "pricePerTB": 89.99,
-    "readSpeedMBs": 1000,
+    "pricePerTB": 179.98,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "1yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "Windows",
+      "Android"
+    ],
+    "rating": 4.4,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/71VtTtHU7DL.jpg",
+    "amazonUrl": "https://www.amazon.com/SSK-Portable-External-Transmission-Smartphone/dp/B0BGKXX9TK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-6",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 75
+  },
+  {
+    "id": "B08FSZT2J7",
+    "title": "Crucial X6 1TB Portable SSD – Up to 800MB/s, USB 3.2 – External Solid State Drive for PC, Mac, PS5, Xbox – CT1000X6SSD9",
+    "brand": "Crucial",
+    "capacityTB": 1,
+    "price": 179.99,
+    "pricePerTB": 179.99,
+    "readSpeedMBs": 800,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "PS5",
+      "Xbox",
+      "Mac",
+      "Windows"
+    ],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41toBPLCXML.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X6SSD9/dp/B08FSZT2J7/ref=sr_1_8?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-8",
+    "techTags": [
+      "500+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [
+      "PS5 Ready",
+      "Xbox Ready",
+      "Mac Compatible"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.280Z",
+    "trustScore": 90
+  },
+  {
+    "id": "B0874XWW23",
+    "title": "Samsung T7 Portable SSD, 2TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 Gen 2, Reliable Storage for Gaming, Students, Professionals, MU-PC2T0T/AM, Gray",
+    "brand": "Samsung",
+    "capacityTB": 2,
+    "price": 362.99,
+    "pricePerTB": 181.5,
+    "readSpeedMBs": 1050,
     "interface": "USB 3.2 Gen2",
     "maxSpeedMBs": 1000,
     "connector": "USB-C",
@@ -390,9 +909,9 @@
       "Windows"
     ],
     "rating": 4.7,
-    "reviews": 91032,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B08GTYFC37",
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/91YfRIy7kYL.jpg",
+    "amazonUrl": "https://www.amazon.com/SAMSUNG-Portable-SSD-2TB-MU-PC2T0T/dp/B0874XWW23/ref=sr_1_5?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-5",
     "techTags": [
       "1000+ MB/s",
       "USB 3.2 Gen2"
@@ -402,111 +921,479 @@
       "Amazon Retail",
       "3yr Warranty"
     ],
-    "lastSeen": "2026-07-02T21:09:14.024Z",
+    "lastSeen": "2026-07-02T21:26:19.276Z",
     "trustScore": 88
   },
   {
-    "id": "B0C1GJKFBZ",
-    "title": "SanDisk Professional Pro-G40 SSD 2TB Thunderbolt 3 2000MB/s Ruggedized Drive for Mac Windows SDPRO3G-2T00-GBAND",
-    "brand": "SanDisk",
+    "id": "B08F1MRQFD",
+    "title": "WD 2TB My Passport SSD Portable External Solid State Drive, Blue, Sturdy and Blazing Fast, Password Protection with Hardware Encryption - WDBAGF0020BBL-WESN",
+    "brand": "WD",
     "capacityTB": 2,
-    "price": 224.99,
-    "pricePerTB": 112.5,
-    "readSpeedMBs": 2000,
-    "interface": "Thunderbolt 3",
-    "maxSpeedMBs": 2750,
+    "price": 365,
+    "pricePerTB": 182.5,
+    "readSpeedMBs": 0,
+    "interface": "",
+    "maxSpeedMBs": 0,
     "connector": "USB-C",
-    "formFactor": "Rugged",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/61fqaXWw7xL.jpg",
+    "amazonUrl": "https://www.amazon.com/Passport-External-Portable-Drive-WDBAGF0020BBL-WESN/dp/B08F1MRQFD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-3",
+    "techTags": [],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B08F27QGHX",
+    "title": "Western Digital 1TB My Passport SSD Portable External Solid State Drive, Gray, Sturdy and Blazing Fast, Password Protection with Hardware Encryption - WDBAGF0010BGY-WESN",
+    "brand": "Western Digital",
+    "capacityTB": 1,
+    "price": 185,
+    "pricePerTB": 185,
+    "readSpeedMBs": 0,
+    "interface": "",
+    "maxSpeedMBs": 0,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/81y8P1up-PL.jpg",
+    "amazonUrl": "https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F27QGHX/ref=sr_1_1?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-1",
+    "techTags": [],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B08GTYFC37",
+    "title": "Sandisk 1TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-1T00-G25",
+    "brand": "SanDisk",
+    "capacityTB": 1,
+    "price": 189.99,
+    "pricePerTB": 189.99,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/61zuR3UMnWL.jpg",
+    "amazonUrl": "https://www.amazon.com/SanDisk-1TB-Extreme-Portable-SDSSDE61-1T00-G25/dp/B08GTYFC37/ref=sr_1_10?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-10",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.280Z",
+    "trustScore": 88
+  },
+  {
+    "id": "B0DN7CYYSD",
+    "title": "WD_Black SN7100 1TB NVMe SSD - Gen4 PCIe, M.2 2280, Up to 7,250 MB/s Read Speed, Up to 6,900 MB/s Write Speed, Next Gen TLC 3D NAND, for Laptops, Handheld Gaming Devices - WDS100T4X0E",
+    "brand": "",
+    "capacityTB": 1,
+    "price": 189.99,
+    "pricePerTB": 189.99,
+    "readSpeedMBs": 7250,
+    "interface": "",
+    "maxSpeedMBs": 0,
+    "connector": "USB-C",
+    "formFactor": "Portable",
     "warrantyYears": "3yr",
     "condition": "Amazon Retail",
     "compatibility": [
-      "Mac",
       "Windows"
     ],
-    "rating": 4.5,
-    "reviews": 3211,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B0C1GJKFBZ",
+    "rating": 4.8,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/61uDl4amtnL.jpg",
+    "amazonUrl": "https://www.amazon.com/WD_BLACK-SN7100-Internal-Gaming-Solid/dp/B0DN7CYYSD/ref=sr_1_9?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-9",
     "techTags": [
-      "USB4/TB",
+      "2000+ MB/s"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 93
+  },
+  {
+    "id": "B0CHFSWM2P",
+    "title": "Samsung T9 Portable SSD 1TB, USB 3.2 Gen 2x2 External Solid State Drive, Seq. Read Speeds Up to 2,000MB/s for Gaming, Students and Professionals, MU-PG1T0B/AM, Black",
+    "brand": "Samsung",
+    "capacityTB": 1,
+    "price": 199.99,
+    "pricePerTB": 199.99,
+    "readSpeedMBs": 2000,
+    "interface": "USB 3.2 Gen2x2",
+    "maxSpeedMBs": 2000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.7,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/71EESd1deTL.jpg",
+    "amazonUrl": "https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG1T0B-AM/dp/B0CHFSWM2P/ref=sr_1_3?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-3",
+    "techTags": [
       "2000+ MB/s",
-      "Thunderbolt 3"
+      "USB 3.2 Gen2x2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 93
+  },
+  {
+    "id": "B0CW2616J3",
+    "title": "Samsung MU-PE4T0S/AM T7 4TB Shield Portable SSD, USB 3.2, Black Bundle with Hard Shell Case & Converter Adapter Type C Adapter, Type-C USB C Female to USB2.0 USB 2.0 A Male",
+    "brand": "Samsung",
+    "capacityTB": 4,
+    "price": 799.99,
+    "pricePerTB": 200,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.3,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/71lqAx0yX2L.jpg",
+    "amazonUrl": "https://www.amazon.com/SAMSUNG-MU-PE4T0S-Portable-Converter-Adapter/dp/B0CW2616J3/ref=sr_1_10?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-10",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [
+      "4TB+"
+    ],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 73
+  },
+  {
+    "id": "B0CHFS9K14",
+    "title": "Samsung T9 Portable SSD 2TB, USB 3.2 Gen 2x2 External Solid State Drive, Seq. Read Speeds Up to 2,000MB/s for Gaming, Students and Professionals, MU-PG2T0B/AM, Black",
+    "brand": "Samsung",
+    "capacityTB": 2,
+    "price": 434,
+    "pricePerTB": 217,
+    "readSpeedMBs": 2000,
+    "interface": "USB 3.2 Gen2x2",
+    "maxSpeedMBs": 2000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.7,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/71EESd1deTL.jpg",
+    "amazonUrl": "https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG2T0B-AM/dp/B0CHFS9K14/ref=sr_1_7?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-7",
+    "techTags": [
+      "2000+ MB/s",
+      "USB 3.2 Gen2x2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.276Z",
+    "trustScore": 93
+  },
+  {
+    "id": "B087DFLF9S",
+    "title": "Samsung T7 Portable SSD - 1 TB - USB 3.2 Gen.2 External SSD Titanium Grey (MU-PC1T0T/WW)",
+    "brand": "Samsung",
+    "capacityTB": 1,
+    "price": 219,
+    "pricePerTB": 219,
+    "readSpeedMBs": 0,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Windows"
+    ],
+    "rating": 4.7,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/A1sHjPpz6fL.jpg",
+    "amazonUrl": "https://www.amazon.com/Samsung-T7-Portable-SSD-MU-PC1T0T/dp/B087DFLF9S/ref=sr_1_4?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-4",
+    "techTags": [
+      "USB 3.0"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B0874XN4D8",
+    "title": "Samsung T7 Portable SSD, 1TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 Gen 2, Reliable Storage for Gaming, Students, Professionals, MU-PC1T0T/AM, Gray",
+    "brand": "Samsung",
+    "capacityTB": 1,
+    "price": 219.99,
+    "pricePerTB": 219.99,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Windows"
+    ],
+    "rating": 4.7,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/91YfRIy7kYL.jpg",
+    "amazonUrl": "https://www.amazon.com/SAMSUNG-Portable-SSD-1TB-MU-PC1T0T/dp/B0874XN4D8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-1",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 88
+  },
+  {
+    "id": "B0FVMGFPHT",
+    "title": "Corsair EX400U Survivor 1TB USB4 External SSD – Up to 4000 MB/s, IP55 Rugged Drive, Plug & Play for PC, Mac & iPad – Black",
+    "brand": "",
+    "capacityTB": 1,
+    "price": 264.99,
+    "pricePerTB": 264.99,
+    "readSpeedMBs": 4000,
+    "interface": "",
+    "maxSpeedMBs": 0,
+    "connector": "USB-C",
+    "formFactor": "Rugged",
+    "warrantyYears": "1yr",
+    "condition": "Amazon Retail",
+    "compatibility": [
+      "Mac",
+      "iPad",
+      "Windows"
+    ],
+    "rating": 4.8,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/61mdozgmb9L.jpg",
+    "amazonUrl": "https://www.amazon.com/Corsair-EX400U-Survivor-USB4-External/dp/B0FVMGFPHT/ref=sr_1_5?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-5",
+    "techTags": [
+      "2000+ MB/s"
     ],
     "useTags": [
       "Mac Compatible",
       "Rugged"
     ],
     "condTags": [
+      "Amazon Retail"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.278Z",
+    "trustScore": 85
+  },
+  {
+    "id": "B09VLK9W3S",
+    "title": "Samsung T7 Shield 1TB, up to 1050MB/s, USB 3.2 Gen2, Rugged, IP65 Rated, for Photographers, Content Creators and Gaming, Portable External Solid State Drive (MU-PE1T0S/AM, 2022), Black",
+    "brand": "Samsung",
+    "capacityTB": 1,
+    "price": 283.53,
+    "pricePerTB": 283.53,
+    "readSpeedMBs": 1050,
+    "interface": "USB 3.2 Gen2",
+    "maxSpeedMBs": 1000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.7,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/61CKrZWOcrL.jpg",
+    "amazonUrl": "https://www.amazon.com/SAMSUNG-Photographers-Creators-MU-PE1T0S-AM/dp/B09VLK9W3S/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-2",
+    "techTags": [
+      "1000+ MB/s",
+      "USB 3.2 Gen2"
+    ],
+    "useTags": [],
+    "condTags": [
       "Amazon Retail",
       "3yr Warranty"
     ],
-    "lastSeen": "2026-07-02T21:09:14.027Z",
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 88
+  },
+  {
+    "id": "B0DN688B7V",
+    "title": "2TB SANDISK Extreme PRO Portable SSD with USB4, Up to 3800 MB/s Read and 3700MB/s Write, USB-C, USB 3.2, Backwards Compatible, IP65 Water and Dust Resistance - SDSSDE82-2T00-G25",
+    "brand": "SanDisk",
+    "capacityTB": 2,
+    "price": 0,
+    "pricePerTB": 0,
+    "readSpeedMBs": 3800,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.6,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/81QbofRpHSL.jpg",
+    "amazonUrl": "https://www.amazon.com/SanDisk-Portable-Backwards-Compatible-Resistance/dp/B0DN688B7V/ref=sr_1_6?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-6",
+    "techTags": [
+      "2000+ MB/s",
+      "USB 3.0"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "5yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.278Z",
+    "trustScore": 100
+  },
+  {
+    "id": "B08GV9M64L",
+    "title": "SANDISK 1TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE81-1T00-G25",
+    "brand": "SanDisk",
+    "capacityTB": 1,
+    "price": 0,
+    "pricePerTB": 0,
+    "readSpeedMBs": 2000,
+    "interface": "USB 3.2 Gen2x2",
+    "maxSpeedMBs": 2000,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/71z2lEHwfNL.jpg",
+    "amazonUrl": "https://www.amazon.com/SanDisk-1TB-Extreme-Portable-SDSSDE81-1T00-G25/dp/B08GV9M64L/ref=sr_1_8?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-8",
+    "techTags": [
+      "2000+ MB/s",
+      "USB 3.2 Gen2x2"
+    ],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
     "trustScore": 93
   },
   {
-    "id": "B09FKTDM3T",
-    "title": "OWC Envoy Pro FX 1TB NVMe Thunderbolt 3 & USB-C Compatible External SSD 2800MB/s For Mac OWCTB3ENV1.0",
-    "brand": "OWC",
+    "id": "B08MRCJHSK",
+    "title": "WD 1TB My Passport SSD Portable External Solid State Drive, Silver, Sturdy and Blazing Fast, Password Protection with Hardware Encryption - WDBAGF0010BSL-WESN",
+    "brand": "WD",
     "capacityTB": 1,
-    "price": 159.99,
-    "pricePerTB": 159.99,
-    "readSpeedMBs": 2800,
-    "interface": "Thunderbolt 3",
-    "maxSpeedMBs": 2750,
+    "price": 0,
+    "pricePerTB": 0,
+    "readSpeedMBs": 0,
+    "interface": "",
+    "maxSpeedMBs": 0,
     "connector": "USB-C",
     "formFactor": "Portable",
-    "warrantyYears": "1yr",
+    "warrantyYears": "3yr",
+    "condition": "Amazon Retail",
+    "compatibility": [],
+    "rating": 4.5,
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/51SfDDcZNML.jpg",
+    "amazonUrl": "https://www.amazon.com/Passport-External-Portable-Compatible-Systems/dp/B08MRCJHSK/ref=sr_1_10?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-10",
+    "techTags": [],
+    "useTags": [],
+    "condTags": [
+      "Amazon Retail",
+      "3yr Warranty"
+    ],
+    "lastSeen": "2026-07-02T21:26:19.279Z",
+    "trustScore": 78
+  },
+  {
+    "id": "B0F3377JBN",
+    "title": "Crucial X10 1TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, Compatible with Windows, Mac & Android, Durable Storage for Games, Photos & Files, Blue - CT1000X10SSD9-02",
+    "brand": "Crucial",
+    "capacityTB": 1,
+    "price": 0,
+    "pricePerTB": 0,
+    "readSpeedMBs": 2100,
+    "interface": "USB 3.0",
+    "maxSpeedMBs": 400,
+    "connector": "USB-C",
+    "formFactor": "Portable",
+    "warrantyYears": "5yr",
     "condition": "Amazon Retail",
     "compatibility": [
-      "Mac"
+      "Mac",
+      "Windows",
+      "Android"
     ],
     "rating": 4.5,
-    "reviews": 2341,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B09FKTDM3T",
+    "reviews": 0,
+    "imageUrl": "https://m.media-amazon.com/images/I/41rI1J9FcZL.jpg",
+    "amazonUrl": "https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F3377JBN/ref=sr_1_7?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-7",
     "techTags": [
-      "USB4/TB",
       "2000+ MB/s",
-      "Thunderbolt 3"
+      "USB 3.0"
     ],
     "useTags": [
       "Mac Compatible"
     ],
     "condTags": [
-      "Amazon Retail"
+      "Amazon Retail",
+      "5yr Warranty"
     ],
-    "lastSeen": "2026-07-02T21:09:14.027Z",
-    "trustScore": 85
-  },
-  {
-    "id": "B0D2PHCC7S",
-    "title": "LaCie Rugged SSD Pro 1TB Thunderbolt 3 NVMe 2800MB/s Rugged Portable External SSD STHR1000800 3yr Warranty",
-    "brand": "LaCie",
-    "capacityTB": 1,
-    "price": 169.99,
-    "pricePerTB": 169.99,
-    "readSpeedMBs": 2800,
-    "interface": "Thunderbolt 3",
-    "maxSpeedMBs": 2750,
-    "connector": "USB-C",
-    "formFactor": "Portable",
-    "warrantyYears": "1yr",
-    "condition": "Amazon Retail",
-    "compatibility": [],
-    "rating": 4.4,
-    "reviews": 4567,
-    "imageUrl": "",
-    "amazonUrl": "https://www.amazon.com/dp/B0D2PHCC7S",
-    "techTags": [
-      "USB4/TB",
-      "2000+ MB/s",
-      "Thunderbolt 3"
-    ],
-    "useTags": [],
-    "condTags": [
-      "Amazon Retail"
-    ],
-    "lastSeen": "2026-07-02T21:09:14.027Z",
-    "trustScore": 80
+    "lastSeen": "2026-07-02T21:26:19.280Z",
+    "trustScore": 100
   }
 ]

@@ -243,7 +243,7 @@ function normalizeItem(raw) {
     rating:        parseFloat(raw.rating || raw.stars || 0) || 0,
     reviews:       parseInt(raw.reviews_count || raw.reviews || 0) || 0,
     imageUrl:      raw.image || raw.thumbnail || raw.product_photo || '',
-    amazonUrl:     raw.url || raw.link || raw.product_url || (() => { const id = raw.asin || raw.id || ''; return id.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${id}` : '#'; })(),
+    amazonUrl:     (() => { const id = raw.asin || raw.id || ''; const u = raw.url || raw.link || raw.product_url || ''; return (u.includes('sspa/click') || !u) && id.match(/^[A-Z0-9]{10}$/) ? `https://www.amazon.com/dp/${id}` : (u || '#'); })(),
     techTags,
     useTags,
     condTags,
