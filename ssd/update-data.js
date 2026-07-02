@@ -298,9 +298,8 @@ function buildStaticRow(item) {
   const prc  = item.price > 0 ? `$${item.price.toFixed(2)}` : '—';
   const rat  = item.rating > 0 ? `⭐ ${item.rating.toFixed(1)}` : '—';
   const rev  = item.reviews > 0 ? `(${item.reviews.toLocaleString()})` : '';
-  const img  = item.imageUrl
-    ? `<img src="${item.imageUrl}" alt="${item.brand} ${item.capacityTB}TB external SSD" class="product-thumb" loading="lazy" onerror="this.style.display='none'">`
-    : `<span style="color:var(--text-muted);font-size:.7rem">No img</span>`;
+  const _imgSrc = item.imageUrl || `https://placehold.co/44x44/1e293b/34d399?text=${encodeURIComponent((item.brand||'SSD').slice(0,2).toUpperCase())}`;
+  const img = `<img src="${_imgSrc}" alt="${item.brand} ${item.capacityTB}TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'">`;
   const title = (item.title || '').slice(0, 90) + (item.title?.length > 90 ? '…' : '');
 
   return `<tr data-id="${item.id}" data-tags="${[...item.techTags,...item.useTags,...item.condTags].join(',')}">
@@ -364,21 +363,21 @@ function updateHtml(products) {
 
 // ── MOCK DATA ────────────────────────────────────────────────────────────────
 const MOCK_PRODUCTS_RAW = [
-  { asin:'B09B398QCX', title:'Samsung T7 Shield 2TB Portable External Solid State Drive USB 3.2 Gen 2 (10Gbps) — Beige MU-PE2T0K/AM', price:99.99,  rating:4.7, reviews_count:45231, image:'https://m.media-amazon.com/images/I/71wP4WX0ceL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B09B398QCX' },
-  { asin:'B09BKBP939', title:'Samsung T7 Shield 4TB Portable External SSD USB 3.2 Gen 2 (10Gbps) Ruggedized Case Beige MU-PE4T0K/AM', price:149.99, rating:4.7, reviews_count:45231, image:'https://m.media-amazon.com/images/I/71wP4WX0ceL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B09BKBP939' },
-  { asin:'B08GTYFC37', title:'Samsung T7 1TB Portable External SSD USB 3.2 Gen 2 (10Gbps) 1000 MB/s Gray MU-PC1T0T/AM', price:89.99,  rating:4.7, reviews_count:91032, image:'https://m.media-amazon.com/images/I/71SDuT7MVYL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B08GTYFC37' },
-  { asin:'B09DGQ5GDZ', title:'SanDisk 2TB Extreme Pro Portable SSD — Solid State Drive 5yr Warranty 2000MB/s USB-C USB 3.2 Gen 2x2 — SDSSDE81-2T00-G25', price:149.00, rating:4.6, reviews_count:28540, image:'https://m.media-amazon.com/images/I/71H+kGZ0jkL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B09DGQ5GDZ' },
-  { asin:'B08KNLQ2JF', title:'SanDisk 4TB Extreme Portable SSD — 1050MB/s 5yr Warranty USB-C USB 3.2 Gen 2 Rugged SDSSDE61-4T00-G25', price:199.99, rating:4.6, reviews_count:15023, image:'https://m.media-amazon.com/images/I/71H+kGZ0jkL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B08KNLQ2JF' },
-  { asin:'B08F7L33MH', title:'Crucial X8 2TB Portable SSD — Up to 1050MB/s — PS4, Xbox & PlayStation Compatible USB 3.2 CT2000X8SSD9', price:84.99,  rating:4.6, reviews_count:67890, image:'https://m.media-amazon.com/images/I/71QeZBnQXiL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B08F7L33MH' },
-  { asin:'B09FVVPFJJ', title:'Crucial X9 Pro 4TB Portable SSD for Mac — Up to 1050MB/s 3yr Warranty USB-C USB 3.2 CTMACP4000X9PRO', price:139.99, rating:4.5, reviews_count:8912, image:'https://m.media-amazon.com/images/I/71QeZBnQXiL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B09FVVPFJJ' },
-  { asin:'B07H4DR7QS', title:'WD My Passport SSD 1TB — Portable External Solid State Drive 1050MB/s USB-C & USB-A 3yr Warranty WDBAGF0010BBL-WESN', price:79.99,  rating:4.5, reviews_count:42110, image:'https://m.media-amazon.com/images/I/71OhKuaDWqL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B07H4DR7QS' },
-  { asin:'B09HW8G3PZ', title:'WD My Passport SSD 4TB External Solid State Drive 1050MB/s USB-C Windows Mac 3yr Warranty WDBB9G0040BBL-WESN', price:169.99, rating:4.5, reviews_count:18432, image:'https://m.media-amazon.com/images/I/71OhKuaDWqL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B09HW8G3PZ' },
-  { asin:'B08MFCCCQX', title:'Seagate Fast SSD 1TB External Solid State Drive Portable PC Mac PS5 Xbox USB-C USB-A 3yr Warranty STCM1000400', price:69.99,  rating:4.4, reviews_count:23456, image:'https://m.media-amazon.com/images/I/71mPnZPx+YL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B08MFCCCQX' },
-  { asin:'B08MJY4FXL', title:'Samsung 2TB T9 Portable SSD 2000MB/s External Solid State Drive USB4 20Gbps Type-C PC Mac iPad MU-PG2T0B/AM', price:129.99, rating:4.6, reviews_count:5923, image:'https://m.media-amazon.com/images/I/71dCU+kn+GL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B08MJY4FXL' },
-  { asin:'B0C1GJKFBZ', title:'SanDisk Professional Pro-G40 SSD 2TB Thunderbolt 3 2000MB/s Ruggedized Drive for Mac Windows SDPRO3G-2T00-GBAND', price:224.99, rating:4.5, reviews_count:3211, image:'https://m.media-amazon.com/images/I/81Q+VLM3SjL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B0C1GJKFBZ' },
-  { asin:'B0BZ8QZW2J', title:'Crucial X10 Pro 2TB Portable SSD — Up to 2100MB/s USB 3.2 Gen 2x2 Compact External Storage 5yr Warranty CT2000X10PROSSD9', price:109.99, rating:4.6, reviews_count:7834, image:'https://m.media-amazon.com/images/I/71QeZBnQXiL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B0BZ8QZW2J' },
-  { asin:'B09FKTDM3T', title:'OWC Envoy Pro FX 1TB NVMe Thunderbolt 3 & USB-C Compatible External SSD 2800MB/s For Mac OWCTB3ENV1.0', price:159.99, rating:4.5, reviews_count:2341, image:'https://m.media-amazon.com/images/I/71lMbOxFkdL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B09FKTDM3T' },
-  { asin:'B0D2PHCC7S', title:'LaCie Rugged SSD Pro 1TB Thunderbolt 3 NVMe 2800MB/s Rugged Portable External SSD STHR1000800 3yr Warranty', price:169.99, rating:4.4, reviews_count:4567, image:'https://m.media-amazon.com/images/I/71Xu3w7bJAL._AC_SL1500_.jpg', url:'https://www.amazon.com/dp/B0D2PHCC7S' },
+  { asin:'B09B398QCX', title:'Samsung T7 Shield 2TB Portable External Solid State Drive USB 3.2 Gen 2 (10Gbps) — Beige MU-PE2T0K/AM', price:99.99,  rating:4.7, reviews_count:45231, image:'', url:'https://www.amazon.com/dp/B09B398QCX' },
+  { asin:'B09BKBP939', title:'Samsung T7 Shield 4TB Portable External SSD USB 3.2 Gen 2 (10Gbps) Ruggedized Case Beige MU-PE4T0K/AM', price:149.99, rating:4.7, reviews_count:45231, image:'', url:'https://www.amazon.com/dp/B09BKBP939' },
+  { asin:'B08GTYFC37', title:'Samsung T7 1TB Portable External SSD USB 3.2 Gen 2 (10Gbps) 1000 MB/s Gray MU-PC1T0T/AM', price:89.99,  rating:4.7, reviews_count:91032, image:'', url:'https://www.amazon.com/dp/B08GTYFC37' },
+  { asin:'B09DGQ5GDZ', title:'SanDisk 2TB Extreme Pro Portable SSD — Solid State Drive 5yr Warranty 2000MB/s USB-C USB 3.2 Gen 2x2 — SDSSDE81-2T00-G25', price:149.00, rating:4.6, reviews_count:28540, image:'', url:'https://www.amazon.com/dp/B09DGQ5GDZ' },
+  { asin:'B08KNLQ2JF', title:'SanDisk 4TB Extreme Portable SSD — 1050MB/s 5yr Warranty USB-C USB 3.2 Gen 2 Rugged SDSSDE61-4T00-G25', price:199.99, rating:4.6, reviews_count:15023, image:'', url:'https://www.amazon.com/dp/B08KNLQ2JF' },
+  { asin:'B08F7L33MH', title:'Crucial X8 2TB Portable SSD — Up to 1050MB/s — PS4, Xbox & PlayStation Compatible USB 3.2 CT2000X8SSD9', price:84.99,  rating:4.6, reviews_count:67890, image:'', url:'https://www.amazon.com/dp/B08F7L33MH' },
+  { asin:'B09FVVPFJJ', title:'Crucial X9 Pro 4TB Portable SSD for Mac — Up to 1050MB/s 3yr Warranty USB-C USB 3.2 CTMACP4000X9PRO', price:139.99, rating:4.5, reviews_count:8912, image:'', url:'https://www.amazon.com/dp/B09FVVPFJJ' },
+  { asin:'B07H4DR7QS', title:'WD My Passport SSD 1TB — Portable External Solid State Drive 1050MB/s USB-C & USB-A 3yr Warranty WDBAGF0010BBL-WESN', price:79.99,  rating:4.5, reviews_count:42110, image:'', url:'https://www.amazon.com/dp/B07H4DR7QS' },
+  { asin:'B09HW8G3PZ', title:'WD My Passport SSD 4TB External Solid State Drive 1050MB/s USB-C Windows Mac 3yr Warranty WDBB9G0040BBL-WESN', price:169.99, rating:4.5, reviews_count:18432, image:'', url:'https://www.amazon.com/dp/B09HW8G3PZ' },
+  { asin:'B08MFCCCQX', title:'Seagate Fast SSD 1TB External Solid State Drive Portable PC Mac PS5 Xbox USB-C USB-A 3yr Warranty STCM1000400', price:69.99,  rating:4.4, reviews_count:23456, image:'', url:'https://www.amazon.com/dp/B08MFCCCQX' },
+  { asin:'B08MJY4FXL', title:'Samsung 2TB T9 Portable SSD 2000MB/s External Solid State Drive USB4 20Gbps Type-C PC Mac iPad MU-PG2T0B/AM', price:129.99, rating:4.6, reviews_count:5923, image:'', url:'https://www.amazon.com/dp/B08MJY4FXL' },
+  { asin:'B0C1GJKFBZ', title:'SanDisk Professional Pro-G40 SSD 2TB Thunderbolt 3 2000MB/s Ruggedized Drive for Mac Windows SDPRO3G-2T00-GBAND', price:224.99, rating:4.5, reviews_count:3211, image:'', url:'https://www.amazon.com/dp/B0C1GJKFBZ' },
+  { asin:'B0BZ8QZW2J', title:'Crucial X10 Pro 2TB Portable SSD — Up to 2100MB/s USB 3.2 Gen 2x2 Compact External Storage 5yr Warranty CT2000X10PROSSD9', price:109.99, rating:4.6, reviews_count:7834, image:'', url:'https://www.amazon.com/dp/B0BZ8QZW2J' },
+  { asin:'B09FKTDM3T', title:'OWC Envoy Pro FX 1TB NVMe Thunderbolt 3 & USB-C Compatible External SSD 2800MB/s For Mac OWCTB3ENV1.0', price:159.99, rating:4.5, reviews_count:2341, image:'', url:'https://www.amazon.com/dp/B09FKTDM3T' },
+  { asin:'B0D2PHCC7S', title:'LaCie Rugged SSD Pro 1TB Thunderbolt 3 NVMe 2800MB/s Rugged Portable External SSD STHR1000800 3yr Warranty', price:169.99, rating:4.4, reviews_count:4567, image:'', url:'https://www.amazon.com/dp/B0D2PHCC7S' },
 ];
 
 // ── SCRAPER API ──────────────────────────────────────────────────────────────

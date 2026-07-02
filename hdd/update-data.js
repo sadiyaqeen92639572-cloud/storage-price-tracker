@@ -223,21 +223,21 @@ function normalizeItem(raw) {
 
 // ── MOCK DATA ────────────────────────────────────────────────────────────────
 const MOCK_PRODUCTS = [
-  { id: 'B08WK1KZSP', title: 'WD Red Plus 8TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, CMR, 256 MB Cache, 3.5"', price: 129.99, brand: 'WD', rating: 4.6, reviews_count: 8420, image: 'https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B08TNT7H3T', title: 'WD Red Plus 12TB NAS Internal Hard Drive CMR - 7200 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5" - WD120EFBX', price: 214.99, brand: 'WD', rating: 4.5, reviews_count: 3210, image: 'https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B07H289S7C', title: 'WD Red Plus 4TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, CMR, 128 MB Cache', price: 79.99, brand: 'WD', rating: 4.6, reviews_count: 12350, image: 'https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B084ZV4DXB', title: 'Seagate IronWolf 8TB NAS Internal Hard Drive HDD – CMR 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache for RAID Network Attached Storage', price: 154.99, brand: 'Seagate', rating: 4.6, reviews_count: 15600, image: 'https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B07999WTNT', title: 'Seagate IronWolf 4TB NAS Internal Hard Drive CMR HDD – 3.5 Inch SATA 6Gb/s 5900 RPM 64MB Cache', price: 84.99, brand: 'Seagate', rating: 4.6, reviews_count: 22100, image: 'https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B07H5MD2GK', title: 'Seagate IronWolf 12TB NAS Internal Hard Drive CMR 7200RPM 256MB Cache SATA 6 Gb/s 3.5"', price: 199.99, brand: 'Seagate', rating: 4.6, reviews_count: 5430, image: 'https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B07FP4Q3HB', title: 'WD Gold 8TB Enterprise Class Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 256 MB Cache, CMR, 5 Year Warranty', price: 189.99, brand: 'WD', rating: 4.7, reviews_count: 2890, image: 'https://m.media-amazon.com/images/I/51Wg-zLgfzL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B01LYVX0H5', title: 'Seagate Exos X18 18TB Enterprise HDD CMR Internal Hard Drive – 3.5 Inch Hyperscale SATA 6Gb/s 7200 RPM 256MB Cache', price: 279.99, brand: 'Seagate', rating: 4.5, reviews_count: 1240, image: 'https://m.media-amazon.com/images/I/51-3BQ5i0ZL._AC_SL300_.jpg', seller_name: 'Seagate Direct' },
-  { id: 'B0812G55GS', title: 'Toshiba N300 8TB NAS 3.5-Inch Internal Hard Drive - CMR SATA 6.0 GB/s 7200 RPM 256 MB Cache', price: 144.99, brand: 'Toshiba', rating: 4.5, reviews_count: 4120, image: 'https://m.media-amazon.com/images/I/61ZGQ8FXHQL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B08VM17BSJ', title: 'WD Red 4TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, SMR, 256 MB Cache, 3.5"', price: 69.99, brand: 'WD', rating: 4.3, reviews_count: 9800, image: 'https://m.media-amazon.com/images/I/71HXaVVrJtL._AC_SL300_.jpg', seller_name: 'Third Party Seller' },
-  { id: 'B07H5HDJBX', title: 'Seagate Barracuda 4TB Internal Hard Drive HDD – 3.5 Inch SATA 6 Gb/s 5400 RPM 256MB Cache', price: 64.99, brand: 'Seagate', rating: 4.4, reviews_count: 31200, image: 'https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B09ZP4MJGX', title: 'Seagate Exos 12TB Enterprise HDD CMR Internal Hard Drive 7200 RPM 256MB Cache SATA 6Gb/s', price: 209.99, brand: 'Seagate', rating: 4.6, reviews_count: 890, image: 'https://m.media-amazon.com/images/I/51-3BQ5i0ZL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B0B2RHJJGH', title: 'WD Purple Pro 8TB Surveillance Internal Hard Drive CMR - 7200 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5"', price: 149.99, brand: 'WD', rating: 4.5, reviews_count: 1560, image: 'https://m.media-amazon.com/images/I/51Wg-zLgfzL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
-  { id: 'B0BXRNWCDY', title: 'Seagate IronWolf 16TB NAS Internal Hard Drive CMR 7200 RPM SATA 6Gb/s 256MB Cache - Renewed', price: 179.99, brand: 'Seagate', rating: 4.4, reviews_count: 340, image: 'https://m.media-amazon.com/images/I/61IFiCG9-zL._AC_SL300_.jpg', seller_name: 'Amazon Renewed' },
-  { id: 'B07XWP5BK5', title: 'WD Blue 4TB PC Hard Drive - 5400 RPM, CMR, SATA 6 Gb/s, 256 MB Cache, 3.5"', price: 69.99, brand: 'WD', rating: 4.5, reviews_count: 18900, image: 'https://m.media-amazon.com/images/I/61HQIxPRriL._AC_SL300_.jpg', seller_name: 'Amazon.com' },
+  { id: 'B08WK1KZSP', title: 'WD Red Plus 8TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, CMR, 256 MB Cache, 3.5"', price: 129.99, brand: 'WD', rating: 4.6, reviews_count: 8420, image: '', seller_name: 'Amazon.com' },
+  { id: 'B08TNT7H3T', title: 'WD Red Plus 12TB NAS Internal Hard Drive CMR - 7200 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5" - WD120EFBX', price: 214.99, brand: 'WD', rating: 4.5, reviews_count: 3210, image: '', seller_name: 'Amazon.com' },
+  { id: 'B07H289S7C', title: 'WD Red Plus 4TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, CMR, 128 MB Cache', price: 79.99, brand: 'WD', rating: 4.6, reviews_count: 12350, image: '', seller_name: 'Amazon.com' },
+  { id: 'B084ZV4DXB', title: 'Seagate IronWolf 8TB NAS Internal Hard Drive HDD – CMR 3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache for RAID Network Attached Storage', price: 154.99, brand: 'Seagate', rating: 4.6, reviews_count: 15600, image: '', seller_name: 'Amazon.com' },
+  { id: 'B07999WTNT', title: 'Seagate IronWolf 4TB NAS Internal Hard Drive CMR HDD – 3.5 Inch SATA 6Gb/s 5900 RPM 64MB Cache', price: 84.99, brand: 'Seagate', rating: 4.6, reviews_count: 22100, image: '', seller_name: 'Amazon.com' },
+  { id: 'B07H5MD2GK', title: 'Seagate IronWolf 12TB NAS Internal Hard Drive CMR 7200RPM 256MB Cache SATA 6 Gb/s 3.5"', price: 199.99, brand: 'Seagate', rating: 4.6, reviews_count: 5430, image: '', seller_name: 'Amazon.com' },
+  { id: 'B07FP4Q3HB', title: 'WD Gold 8TB Enterprise Class Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 256 MB Cache, CMR, 5 Year Warranty', price: 189.99, brand: 'WD', rating: 4.7, reviews_count: 2890, image: '', seller_name: 'Amazon.com' },
+  { id: 'B01LYVX0H5', title: 'Seagate Exos X18 18TB Enterprise HDD CMR Internal Hard Drive – 3.5 Inch Hyperscale SATA 6Gb/s 7200 RPM 256MB Cache', price: 279.99, brand: 'Seagate', rating: 4.5, reviews_count: 1240, image: '', seller_name: 'Seagate Direct' },
+  { id: 'B0812G55GS', title: 'Toshiba N300 8TB NAS 3.5-Inch Internal Hard Drive - CMR SATA 6.0 GB/s 7200 RPM 256 MB Cache', price: 144.99, brand: 'Toshiba', rating: 4.5, reviews_count: 4120, image: '', seller_name: 'Amazon.com' },
+  { id: 'B08VM17BSJ', title: 'WD Red 4TB NAS Internal Hard Drive - 5400 RPM, SATA 6 Gb/s, SMR, 256 MB Cache, 3.5"', price: 69.99, brand: 'WD', rating: 4.3, reviews_count: 9800, image: '', seller_name: 'Third Party Seller' },
+  { id: 'B07H5HDJBX', title: 'Seagate Barracuda 4TB Internal Hard Drive HDD – 3.5 Inch SATA 6 Gb/s 5400 RPM 256MB Cache', price: 64.99, brand: 'Seagate', rating: 4.4, reviews_count: 31200, image: '', seller_name: 'Amazon.com' },
+  { id: 'B09ZP4MJGX', title: 'Seagate Exos 12TB Enterprise HDD CMR Internal Hard Drive 7200 RPM 256MB Cache SATA 6Gb/s', price: 209.99, brand: 'Seagate', rating: 4.6, reviews_count: 890, image: '', seller_name: 'Amazon.com' },
+  { id: 'B0B2RHJJGH', title: 'WD Purple Pro 8TB Surveillance Internal Hard Drive CMR - 7200 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5"', price: 149.99, brand: 'WD', rating: 4.5, reviews_count: 1560, image: '', seller_name: 'Amazon.com' },
+  { id: 'B0BXRNWCDY', title: 'Seagate IronWolf 16TB NAS Internal Hard Drive CMR 7200 RPM SATA 6Gb/s 256MB Cache - Renewed', price: 179.99, brand: 'Seagate', rating: 4.4, reviews_count: 340, image: '', seller_name: 'Amazon Renewed' },
+  { id: 'B07XWP5BK5', title: 'WD Blue 4TB PC Hard Drive - 5400 RPM, CMR, SATA 6 Gb/s, 256 MB Cache, 3.5"', price: 69.99, brand: 'WD', rating: 4.5, reviews_count: 18900, image: '', seller_name: 'Amazon.com' },
 ];
 
 // ── STATIC ROW BUILDER ───────────────────────────────────────────────────────
@@ -277,7 +277,7 @@ function buildStaticRow(item) {
 
   return `<tr data-id="${item.id}" data-cat="${item.category}" data-tags="${allTags}"
     data-cmr="${item.cmrSmr}" data-ptb="${item.pricePerTB || 9999}" data-rating="${item.rating}">
-  <td class="col-essential col-img"><img src="${item.image}" alt="${item.brand}" loading="lazy" class="product-thumb" onerror="this.style.display='none'"></td>
+  <td class="col-essential col-img"><img src="${item.image || `https://placehold.co/44x44/1e293b/94a3b8?text=${encodeURIComponent((item.brand||'HDD').slice(0,2).toUpperCase())}`}" alt="${item.brand}" loading="lazy" class="product-thumb" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/94a3b8?text=HDD'"></td>
   <td class="col-essential col-name">
     <a href="${item.asinUrl}" target="_blank" rel="nofollow sponsored" class="prod-link">${shortName}</a>
     <div class="prod-brand">${item.brand}</div>
