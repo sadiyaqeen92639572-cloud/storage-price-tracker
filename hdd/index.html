@@ -342,7 +342,7 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
 <section class="stats-bar" id="hdd-market-stats">
   <div class="stat-card"><div class="stat-label">Drives Tracked</div><span class="stat-val" id="stat-total">132</span></div>
   <div class="stat-card"><div class="stat-label">Lowest $/TB</div><span class="stat-val green" id="stat-lowest">—</span></div>
-  <div class="stat-card"><div class="stat-label">Avg $/TB</div><span class="stat-val" id="stat-avg">$46.55/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB</span></div>
+  <div class="stat-card"><div class="stat-label">Avg $/TB</div><span class="stat-val" id="stat-avg">—</span></div>
   <div class="stat-card"><div class="stat-label">CMR Drives</div><span class="stat-val green" id="stat-cmr">0</span></div>
   <div class="stat-card"><div class="stat-label">SMR (avoid for NAS)</div><span class="stat-val red" id="stat-smr">0</span></div>
 </section>
@@ -8235,17 +8235,15 @@ function calculateBudget() {
 
 // ── STATS BAR ────────────────────────────────────────────────────────────────
 function updateStats() {
-  const n = document.getElementById('stat-total');
-  if (n && n.textContent === '0' && PRODUCTS_DATA.length > 0) {
-    const ptbs   = PRODUCTS_DATA.map(p=>p.pricePerTB).filter(Boolean);
-    const cmrCnt = PRODUCTS_DATA.filter(p=>p.cmrSmr==='CMR').length;
-    const smrCnt = PRODUCTS_DATA.filter(p=>p.cmrSmr==='SMR').length;
-    document.getElementById('stat-total').textContent  = PRODUCTS_DATA.length;
-    document.getElementById('stat-lowest').textContent = ptbs.length ? `$${Math.min(...ptbs).toFixed(2)}/TB` : '—';
-    document.getElementById('stat-avg').textContent    = ptbs.length ? `$${(ptbs.reduce((a,b)=>a+b,0)/ptbs.length).toFixed(2)}/TB` : '—';
-    document.getElementById('stat-cmr').textContent   = cmrCnt;
-    document.getElementById('stat-smr').textContent   = smrCnt;
-  }
+  if (PRODUCTS_DATA.length === 0) return;
+  const ptbs   = PRODUCTS_DATA.map(p=>p.pricePerTB).filter(Boolean);
+  const cmrCnt = PRODUCTS_DATA.filter(p=>p.cmrSmr==='CMR').length;
+  const smrCnt = PRODUCTS_DATA.filter(p=>p.cmrSmr==='SMR').length;
+  document.getElementById('stat-total').textContent  = PRODUCTS_DATA.length;
+  document.getElementById('stat-lowest').textContent = ptbs.length ? `$${Math.min(...ptbs).toFixed(2)}/TB` : '—';
+  document.getElementById('stat-avg').textContent    = ptbs.length ? `$${(ptbs.reduce((a,b)=>a+b,0)/ptbs.length).toFixed(2)}/TB` : '—';
+  document.getElementById('stat-cmr').textContent   = cmrCnt;
+  document.getElementById('stat-smr').textContent   = smrCnt;
 }
 
 // ── SCROLL NAV ───────────────────────────────────────────────────────────────
