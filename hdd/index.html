@@ -336,16 +336,16 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
 <div class="page-wrap">
 
 <!-- ADSENSE -->
-<div class="ad-block">AdSense — Responsive Leaderboard (728×90)</div>
+<section class="ad-block">AdSense — Responsive Leaderboard (728×90)</section>
 
 <!-- STATS BAR -->
-<div class="stats-bar">
+<section class="stats-bar" id="hdd-market-stats">
   <div class="stat-card"><div class="stat-label">Drives Tracked</div><span class="stat-val" id="stat-total">132</span></div>
   <div class="stat-card"><div class="stat-label">Lowest $/TB</div><span class="stat-val green" id="stat-lowest">—</span></div>
   <div class="stat-card"><div class="stat-label">Avg $/TB</div><span class="stat-val" id="stat-avg">$46.55/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB<span class="stat-val" id="stat-avg">7.84/TB</span></div>
   <div class="stat-card"><div class="stat-label">CMR Drives</div><span class="stat-val green" id="stat-cmr">0</span></div>
   <div class="stat-card"><div class="stat-label">SMR (avoid for NAS)</div><span class="stat-val red" id="stat-smr">0</span></div>
-</div>
+</section>
 
 <!-- $/TB CALCULATOR -->
 <section id="budget-calculator" class="seo-section">
@@ -578,7 +578,7 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
 
   <div class="table-wrapper" id="tableWrapper">
     <table id="hddTable" class="view-essential">
-      <thead>
+      <thead title="HDD price comparison table columns">
         <tr>
           <th class="col-essential col-img" title="Product image">Img</th>
           <th class="col-essential col-name" title="Product name and brand" onclick="sortBy('title')">Drive</th>
@@ -7997,6 +7997,7 @@ const TAG_DESC = {
   'Renewed':      'Amazon Renewed — Refurbished. 90-day Amazon warranty. Lower price but unknown prior use.',
   'Best $/TB':    'Best $/TB — Listed price ÷ capacity ≤ $20/TB. The most cost-effective CMR drives on Amazon right now.',
 };
+const TAG_DESCRIPTIONS = TAG_DESC;
 
 // ── INIT TAG PILLS ───────────────────────────────────────────────────────────
 function initTagPills() {

@@ -130,6 +130,11 @@ header h1{font-size:clamp(1.5rem,4vw,2.4rem);font-weight:800;margin-bottom:.75re
 .niche-card:hover{transform:translateY(-2px);border-color:var(--brand)}
 .niche-card h3{font-size:.92rem;font-weight:700;margin-bottom:.5rem}
 .niche-card p{font-size:.82rem;color:var(--text-sec);line-height:1.65}
+.tag-card{cursor:pointer}
+.tag-card:hover{border-color:var(--brand);transform:translateY(-2px)}
+.tag-card-count{display:block;font-size:.7rem;font-family:'JetBrains Mono',monospace;color:var(--brand);margin-top:.35rem}
+.tag-card-link{display:inline-block;margin-top:.4rem;font-size:.75rem;font-weight:600;color:var(--brand-light)}
+.tag-card-link:hover{text-decoration:underline}
 .support-line{font-size:.72rem;color:var(--text-muted);font-style:italic;margin-top:.5rem;padding-top:.4rem;border-top:1px dashed var(--border)}
 .card-cta{display:inline-block;margin-top:.65rem;padding:.35rem .85rem;border-radius:6px;border:1px solid var(--brand);color:var(--brand-light);font-size:.75rem;font-weight:600;cursor:pointer;background:var(--brand-glow);transition:all .15s}
 .card-cta:hover{background:var(--brand);color:#fff}
@@ -292,15 +297,15 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
 
 <div class="page-wrap">
 
-<div class="ad-block">AdSense — Responsive Leaderboard (728×90)</div>
+<section class="ad-block">AdSense — Responsive Leaderboard (728×90)</section>
 
-<div class="stats-bar">
+<section class="stats-bar" id="ssd-market-stats">
   <div class="stat-card"><div class="stat-label">SSDs Tracked</div><span class="stat-val" id="stat-total">38</span></div>
   <div class="stat-card"><div class="stat-label">Lowest $/TB</div><span class="stat-val" id="stat-lowest">.50/TB.50/TB.50/TB</span>5.00/TB</span>5.00/TB</span>5.00/TB</span>5.00/TB</span></div>
   <div class="stat-card"><div class="stat-label">Avg $/TB</div><span class="stat-val" id="stat-avg"><span class="stat-val" id="stat-avg"><span class="stat-val" id="stat-avg"><span class="stat-val" id="stat-avg">46.45/TB</span></div>
   <div class="stat-card"><div class="stat-label">1000+ MB/s</div><span class="stat-val" id="stat-fast">21</span></div>
   <div class="stat-card"><div class="stat-label">&lt; 1000 MB/s</div><span class="stat-val yellow" id="stat-slow">3</span></div>
-</div>
+</section>
 
 <!-- CALCULATOR -->
 <section id="budget-calculator" class="seo-section">
@@ -358,6 +363,8 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
     </div>
   </div>
 
+  <h3>How We Calculate $/TB</h3>
+  <p>We divide the listed Amazon price by the drive's storage capacity in terabytes (TB). A 2TB drive at $120 = $60/TB. Prices update automatically from live Amazon data. The calculator above uses the same formula on the filtered subset of drives.</p>
   <h3>How Much Should I Pay Per TB for an External SSD?</h3>
   <p>In 2026: <strong>$60–$90/TB</strong> for 1TB drives (T7, Extreme), <strong>$45–$70/TB</strong> for 2TB, <strong>$35–$55/TB</strong> for 4TB. USB4/Thunderbolt drives command a <strong>$25–$60/TB premium</strong> over USB 3.2 Gen 2 equivalents — justified only if your host port supports the extra bandwidth.</p>
   <h3>The Interface Trap</h3>
@@ -369,7 +376,7 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <h2>⚡ USB Interface Speed Guide</h2>
   <p>The "read speed" on the box means nothing if your port can't deliver it. Here's the real bandwidth hierarchy.</p>
   <table class="speed-table">
-    <thead><tr><th>Interface</th><th>Max Throughput</th><th>Typical Real-World</th><th>Connector</th><th>Common Drives</th></tr></thead>
+    <thead><tr><th title="USB/Thunderbolt interface version">Interface</th><th title="Theoretical maximum throughput of this interface">Max Throughput</th><th title="Actual transfer speeds observed in real-world testing">Typical Real-World</th><th title="Physical connector type: USB-C or USB-A">Connector</th><th title="Representative drives using this interface">Common Drives</th></tr></thead>
     <tbody>
       <tr><td>USB4 40Gbps</td><td>5,000 MB/s</td><td>3,000–4,500 MB/s</td><td>USB-C</td><td>Sabrent Rocket XTRM-Q</td></tr>
       <tr><td>Thunderbolt 3/4</td><td>2,750–3,000 MB/s</td><td>2,000–2,800 MB/s</td><td>USB-C</td><td>OWC Envoy Pro FX, LaCie Rugged SSD Pro</td></tr>
@@ -413,6 +420,62 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
       <p><strong>Perfect for:</strong> Travel photography, fieldwork, outdoor shoots, gear bags. IP55 water and dust resistance, drop-tested housings. SanDisk Extreme, Samsung T7 Shield, and LaCie Rugged are the most durable options on the market.</p>
       <div class="support-line">Popular: rugged external SSD, waterproof portable drive, IP55 SSD USB-C</div>
       <button class="card-cta" onclick="filterByTag('Rugged','use')">Browse Rugged SSDs →</button>
+    </div>
+  </div>
+</section>
+
+<!-- TAG CARDS -->
+<section id="tag-cards-section" class="seo-section">
+  <h2>Browse External SSDs by Feature</h2>
+  <p>Click any card to filter the tracker by that feature.</p>
+  <div class="niche-grid">
+    <div class="niche-card tag-card" data-filter-tag="USB4/TB" data-filter-type="tech" onclick="filterByTag('USB4/TB','tech')">
+      <h3>🚀 USB4 / Thunderbolt</h3>
+      <p>USB4 or Thunderbolt 3/4 — up to 40 Gbps, 5,000 MB/s theoretical. Full NVMe speed possible on compatible ports. Mac-friendly with Thunderbolt hosts.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View USB4/Thunderbolt SSDs →</a>
+    </div>
+    <div class="niche-card tag-card" data-filter-tag="2000+ MB/s" data-filter-type="tech" onclick="filterByTag('2000+ MB/s','tech')">
+      <h3>⚡ 2000+ MB/s Speed</h3>
+      <p>Over 2,000 MB/s read — suitable for 8K RAW video editing, fast backup of large project folders. Requires USB4 or USB 3.2 Gen 2×2 port on the host.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View 2000+ MB/s SSDs →</a>
+    </div>
+    <div class="niche-card tag-card" data-filter-tag="1000+ MB/s" data-filter-type="tech" onclick="filterByTag('1000+ MB/s','tech')">
+      <h3>💨 1000+ MB/s Speed</h3>
+      <p>1,000+ MB/s — USB 3.2 Gen 2 class. Fast enough for 4K editing, PS5 PS4 game storage, and all standard portable tasks. The sweet spot for most users.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View 1000+ MB/s SSDs →</a>
+    </div>
+    <div class="niche-card tag-card" data-filter-tag="PS5 Ready" data-filter-type="use" onclick="filterByTag('PS5 Ready','use')">
+      <h3>🎮 PS5 Ready</h3>
+      <p>Tested or advertised for PS5 PS4 game storage. Any USB 3.2 Gen 2 drive (1,000 MB/s) handles PS5 PS4 launches natively. No internal SSD slot required.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View PS5-Ready SSDs →</a>
+    </div>
+    <div class="niche-card tag-card" data-filter-tag="Mac Compatible" data-filter-type="use" onclick="filterByTag('Mac Compatible','use')">
+      <h3>🍎 Mac Compatible</h3>
+      <p>Works with macOS for Time Machine backup, Final Cut Pro media, or general MacBook storage. Format as APFS for best performance with Apple silicon.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View Mac-Compatible SSDs →</a>
+    </div>
+    <div class="niche-card tag-card" data-filter-tag="Rugged" data-filter-type="use" onclick="filterByTag('Rugged','use')">
+      <h3>🏕️ Rugged</h3>
+      <p>Drop-tested, IP-rated for dust and water resistance. Built for travel, outdoor shoots, and field work. SanDisk Extreme, Samsung T7 Shield, LaCie Rugged.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View Rugged SSDs →</a>
+    </div>
+    <div class="niche-card tag-card" data-filter-tag="4TB+" data-filter-type="use" onclick="filterByTag('4TB+','use')">
+      <h3>📦 4TB+ Capacity</h3>
+      <p>4TB or larger — best $/TB ratio in the external SSD category. Ideal for video project libraries, game collections, and large offsite backups.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View 4TB+ SSDs →</a>
+    </div>
+    <div class="niche-card tag-card" data-filter-tag="Best $/TB" data-filter-type="value" onclick="filterByTag('Best $/TB','value')">
+      <h3>💰 Best $/TB Value</h3>
+      <p>Most cost-effective external SSDs in the tracker — lowest price per terabyte without sacrificing USB 3.2 Gen 2 speed or warranty coverage.</p>
+      <span class="tag-card-count"></span>
+      <a href="#tracker-section" class="tag-card-link">View best-value SSDs →</a>
     </div>
   </div>
 </section>
@@ -508,7 +571,7 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
 
   <div class="table-wrapper" id="tableWrapper">
     <table id="ssdTable" class="view-essential">
-      <thead>
+      <thead title="External SSD price comparison table columns">
         <tr>
           <th class="col-essential col-img" title="Product image">Img</th>
           <th class="col-essential col-name" title="Product name and brand" onclick="sortBy('title')">Drive</th>
@@ -532,7 +595,7 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
 <tr data-id="B0CRYY9THJ" data-tags="4TB+,Amazon Retail,3yr Warranty,Best $/TB">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/81UoGiVDpuL.jpg" alt="Samsung 4TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Carrying-Compatible-Portable-External-Cable%EF%BC%88Blue%EF%BC%89/dp/B0CRYY9THJ/ref=sr_1_9?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="prod-link">PAIYULE Carrying Case for Samsung T9/T7/T7 Shield Portable SSD 4TB 2TB 1TB, Hard Travel St…</a>
+    <a href="https://www.amazon.com/Carrying-Compatible-Portable-External-Cable%EF%BC%88Blue%EF%BC%89/dp/B0CRYY9THJ/ref=sr_1_9?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-9" target="_blank" rel="nofollow sponsored" class="prod-link">PAIYULE Carrying Case for Samsung T9/T7/T7 Shield Portable SSD 4TB 2TB 1TB, Hard Travel St…</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">4TB</td>
@@ -547,12 +610,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">83</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Carrying-Compatible-Portable-External-Cable%EF%BC%88Blue%EF%BC%89/dp/B0CRYY9THJ/ref=sr_1_9?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Carrying-Compatible-Portable-External-Cable%EF%BC%88Blue%EF%BC%89/dp/B0CRYY9THJ/ref=sr_1_9?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-9" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0BBYP662X" data-tags="USB 3.0,Amazon Retail,3yr Warranty,Best $/TB">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/81v527X--PL.jpg" alt="Samsung 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/ProCase-Carrying-External-Shockproof-Organizer/dp/B0BBYP662X/ref=sr_1_7?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="prod-link">ProCase Carrying Case for Samsung T7 Shield External SSD with 2 Cable Ties, Hard EVA Shock…</a>
+    <a href="https://www.amazon.com/ProCase-Carrying-External-Shockproof-Organizer/dp/B0BBYP662X/ref=sr_1_7?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-7" target="_blank" rel="nofollow sponsored" class="prod-link">ProCase Carrying Case for Samsung T7 Shield External SSD with 2 Cable Ties, Hard EVA Shock…</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -567,12 +630,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.8 </td>
   <td class="col-val col-trust"><span class="score-high">83</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/ProCase-Carrying-External-Shockproof-Organizer/dp/B0BBYP662X/ref=sr_1_7?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/ProCase-Carrying-External-Shockproof-Organizer/dp/B0BBYP662X/ref=sr_1_7?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-7" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B07VP5X239" data-tags="USB 3.0,4TB+,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/51tXR09l5qL.jpg" alt="WD 5TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VP5X239/ref=sr_1_4?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD 5TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
+    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VP5X239/ref=sr_1_4?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-4" target="_blank" rel="nofollow sponsored" class="prod-link">WD 5TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
     <div class="prod-brand">WD · Portable</div>
   </td>
   <td class="col-essential col-cap">5TB</td>
@@ -587,12 +650,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VP5X239/ref=sr_1_4?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VP5X239/ref=sr_1_4?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-4" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B07VTW2LPX" data-tags="USB 3.0,4TB+,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/51CDEElxPFL.jpg" alt="WD 4TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTW2LPX/ref=sr_1_9?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD 4TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
+    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTW2LPX/ref=sr_1_9?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-9" target="_blank" rel="nofollow sponsored" class="prod-link">WD 4TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
     <div class="prod-brand">WD · Portable</div>
   </td>
   <td class="col-essential col-cap">4TB</td>
@@ -607,12 +670,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTW2LPX/ref=sr_1_9?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTW2LPX/ref=sr_1_9?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-9" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B07X46C64N" data-tags="USB 3.0,4TB+,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/A14DWcn1AlL.jpg" alt="WD 5TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/WD-5Tb-My-Passport-Ultra-Portable-External-Drive/dp/B07X46C64N/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-8" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD 5TB My Passport Ultra, Blue, Portable External Hard Drive, backup software with defense…</a>
+    <a href="https://www.amazon.com/WD-5Tb-My-Passport-Ultra-Portable-External-Drive/dp/B07X46C64N/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-8" target="_blank" rel="nofollow sponsored" class="prod-link">WD 5TB My Passport Ultra, Blue, Portable External Hard Drive, backup software with defense…</a>
     <div class="prod-brand">WD · Portable</div>
   </td>
   <td class="col-essential col-cap">5TB</td>
@@ -627,12 +690,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/WD-5Tb-My-Passport-Ultra-Portable-External-Drive/dp/B07X46C64N/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-8" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/WD-5Tb-My-Passport-Ultra-Portable-External-Drive/dp/B07X46C64N/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-8" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B07VTFN6HM" data-tags="USB 3.0,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/510+J06fz0L.jpg" alt="WD 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTFN6HM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD 2TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
+    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTFN6HM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-5" target="_blank" rel="nofollow sponsored" class="prod-link">WD 2TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
     <div class="prod-brand">WD · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -647,12 +710,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTFN6HM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTFN6HM/ref=sr_1_5?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-5" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B07VSPL8FJ" data-tags="USB 3.0,Mac Compatible,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/618VbHZAaOL.jpg" alt="WD 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Passport-Portable-External-Drive-WDBA2D0020BBL-WESN/dp/B07VSPL8FJ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD 2TB My Passport for Mac, Navy, Portable External Hard Drive with backup software and pa…</a>
+    <a href="https://www.amazon.com/Passport-Portable-External-Drive-WDBA2D0020BBL-WESN/dp/B07VSPL8FJ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-7" target="_blank" rel="nofollow sponsored" class="prod-link">WD 2TB My Passport for Mac, Navy, Portable External Hard Drive with backup software and pa…</a>
     <div class="prod-brand">WD · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -667,12 +730,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.4 </td>
   <td class="col-val col-trust"><span class="score-mid">73</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-WDBA2D0020BBL-WESN/dp/B07VSPL8FJ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-WDBA2D0020BBL-WESN/dp/B07VSPL8FJ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-7" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0CGVZL1M1" data-tags="1000+ MB/s,USB 3.0,Mac Compatible,4TB+,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/41n+bV47yGL.jpg" alt="Crucial 4TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Crucial-4TB-Portable-SSD-CT4000X9SSD902/dp/B0CGVZL1M1/ref=sr_1_3?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X9 4TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Co…</a>
+    <a href="https://www.amazon.com/Crucial-4TB-Portable-SSD-CT4000X9SSD902/dp/B0CGVZL1M1/ref=sr_1_3?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-3" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X9 4TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Co…</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">4TB</td>
@@ -687,12 +750,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">95</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-4TB-Portable-SSD-CT4000X9SSD902/dp/B0CGVZL1M1/ref=sr_1_3?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-4TB-Portable-SSD-CT4000X9SSD902/dp/B0CGVZL1M1/ref=sr_1_3?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-3" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0F336NLC7" data-tags="2000+ MB/s,USB 3.0,Mac Compatible,4TB+,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/41rI1J9FcZL.jpg" alt="Crucial 8TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F336NLC7/ref=sr_1_1?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X10 8TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, …</a>
+    <a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F336NLC7/ref=sr_1_1?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-1" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X10 8TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, …</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">8TB</td>
@@ -707,12 +770,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">100</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F336NLC7/ref=sr_1_1?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F336NLC7/ref=sr_1_1?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-1" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0F3368QFL" data-tags="2000+ MB/s,USB 3.0,Mac Compatible,4TB+,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/41rI1J9FcZL.jpg" alt="Crucial 6TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Portable-External-Compatible-Mac-OS-X/dp/B0F3368QFL/ref=sr_1_4?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X10 6TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, …</a>
+    <a href="https://www.amazon.com/Portable-External-Compatible-Mac-OS-X/dp/B0F3368QFL/ref=sr_1_4?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-4" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X10 6TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, …</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">6TB</td>
@@ -727,12 +790,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">100</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Portable-External-Compatible-Mac-OS-X/dp/B0F3368QFL/ref=sr_1_4?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Portable-External-Compatible-Mac-OS-X/dp/B0F3368QFL/ref=sr_1_4?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-4" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B07VTWX8MN" data-tags="USB 3.0,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/510+J06fz0L.jpg" alt="WD 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTWX8MN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-6" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD 1TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
+    <a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTWX8MN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-6" target="_blank" rel="nofollow sponsored" class="prod-link">WD 1TB My Passport, Portable External Hard Drive, Black, backup software with defense agai…</a>
     <div class="prod-brand">WD · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -747,12 +810,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTWX8MN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-6" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-Portable-External-Drive-Black/dp/B07VTWX8MN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-6" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0DK6VR4JM" data-tags="1000+ MB/s,Mac Compatible,Amazon Retail">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/516pCxEu70L.jpg" alt=" 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://aax-us-east-retail-direct.amazon.com/x/c/JDObeE-uaYX_wMhm1TfxKwcAAAGfJLf0IwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDnYwZR/clv1c_ek-YBfHXEsTW3uLbE-9UGoKaSpmRYqTSgZEgO8Xy7TDGvsTvM2MaAqUOKhyyDAiqdHboSQQnJV_Mba_y8eo6tpOLcjuCOCsLI3WsfLSj1K-6m0Pb-n8he2fKrrm0IHyS0Z6brSxz89Gvs33jSE_eTUGwMNybmld6EnLY31erSYgrMQvdZk3pw5szY0rec0dfSHDNItgOhxeolGOg9EvYhiEJCUY7MHqz2xZycXjvHskeyKB8asVZFhlsPV3AAvV_WLkSBFAwsymcSO962-elKFMBIHvJZVEp8ulGiOJR9CG2RtPtuwfRlOTihYTNlBfgDEm0pGFrd8v-zBC7HOXZJsiv-5Lel5qYh_i0p9MiJIGGY4KBiRIDxe59TDuujhQdwzjmVyL-XqvngciRJrh2aO41RIgHPbNgh5sesCV-UmjBwAxhQ6izQE0Cgqv6xyxh3Xg7HMsyXQMr7DEMIV8Fh4MKm7mCbTE1nhtKSQQdYekGezI_5zkMpj12MKB653RUZ21nux939_b4lj8qSk217vgW_yOccE8pH0S2EAW--XcNdp8HKX3mXBNvSN47pe5EV5f9nrAvvdiIzYZmxetAIsDvHVJErG42kksE1SSwRWOgXYGD6-VfIp70_0dcByQWMo5llnBmfnLvWJUhnsnXM10DLU7Gw6B9s2iQQWt9T6lt5eCOd8buyYNxsX9msp2X4zL6hh7TYxtgqj95MZqTYBWQnV1jD80hvF0fQ75jeo2HqSXt6AUUiTrbEkcFae6_a1fCSuiG_IoWugXvA6FQrfotuBmMOYo6YVqbckBG73_SyYmTCFjDKDyiTu4rquDIfrVrekEWpd-TPb_OuGkfhAi1mtPgFfVXMyIR90yrxD0mOlQlgPDMeBYEFmQ09A5Y8TlfULk20pn-eB7MMp0n9DoMdSQVA5iwhq_L7D_9tfALjRNXMf2-l5YkonvBo5CblhIiryTJlRL8_2Q8WES84MREGpZ7V3aaozObyaBLRWKEfx2Nk3hux7NuOg7IhPBFFGywAYF3w2L80DPJ9Rn0R5rGwLfWdF5vQlHf3ShO8dHH-gEScfXDJJma_C49V3I5N8GJYOcA28oGWHLIRN_R5Gqt3TdDwiE5jOwtTMRhcC2yqSIOFSEQI5U4MbqmXzFOHbU3KSFDn4vIIxna9FpCvaUtUz_Lvw52NuU2ORXo19-tL37f5tzz5JMUn1ZOa_VorMDHDPUdGGj0Sf3KTe0wuWlashxEcRv-MdAvq4sZrVnuF8R1gKkv_DC8P40xwhiJuQhRelQWvVPCO8J9jKuos-OOz_t4I1-BsO-QZ7-U-Y4raioW3lksOSRQyJZRyrTEkDDaSi-UY1Qb6PYwzOpcOJNWYH3ADctndr9fgsHVSVpKyLtLv2eIRNLzzAGR6-YLzc6XcT4G-wB2l2mv6R3JDVCZn2QYnDGAxxURjx7rHbxyQ1E8o8xzNDOHPMZsSjmv50gkOkKNg501gpuZqbfAXEA14q2rfZMex_UegZ3fh9a98JjH632kKpo0SjO821FxAmbSIMpcrvTQ2oq1MBCjEi_i7ex68CEYtnNgxxFDMH2un1Ir_ru22LQzKKYPJBDkeIHIQOxoXXba-MG7t8eusE-Xyik3AaxyekbcpEZ2d7wE230l/https://www.amazon.com/Vansuny-USB-3-2-Portable-External/dp/B0DK6VR4JM/ref=sxin_19_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=best+external+SSD+speed+MB%2Fs+comparison&keywords=best+external+SSD+speed+MB%2Fs+comparison&pd_rd_i=B0DK6VR4JM&pd_rd_r=8d21f97c-1a24-4b2b-82eb-34d67b4e4c7a&pd_rd_w=t4SPm&pd_rd_wg=BMmlT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9ME1GHM7Z2N83VXGQK9A&qid=1783027462&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Vansuny 1TB USB Solid State Drive Up to 1000MB/s 3.2 Gen 2 Dual SSD USB A + Type C Portabl…</a>
+    <a href="https://aax-us-east-retail-direct.amazon.com/x/c/JDObeE-uaYX_wMhm1TfxKwcAAAGfJLf0IwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDnYwZR/clv1c_ek-YBfHXEsTW3uLbE-9UGoKaSpmRYqTSgZEgO8Xy7TDGvsTvM2MaAqUOKhyyDAiqdHboSQQnJV_Mba_y8eo6tpOLcjuCOCsLI3WsfLSj1K-6m0Pb-n8he2fKrrm0IHyS0Z6brSxz89Gvs33jSE_eTUGwMNybmld6EnLY31erSYgrMQvdZk3pw5szY0rec0dfSHDNItgOhxeolGOg9EvYhiEJCUY7MHqz2xZycXjvHskeyKB8asVZFhlsPV3AAvV_WLkSBFAwsymcSO962-elKFMBIHvJZVEp8ulGiOJR9CG2RtPtuwfRlOTihYTNlBfgDEm0pGFrd8v-zBC7HOXZJsiv-5Lel5qYh_i0p9MiJIGGY4KBiRIDxe59TDuujhQdwzjmVyL-XqvngciRJrh2aO41RIgHPbNgh5sesCV-UmjBwAxhQ6izQE0Cgqv6xyxh3Xg7HMsyXQMr7DEMIV8Fh4MKm7mCbTE1nhtKSQQdYekGezI_5zkMpj12MKB653RUZ21nux939_b4lj8qSk217vgW_yOccE8pH0S2EAW--XcNdp8HKX3mXBNvSN47pe5EV5f9nrAvvdiIzYZmxetAIsDvHVJErG42kksE1SSwRWOgXYGD6-VfIp70_0dcByQWMo5llnBmfnLvWJUhnsnXM10DLU7Gw6B9s2iQQWt9T6lt5eCOd8buyYNxsX9msp2X4zL6hh7TYxtgqj95MZqTYBWQnV1jD80hvF0fQ75jeo2HqSXt6AUUiTrbEkcFae6_a1fCSuiG_IoWugXvA6FQrfotuBmMOYo6YVqbckBG73_SyYmTCFjDKDyiTu4rquDIfrVrekEWpd-TPb_OuGkfhAi1mtPgFfVXMyIR90yrxD0mOlQlgPDMeBYEFmQ09A5Y8TlfULk20pn-eB7MMp0n9DoMdSQVA5iwhq_L7D_9tfALjRNXMf2-l5YkonvBo5CblhIiryTJlRL8_2Q8WES84MREGpZ7V3aaozObyaBLRWKEfx2Nk3hux7NuOg7IhPBFFGywAYF3w2L80DPJ9Rn0R5rGwLfWdF5vQlHf3ShO8dHH-gEScfXDJJma_C49V3I5N8GJYOcA28oGWHLIRN_R5Gqt3TdDwiE5jOwtTMRhcC2yqSIOFSEQI5U4MbqmXzFOHbU3KSFDn4vIIxna9FpCvaUtUz_Lvw52NuU2ORXo19-tL37f5tzz5JMUn1ZOa_VorMDHDPUdGGj0Sf3KTe0wuWlashxEcRv-MdAvq4sZrVnuF8R1gKkv_DC8P40xwhiJuQhRelQWvVPCO8J9jKuos-OOz_t4I1-BsO-QZ7-U-Y4raioW3lksOSRQyJZRyrTEkDDaSi-UY1Qb6PYwzOpcOJNWYH3ADctndr9fgsHVSVpKyLtLv2eIRNLzzAGR6-YLzc6XcT4G-wB2l2mv6R3JDVCZn2QYnDGAxxURjx7rHbxyQ1E8o8xzNDOHPMZsSjmv50gkOkKNg501gpuZqbfAXEA14q2rfZMex_UegZ3fh9a98JjH632kKpo0SjO821FxAmbSIMpcrvTQ2oq1MBCjEi_i7ex68CEYtnNgxxFDMH2un1Ir_ru22LQzKKYPJBDkeIHIQOxoXXba-MG7t8eusE-Xyik3AaxyekbcpEZ2d7wE230l/https://www.amazon.com/Vansuny-USB-3-2-Portable-External/dp/B0DK6VR4JM/ref=sxin_19_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=best+external+SSD+speed+MB%2Fs+comparison&keywords=best+external+SSD+speed+MB%2Fs+comparison&pd_rd_i=B0DK6VR4JM&pd_rd_r=8d21f97c-1a24-4b2b-82eb-34d67b4e4c7a&pd_rd_w=t4SPm&pd_rd_wg=BMmlT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9ME1GHM7Z2N83VXGQK9A&qid=1783027462&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored" class="prod-link">Vansuny 1TB USB Solid State Drive Up to 1000MB/s 3.2 Gen 2 Dual SSD USB A + Type C Portabl…</a>
     <div class="prod-brand"> · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -767,12 +830,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.2 </td>
   <td class="col-val col-trust"><span class="score-high">75</span></td>
-  <td class="col-essential col-buy"><a href="https://aax-us-east-retail-direct.amazon.com/x/c/JDObeE-uaYX_wMhm1TfxKwcAAAGfJLf0IwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDnYwZR/clv1c_ek-YBfHXEsTW3uLbE-9UGoKaSpmRYqTSgZEgO8Xy7TDGvsTvM2MaAqUOKhyyDAiqdHboSQQnJV_Mba_y8eo6tpOLcjuCOCsLI3WsfLSj1K-6m0Pb-n8he2fKrrm0IHyS0Z6brSxz89Gvs33jSE_eTUGwMNybmld6EnLY31erSYgrMQvdZk3pw5szY0rec0dfSHDNItgOhxeolGOg9EvYhiEJCUY7MHqz2xZycXjvHskeyKB8asVZFhlsPV3AAvV_WLkSBFAwsymcSO962-elKFMBIHvJZVEp8ulGiOJR9CG2RtPtuwfRlOTihYTNlBfgDEm0pGFrd8v-zBC7HOXZJsiv-5Lel5qYh_i0p9MiJIGGY4KBiRIDxe59TDuujhQdwzjmVyL-XqvngciRJrh2aO41RIgHPbNgh5sesCV-UmjBwAxhQ6izQE0Cgqv6xyxh3Xg7HMsyXQMr7DEMIV8Fh4MKm7mCbTE1nhtKSQQdYekGezI_5zkMpj12MKB653RUZ21nux939_b4lj8qSk217vgW_yOccE8pH0S2EAW--XcNdp8HKX3mXBNvSN47pe5EV5f9nrAvvdiIzYZmxetAIsDvHVJErG42kksE1SSwRWOgXYGD6-VfIp70_0dcByQWMo5llnBmfnLvWJUhnsnXM10DLU7Gw6B9s2iQQWt9T6lt5eCOd8buyYNxsX9msp2X4zL6hh7TYxtgqj95MZqTYBWQnV1jD80hvF0fQ75jeo2HqSXt6AUUiTrbEkcFae6_a1fCSuiG_IoWugXvA6FQrfotuBmMOYo6YVqbckBG73_SyYmTCFjDKDyiTu4rquDIfrVrekEWpd-TPb_OuGkfhAi1mtPgFfVXMyIR90yrxD0mOlQlgPDMeBYEFmQ09A5Y8TlfULk20pn-eB7MMp0n9DoMdSQVA5iwhq_L7D_9tfALjRNXMf2-l5YkonvBo5CblhIiryTJlRL8_2Q8WES84MREGpZ7V3aaozObyaBLRWKEfx2Nk3hux7NuOg7IhPBFFGywAYF3w2L80DPJ9Rn0R5rGwLfWdF5vQlHf3ShO8dHH-gEScfXDJJma_C49V3I5N8GJYOcA28oGWHLIRN_R5Gqt3TdDwiE5jOwtTMRhcC2yqSIOFSEQI5U4MbqmXzFOHbU3KSFDn4vIIxna9FpCvaUtUz_Lvw52NuU2ORXo19-tL37f5tzz5JMUn1ZOa_VorMDHDPUdGGj0Sf3KTe0wuWlashxEcRv-MdAvq4sZrVnuF8R1gKkv_DC8P40xwhiJuQhRelQWvVPCO8J9jKuos-OOz_t4I1-BsO-QZ7-U-Y4raioW3lksOSRQyJZRyrTEkDDaSi-UY1Qb6PYwzOpcOJNWYH3ADctndr9fgsHVSVpKyLtLv2eIRNLzzAGR6-YLzc6XcT4G-wB2l2mv6R3JDVCZn2QYnDGAxxURjx7rHbxyQ1E8o8xzNDOHPMZsSjmv50gkOkKNg501gpuZqbfAXEA14q2rfZMex_UegZ3fh9a98JjH632kKpo0SjO821FxAmbSIMpcrvTQ2oq1MBCjEi_i7ex68CEYtnNgxxFDMH2un1Ir_ru22LQzKKYPJBDkeIHIQOxoXXba-MG7t8eusE-Xyik3AaxyekbcpEZ2d7wE230l/https://www.amazon.com/Vansuny-USB-3-2-Portable-External/dp/B0DK6VR4JM/ref=sxin_19_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=best+external+SSD+speed+MB%2Fs+comparison&keywords=best+external+SSD+speed+MB%2Fs+comparison&pd_rd_i=B0DK6VR4JM&pd_rd_r=8d21f97c-1a24-4b2b-82eb-34d67b4e4c7a&pd_rd_w=t4SPm&pd_rd_wg=BMmlT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9ME1GHM7Z2N83VXGQK9A&qid=1783027462&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://aax-us-east-retail-direct.amazon.com/x/c/JDObeE-uaYX_wMhm1TfxKwcAAAGfJLf0IwEAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDnYwZR/clv1c_ek-YBfHXEsTW3uLbE-9UGoKaSpmRYqTSgZEgO8Xy7TDGvsTvM2MaAqUOKhyyDAiqdHboSQQnJV_Mba_y8eo6tpOLcjuCOCsLI3WsfLSj1K-6m0Pb-n8he2fKrrm0IHyS0Z6brSxz89Gvs33jSE_eTUGwMNybmld6EnLY31erSYgrMQvdZk3pw5szY0rec0dfSHDNItgOhxeolGOg9EvYhiEJCUY7MHqz2xZycXjvHskeyKB8asVZFhlsPV3AAvV_WLkSBFAwsymcSO962-elKFMBIHvJZVEp8ulGiOJR9CG2RtPtuwfRlOTihYTNlBfgDEm0pGFrd8v-zBC7HOXZJsiv-5Lel5qYh_i0p9MiJIGGY4KBiRIDxe59TDuujhQdwzjmVyL-XqvngciRJrh2aO41RIgHPbNgh5sesCV-UmjBwAxhQ6izQE0Cgqv6xyxh3Xg7HMsyXQMr7DEMIV8Fh4MKm7mCbTE1nhtKSQQdYekGezI_5zkMpj12MKB653RUZ21nux939_b4lj8qSk217vgW_yOccE8pH0S2EAW--XcNdp8HKX3mXBNvSN47pe5EV5f9nrAvvdiIzYZmxetAIsDvHVJErG42kksE1SSwRWOgXYGD6-VfIp70_0dcByQWMo5llnBmfnLvWJUhnsnXM10DLU7Gw6B9s2iQQWt9T6lt5eCOd8buyYNxsX9msp2X4zL6hh7TYxtgqj95MZqTYBWQnV1jD80hvF0fQ75jeo2HqSXt6AUUiTrbEkcFae6_a1fCSuiG_IoWugXvA6FQrfotuBmMOYo6YVqbckBG73_SyYmTCFjDKDyiTu4rquDIfrVrekEWpd-TPb_OuGkfhAi1mtPgFfVXMyIR90yrxD0mOlQlgPDMeBYEFmQ09A5Y8TlfULk20pn-eB7MMp0n9DoMdSQVA5iwhq_L7D_9tfALjRNXMf2-l5YkonvBo5CblhIiryTJlRL8_2Q8WES84MREGpZ7V3aaozObyaBLRWKEfx2Nk3hux7NuOg7IhPBFFGywAYF3w2L80DPJ9Rn0R5rGwLfWdF5vQlHf3ShO8dHH-gEScfXDJJma_C49V3I5N8GJYOcA28oGWHLIRN_R5Gqt3TdDwiE5jOwtTMRhcC2yqSIOFSEQI5U4MbqmXzFOHbU3KSFDn4vIIxna9FpCvaUtUz_Lvw52NuU2ORXo19-tL37f5tzz5JMUn1ZOa_VorMDHDPUdGGj0Sf3KTe0wuWlashxEcRv-MdAvq4sZrVnuF8R1gKkv_DC8P40xwhiJuQhRelQWvVPCO8J9jKuos-OOz_t4I1-BsO-QZ7-U-Y4raioW3lksOSRQyJZRyrTEkDDaSi-UY1Qb6PYwzOpcOJNWYH3ADctndr9fgsHVSVpKyLtLv2eIRNLzzAGR6-YLzc6XcT4G-wB2l2mv6R3JDVCZn2QYnDGAxxURjx7rHbxyQ1E8o8xzNDOHPMZsSjmv50gkOkKNg501gpuZqbfAXEA14q2rfZMex_UegZ3fh9a98JjH632kKpo0SjO821FxAmbSIMpcrvTQ2oq1MBCjEi_i7ex68CEYtnNgxxFDMH2un1Ir_ru22LQzKKYPJBDkeIHIQOxoXXba-MG7t8eusE-Xyik3AaxyekbcpEZ2d7wE230l/https://www.amazon.com/Vansuny-USB-3-2-Portable-External/dp/B0DK6VR4JM/ref=sxin_19_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=best+external+SSD+speed+MB%2Fs+comparison&keywords=best+external+SSD+speed+MB%2Fs+comparison&pd_rd_i=B0DK6VR4JM&pd_rd_r=8d21f97c-1a24-4b2b-82eb-34d67b4e4c7a&pd_rd_w=t4SPm&pd_rd_wg=BMmlT&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=9ME1GHM7Z2N83VXGQK9A&qid=1783027462&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0CGW18S6Y" data-tags="1000+ MB/s,USB 3.0,Mac Compatible,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/41n+bV47yGL.jpg" alt="Crucial 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Crucial-2TB-Portable-SSD-CT2000X9SSD902/dp/B0CGW18S6Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X9 2TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Co…</a>
+    <a href="https://www.amazon.com/Crucial-2TB-Portable-SSD-CT2000X9SSD902/dp/B0CGW18S6Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-3" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X9 2TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Co…</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -787,12 +850,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">95</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-2TB-Portable-SSD-CT2000X9SSD902/dp/B0CGW18S6Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-2TB-Portable-SSD-CT2000X9SSD902/dp/B0CGW18S6Y/ref=sr_1_3?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-3" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0C5JNWF58" data-tags="500+ MB/s,USB 3.2 Gen2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/71bBCTIvIIL.jpg" alt="SanDisk 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SanDisk-2TB-Portable-SSD-SDSSDE30-2T00-G26/dp/B0C5JNWF58/ref=sr_1_2?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="prod-link">SANDISK 2TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - Externa…</a>
+    <a href="https://www.amazon.com/SanDisk-2TB-Portable-SSD-SDSSDE30-2T00-G26/dp/B0C5JNWF58/ref=sr_1_2?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-2" target="_blank" rel="nofollow sponsored" class="prod-link">SANDISK 2TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - Externa…</a>
     <div class="prod-brand">SanDisk · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -807,12 +870,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">83</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-2TB-Portable-SSD-SDSSDE30-2T00-G26/dp/B0C5JNWF58/ref=sr_1_2?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-2TB-Portable-SSD-SDSSDE30-2T00-G26/dp/B0C5JNWF58/ref=sr_1_2?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-2" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0F332MNX7" data-tags="2000+ MB/s,USB 3.0,Mac Compatible,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/41rI1J9FcZL.jpg" alt="Crucial 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F332MNX7/ref=sr_1_5?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X10 2TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, …</a>
+    <a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F332MNX7/ref=sr_1_5?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-5" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X10 2TB Portable SSD, Up to 2,100MB/s, USB 3.2 USB-C, External Solid State Drive, …</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -827,12 +890,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">100</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F332MNX7/ref=sr_1_5?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-Portable-External-Compatible-Windows/dp/B0F332MNX7/ref=sr_1_5?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-5" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B08HN37XC1" data-tags="1000+ MB/s,USB 3.2 Gen2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/61zuR3UMnWL.jpg" alt="SanDisk 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=sr_1_1?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="prod-link">SANDISK 2TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 …</a>
+    <a href="https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=sr_1_1?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-1" target="_blank" rel="nofollow sponsored" class="prod-link">SANDISK 2TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 …</a>
     <div class="prod-brand">SanDisk · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -847,12 +910,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">88</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=sr_1_1?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=sr_1_1?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-1" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0CGW1FQV4" data-tags="1000+ MB/s,USB 3.0,Mac Compatible,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/41n+bV47yGL.jpg" alt="Crucial 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X9SSD902/dp/B0CGW1FQV4/ref=sr_1_2?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X9 1TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Co…</a>
+    <a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X9SSD902/dp/B0CGW1FQV4/ref=sr_1_2?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-2" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X9 1TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C, External Solid State Drive, Co…</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -867,12 +930,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">95</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X9SSD902/dp/B0CGW1FQV4/ref=sr_1_2?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X9SSD902/dp/B0CGW1FQV4/ref=sr_1_2?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-2" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B08GQ611G4" data-tags="USB 3.2 Gen2,3yr Warranty,Renewed">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/61ABYVLTsiL.jpg" alt="Samsung 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Samsung-External-Portable-Hardware-Encryption/dp/B08GQ611G4/ref=sr_1_5?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung T7 2TB External USB 3.2 Gen 2 Portable SSD w/ Hardware Encryption - Gray (Renewed)</a>
+    <a href="https://www.amazon.com/Samsung-External-Portable-Hardware-Encryption/dp/B08GQ611G4/ref=sr_1_5?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-5" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung T7 2TB External USB 3.2 Gen 2 Portable SSD w/ Hardware Encryption - Gray (Renewed)</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -887,12 +950,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-warn">♻️ Renewed</span></td>
   <td class="col-rely col-rating">⭐ 5.0 </td>
   <td class="col-val col-trust"><span class="score-mid">58</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Samsung-External-Portable-Hardware-Encryption/dp/B08GQ611G4/ref=sr_1_5?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Samsung-External-Portable-Hardware-Encryption/dp/B08GQ611G4/ref=sr_1_5?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-5" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0G2RDTVK1" data-tags="1000+ MB/s,USB 3.2 Gen2x2,PS5 Ready,Xbox Ready,Mac Compatible,Amazon Retail">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/51mCQmESv+L.jpg" alt=" 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://aax-us-east-retail-direct.amazon.com/x/c/JIWD1e7Sy4WrnGaitSDwVkgAAAGfJLfp_wEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDEgICBIHxqh/clv1c_ek-ABfHXbcbWXixXZBshmoDaPoteDoPLal4DJ5NzPYPOjkQA6IQ8wJpwtRn8FQi8SQG1RePMcl95E3l2m2KOEKip82qJiYA4V2MnfsPHUPzwqMG7bW_VDk6MYjjwrL_z9jnw6MPNET3NDAWhM-LhG3f7ItqQikVqoORzTDaO5ta_2W3QR0iql-s6OwhFgD_22WXDO7NBJT_QhYWr50jBJzuPUFqxzZpW5ZANXShLA87dl_jc0teavh4MDZFDcvjLz07LTqs6WsE-1oNMvwvjn7PSo06d2c-OBXznDiDb33x5rcmD86zwqP69gtMa7nT81ZoV3lOSwPtAu0yHey_sGhhcAIxSmxhylggwk9beU_dvC0tf6ajDA-kLxYm6-LiuH1ABOLdFRSR19ovdzy_-VAhRFwVEkvFp0R9NTEXKRscFBF0c1eyvebnGvJJZFQrZ6I9mjplocbxSQ2Jws2MnrhhLk9TcshTip5hAqvnvT_Skd33eTuYFA9Lns-bawXtVtL8JEIYP5KIvBEAXetlARpUaA4FEgoVRxh8JSg3va1vAUhHxozIWRytlhh6PxH5G8GSQrGOE7u5RzJUUgZIau6-MTNlQ6GVUgASeJpHD8OMPZZGYw6z2llLg_4BDDCw6jPbDa64OQzhj9XZ9xOP5c6Nn9gfR5v5Yz5h6C2PQ6b4xnSHUeXoM4AKpqV_AIEkDca16dMGH2CGcUlIwvpY4unGxqdX6i4z9iQqPdTJ376k15VcmrQdJmnFiFgTbbVyvql12IYP8iKhWsZR2mbGfU3HBXAKsaP2URDBsv0rZwpIras3siwsg2Tm3R9jfr8uVb34qeTC-0JfdlFLMhcGmua5HfYYQ4VEuUZORHI89AhqHrhkUYKBqq3Sr76Hf1QcPrwP89JXojvKk9lqAV3BbLLQJZboldz3iiv1dOAxgSGEN3c0Ee73lLHBriyAuovnBMb98vrclDQaMftGEeSntgykD5MX-gcvp1R-c14vw7LYlgG8k9OrAAg6kVOSCKDRDgvFHJGSL0Gw-JSdD0BZB1v05lZPEcefcm908OUu62z62Pwe_hp3yvIQi_GBNPUPvaBntjPXp9wO8DEBlHlR9TEKZ7-ticdMaEmqc-oaVnnTeYH8MU1r50SIFLpHFD0hKZeJ3bpox-ZL3iMKx5TbeaxfnnCRWz_XQPNebUvePIfe0t4DzcltYTEX3ifMwzEBxqfWr7fCcqPMEo2NSZpDV1mOFKRMDEJmuTHTD4WUiLT4SQ8lFzxSD6dDnOppgP-BvijHF5iKzwnWg9TomRc2i0GI_4jnsZFsM0CQGtgvbSq-fassaXEBGRxZ7JMBcUtJgEVpbGEzUj2BiGJRJ8kLrL1bf8nH1Z2QaSOSCgL9hY7WtJ1SpTTOReLxpuw61d6aDnWXBXNIifvTmx5vN8W8w90djcvfcYZf2fXIDNSNlFxRPnKQl6BUJr6CcHEvrTTQQi8IGO9V0EJwAyCZVn2phwuwAAZAML2AWsAYEFSApm0jbYLe5eHd1ouzhb_sdy_zldXXpsrFpE6JM2CSLJePHpfFkcllUQ38cXSeCw5gCQBZ7KPosuvdN9q610iC_NHPmDVHmquMDARrKG2eQRvsteQmvHiGvH85at3-Bta7WlF4/https://www.amazon.com/KingSpec-MemoStone-Portable-External-Battery/dp/B0G2RDTVK1/ref=sxin_28_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=portable+external+SSD+USB-C+2TB&keywords=portable+external+SSD+USB-C+2TB&pd_rd_i=B0G2RDTVK1&pd_rd_r=cd58d5f4-3507-40c7-841a-78a1c214e85f&pd_rd_w=8ExzF&pd_rd_wg=P0nVd&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=A0FNE5M601Y3NHP1BBYW&qid=1783027460&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored noopener" class="prod-link">KingSpec MemoStone ZS301 2TB Portable SSD, USB-C External Solid State Drive with 1900MB/s,…</a>
+    <a href="https://aax-us-east-retail-direct.amazon.com/x/c/JIWD1e7Sy4WrnGaitSDwVkgAAAGfJLfp_wEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDEgICBIHxqh/clv1c_ek-ABfHXbcbWXixXZBshmoDaPoteDoPLal4DJ5NzPYPOjkQA6IQ8wJpwtRn8FQi8SQG1RePMcl95E3l2m2KOEKip82qJiYA4V2MnfsPHUPzwqMG7bW_VDk6MYjjwrL_z9jnw6MPNET3NDAWhM-LhG3f7ItqQikVqoORzTDaO5ta_2W3QR0iql-s6OwhFgD_22WXDO7NBJT_QhYWr50jBJzuPUFqxzZpW5ZANXShLA87dl_jc0teavh4MDZFDcvjLz07LTqs6WsE-1oNMvwvjn7PSo06d2c-OBXznDiDb33x5rcmD86zwqP69gtMa7nT81ZoV3lOSwPtAu0yHey_sGhhcAIxSmxhylggwk9beU_dvC0tf6ajDA-kLxYm6-LiuH1ABOLdFRSR19ovdzy_-VAhRFwVEkvFp0R9NTEXKRscFBF0c1eyvebnGvJJZFQrZ6I9mjplocbxSQ2Jws2MnrhhLk9TcshTip5hAqvnvT_Skd33eTuYFA9Lns-bawXtVtL8JEIYP5KIvBEAXetlARpUaA4FEgoVRxh8JSg3va1vAUhHxozIWRytlhh6PxH5G8GSQrGOE7u5RzJUUgZIau6-MTNlQ6GVUgASeJpHD8OMPZZGYw6z2llLg_4BDDCw6jPbDa64OQzhj9XZ9xOP5c6Nn9gfR5v5Yz5h6C2PQ6b4xnSHUeXoM4AKpqV_AIEkDca16dMGH2CGcUlIwvpY4unGxqdX6i4z9iQqPdTJ376k15VcmrQdJmnFiFgTbbVyvql12IYP8iKhWsZR2mbGfU3HBXAKsaP2URDBsv0rZwpIras3siwsg2Tm3R9jfr8uVb34qeTC-0JfdlFLMhcGmua5HfYYQ4VEuUZORHI89AhqHrhkUYKBqq3Sr76Hf1QcPrwP89JXojvKk9lqAV3BbLLQJZboldz3iiv1dOAxgSGEN3c0Ee73lLHBriyAuovnBMb98vrclDQaMftGEeSntgykD5MX-gcvp1R-c14vw7LYlgG8k9OrAAg6kVOSCKDRDgvFHJGSL0Gw-JSdD0BZB1v05lZPEcefcm908OUu62z62Pwe_hp3yvIQi_GBNPUPvaBntjPXp9wO8DEBlHlR9TEKZ7-ticdMaEmqc-oaVnnTeYH8MU1r50SIFLpHFD0hKZeJ3bpox-ZL3iMKx5TbeaxfnnCRWz_XQPNebUvePIfe0t4DzcltYTEX3ifMwzEBxqfWr7fCcqPMEo2NSZpDV1mOFKRMDEJmuTHTD4WUiLT4SQ8lFzxSD6dDnOppgP-BvijHF5iKzwnWg9TomRc2i0GI_4jnsZFsM0CQGtgvbSq-fassaXEBGRxZ7JMBcUtJgEVpbGEzUj2BiGJRJ8kLrL1bf8nH1Z2QaSOSCgL9hY7WtJ1SpTTOReLxpuw61d6aDnWXBXNIifvTmx5vN8W8w90djcvfcYZf2fXIDNSNlFxRPnKQl6BUJr6CcHEvrTTQQi8IGO9V0EJwAyCZVn2phwuwAAZAML2AWsAYEFSApm0jbYLe5eHd1ouzhb_sdy_zldXXpsrFpE6JM2CSLJePHpfFkcllUQ38cXSeCw5gCQBZ7KPosuvdN9q610iC_NHPmDVHmquMDARrKG2eQRvsteQmvHiGvH85at3-Bta7WlF4/https://www.amazon.com/KingSpec-MemoStone-Portable-External-Battery/dp/B0G2RDTVK1/ref=sxin_28_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=portable+external+SSD+USB-C+2TB&keywords=portable+external+SSD+USB-C+2TB&pd_rd_i=B0G2RDTVK1&pd_rd_r=cd58d5f4-3507-40c7-841a-78a1c214e85f&pd_rd_w=8ExzF&pd_rd_wg=P0nVd&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=A0FNE5M601Y3NHP1BBYW&qid=1783027460&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored" class="prod-link">KingSpec MemoStone ZS301 2TB Portable SSD, USB-C External Solid State Drive with 1900MB/s,…</a>
     <div class="prod-brand"> · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -907,12 +970,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.2 </td>
   <td class="col-val col-trust"><span class="score-high">75</span></td>
-  <td class="col-essential col-buy"><a href="https://aax-us-east-retail-direct.amazon.com/x/c/JIWD1e7Sy4WrnGaitSDwVkgAAAGfJLfp_wEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDEgICBIHxqh/clv1c_ek-ABfHXbcbWXixXZBshmoDaPoteDoPLal4DJ5NzPYPOjkQA6IQ8wJpwtRn8FQi8SQG1RePMcl95E3l2m2KOEKip82qJiYA4V2MnfsPHUPzwqMG7bW_VDk6MYjjwrL_z9jnw6MPNET3NDAWhM-LhG3f7ItqQikVqoORzTDaO5ta_2W3QR0iql-s6OwhFgD_22WXDO7NBJT_QhYWr50jBJzuPUFqxzZpW5ZANXShLA87dl_jc0teavh4MDZFDcvjLz07LTqs6WsE-1oNMvwvjn7PSo06d2c-OBXznDiDb33x5rcmD86zwqP69gtMa7nT81ZoV3lOSwPtAu0yHey_sGhhcAIxSmxhylggwk9beU_dvC0tf6ajDA-kLxYm6-LiuH1ABOLdFRSR19ovdzy_-VAhRFwVEkvFp0R9NTEXKRscFBF0c1eyvebnGvJJZFQrZ6I9mjplocbxSQ2Jws2MnrhhLk9TcshTip5hAqvnvT_Skd33eTuYFA9Lns-bawXtVtL8JEIYP5KIvBEAXetlARpUaA4FEgoVRxh8JSg3va1vAUhHxozIWRytlhh6PxH5G8GSQrGOE7u5RzJUUgZIau6-MTNlQ6GVUgASeJpHD8OMPZZGYw6z2llLg_4BDDCw6jPbDa64OQzhj9XZ9xOP5c6Nn9gfR5v5Yz5h6C2PQ6b4xnSHUeXoM4AKpqV_AIEkDca16dMGH2CGcUlIwvpY4unGxqdX6i4z9iQqPdTJ376k15VcmrQdJmnFiFgTbbVyvql12IYP8iKhWsZR2mbGfU3HBXAKsaP2URDBsv0rZwpIras3siwsg2Tm3R9jfr8uVb34qeTC-0JfdlFLMhcGmua5HfYYQ4VEuUZORHI89AhqHrhkUYKBqq3Sr76Hf1QcPrwP89JXojvKk9lqAV3BbLLQJZboldz3iiv1dOAxgSGEN3c0Ee73lLHBriyAuovnBMb98vrclDQaMftGEeSntgykD5MX-gcvp1R-c14vw7LYlgG8k9OrAAg6kVOSCKDRDgvFHJGSL0Gw-JSdD0BZB1v05lZPEcefcm908OUu62z62Pwe_hp3yvIQi_GBNPUPvaBntjPXp9wO8DEBlHlR9TEKZ7-ticdMaEmqc-oaVnnTeYH8MU1r50SIFLpHFD0hKZeJ3bpox-ZL3iMKx5TbeaxfnnCRWz_XQPNebUvePIfe0t4DzcltYTEX3ifMwzEBxqfWr7fCcqPMEo2NSZpDV1mOFKRMDEJmuTHTD4WUiLT4SQ8lFzxSD6dDnOppgP-BvijHF5iKzwnWg9TomRc2i0GI_4jnsZFsM0CQGtgvbSq-fassaXEBGRxZ7JMBcUtJgEVpbGEzUj2BiGJRJ8kLrL1bf8nH1Z2QaSOSCgL9hY7WtJ1SpTTOReLxpuw61d6aDnWXBXNIifvTmx5vN8W8w90djcvfcYZf2fXIDNSNlFxRPnKQl6BUJr6CcHEvrTTQQi8IGO9V0EJwAyCZVn2phwuwAAZAML2AWsAYEFSApm0jbYLe5eHd1ouzhb_sdy_zldXXpsrFpE6JM2CSLJePHpfFkcllUQ38cXSeCw5gCQBZ7KPosuvdN9q610iC_NHPmDVHmquMDARrKG2eQRvsteQmvHiGvH85at3-Bta7WlF4/https://www.amazon.com/KingSpec-MemoStone-Portable-External-Battery/dp/B0G2RDTVK1/ref=sxin_28_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=portable+external+SSD+USB-C+2TB&keywords=portable+external+SSD+USB-C+2TB&pd_rd_i=B0G2RDTVK1&pd_rd_r=cd58d5f4-3507-40c7-841a-78a1c214e85f&pd_rd_w=8ExzF&pd_rd_wg=P0nVd&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=A0FNE5M601Y3NHP1BBYW&qid=1783027460&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://aax-us-east-retail-direct.amazon.com/x/c/JIWD1e7Sy4WrnGaitSDwVkgAAAGfJLfp_wEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDEgICBIHxqh/clv1c_ek-ABfHXbcbWXixXZBshmoDaPoteDoPLal4DJ5NzPYPOjkQA6IQ8wJpwtRn8FQi8SQG1RePMcl95E3l2m2KOEKip82qJiYA4V2MnfsPHUPzwqMG7bW_VDk6MYjjwrL_z9jnw6MPNET3NDAWhM-LhG3f7ItqQikVqoORzTDaO5ta_2W3QR0iql-s6OwhFgD_22WXDO7NBJT_QhYWr50jBJzuPUFqxzZpW5ZANXShLA87dl_jc0teavh4MDZFDcvjLz07LTqs6WsE-1oNMvwvjn7PSo06d2c-OBXznDiDb33x5rcmD86zwqP69gtMa7nT81ZoV3lOSwPtAu0yHey_sGhhcAIxSmxhylggwk9beU_dvC0tf6ajDA-kLxYm6-LiuH1ABOLdFRSR19ovdzy_-VAhRFwVEkvFp0R9NTEXKRscFBF0c1eyvebnGvJJZFQrZ6I9mjplocbxSQ2Jws2MnrhhLk9TcshTip5hAqvnvT_Skd33eTuYFA9Lns-bawXtVtL8JEIYP5KIvBEAXetlARpUaA4FEgoVRxh8JSg3va1vAUhHxozIWRytlhh6PxH5G8GSQrGOE7u5RzJUUgZIau6-MTNlQ6GVUgASeJpHD8OMPZZGYw6z2llLg_4BDDCw6jPbDa64OQzhj9XZ9xOP5c6Nn9gfR5v5Yz5h6C2PQ6b4xnSHUeXoM4AKpqV_AIEkDca16dMGH2CGcUlIwvpY4unGxqdX6i4z9iQqPdTJ376k15VcmrQdJmnFiFgTbbVyvql12IYP8iKhWsZR2mbGfU3HBXAKsaP2URDBsv0rZwpIras3siwsg2Tm3R9jfr8uVb34qeTC-0JfdlFLMhcGmua5HfYYQ4VEuUZORHI89AhqHrhkUYKBqq3Sr76Hf1QcPrwP89JXojvKk9lqAV3BbLLQJZboldz3iiv1dOAxgSGEN3c0Ee73lLHBriyAuovnBMb98vrclDQaMftGEeSntgykD5MX-gcvp1R-c14vw7LYlgG8k9OrAAg6kVOSCKDRDgvFHJGSL0Gw-JSdD0BZB1v05lZPEcefcm908OUu62z62Pwe_hp3yvIQi_GBNPUPvaBntjPXp9wO8DEBlHlR9TEKZ7-ticdMaEmqc-oaVnnTeYH8MU1r50SIFLpHFD0hKZeJ3bpox-ZL3iMKx5TbeaxfnnCRWz_XQPNebUvePIfe0t4DzcltYTEX3ifMwzEBxqfWr7fCcqPMEo2NSZpDV1mOFKRMDEJmuTHTD4WUiLT4SQ8lFzxSD6dDnOppgP-BvijHF5iKzwnWg9TomRc2i0GI_4jnsZFsM0CQGtgvbSq-fassaXEBGRxZ7JMBcUtJgEVpbGEzUj2BiGJRJ8kLrL1bf8nH1Z2QaSOSCgL9hY7WtJ1SpTTOReLxpuw61d6aDnWXBXNIifvTmx5vN8W8w90djcvfcYZf2fXIDNSNlFxRPnKQl6BUJr6CcHEvrTTQQi8IGO9V0EJwAyCZVn2phwuwAAZAML2AWsAYEFSApm0jbYLe5eHd1ouzhb_sdy_zldXXpsrFpE6JM2CSLJePHpfFkcllUQ38cXSeCw5gCQBZ7KPosuvdN9q610iC_NHPmDVHmquMDARrKG2eQRvsteQmvHiGvH85at3-Bta7WlF4/https://www.amazon.com/KingSpec-MemoStone-Portable-External-Battery/dp/B0G2RDTVK1/ref=sxin_28_sbv_search_btf?content-id=amzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699%3Aamzn1.sym.c8b39f81-ded8-4d75-80c2-6dfa03cbb699&cv_ct_cx=portable+external+SSD+USB-C+2TB&keywords=portable+external+SSD+USB-C+2TB&pd_rd_i=B0G2RDTVK1&pd_rd_r=cd58d5f4-3507-40c7-841a-78a1c214e85f&pd_rd_w=8ExzF&pd_rd_wg=P0nVd&pf_rd_p=c8b39f81-ded8-4d75-80c2-6dfa03cbb699&pf_rd_r=A0FNE5M601Y3NHP1BBYW&qid=1783027460&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-5190daf0-67e3-427c-bea6-c72c1df98776" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0C9WHSZZN" data-tags="1000+ MB/s,USB 3.2 Gen2,Mac Compatible,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/51NUoSidCbL.jpg" alt="Crucial 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Crucial-Pro-2TB-Portable-CT2000X9PROSSD902/dp/B0C9WHSZZN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-6" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X9 Pro 2TB Portable SSD, Up to 1050MB/s Read & Write, 3.2 USB-C, External Solid St…</a>
+    <a href="https://www.amazon.com/Crucial-Pro-2TB-Portable-CT2000X9PROSSD902/dp/B0C9WHSZZN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-6" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X9 Pro 2TB Portable SSD, Up to 1050MB/s Read & Write, 3.2 USB-C, External Solid St…</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -927,12 +990,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">95</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-Pro-2TB-Portable-CT2000X9PROSSD902/dp/B0C9WHSZZN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-6" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-Pro-2TB-Portable-CT2000X9PROSSD902/dp/B0C9WHSZZN/ref=sr_1_6?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-6" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0F37WWYY4" data-tags="1000+ MB/s,USB 3.2 Gen2,PS5 Ready,Xbox Ready,Mac Compatible,Amazon Retail">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/51er2gFUVkL.jpg" alt="Lexar 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0F37WWYY4/ref=sr_1_7?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Lexar ES3 1TB External SSD, USB 3.2 Gen2 Portable SSD, PSSD Up to 1050MB/s Read, 1000MB/s …</a>
+    <a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0F37WWYY4/ref=sr_1_7?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-7" target="_blank" rel="nofollow sponsored" class="prod-link">Lexar ES3 1TB External SSD, USB 3.2 Gen2 Portable SSD, PSSD Up to 1050MB/s Read, 1000MB/s …</a>
     <div class="prod-brand">Lexar · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -947,12 +1010,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.4 </td>
   <td class="col-val col-trust"><span class="score-high">75</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0F37WWYY4/ref=sr_1_7?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0F37WWYY4/ref=sr_1_7?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-7" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0DYDHLN81" data-tags="1000+ MB/s,USB 3.2 Gen2,PS5 Ready,Xbox Ready,Mac Compatible,Amazon Retail">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/51xD2RTskKL.jpg" alt="Lexar 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0DYDHLN81/ref=sr_1_9?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Lexar ES3 1TB External SSD, USB 3.2 Gen2 Portable SSD, PSSD Up to 1050MB/s Read, 1000MB/s …</a>
+    <a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0DYDHLN81/ref=sr_1_9?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-9" target="_blank" rel="nofollow sponsored" class="prod-link">Lexar ES3 1TB External SSD, USB 3.2 Gen2 Portable SSD, PSSD Up to 1050MB/s Read, 1000MB/s …</a>
     <div class="prod-brand">Lexar · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -967,12 +1030,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.4 </td>
   <td class="col-val col-trust"><span class="score-high">75</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0DYDHLN81/ref=sr_1_9?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Lexar-External-Portable-1050MB-Compatible/dp/B0DYDHLN81/ref=sr_1_9?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-9" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0C5JQ68FY" data-tags="500+ MB/s,USB 3.2 Gen2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/71bBCTIvIIL.jpg" alt="SanDisk 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SanDisk-1TB-Portable-SSD-SDSSDE30-1T00-G26/dp/B0C5JQ68FY/ref=sr_1_4?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="prod-link">SANDISK 1TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - Externa…</a>
+    <a href="https://www.amazon.com/SanDisk-1TB-Portable-SSD-SDSSDE30-1T00-G26/dp/B0C5JQ68FY/ref=sr_1_4?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-4" target="_blank" rel="nofollow sponsored" class="prod-link">SANDISK 1TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - Externa…</a>
     <div class="prod-brand">SanDisk · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -987,12 +1050,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">83</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-1TB-Portable-SSD-SDSSDE30-1T00-G26/dp/B0C5JQ68FY/ref=sr_1_4?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-1TB-Portable-SSD-SDSSDE30-1T00-G26/dp/B0C5JQ68FY/ref=sr_1_4?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-4" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B08F1VVBL9" data-tags="Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/81y8P1up-PL.jpg" alt="Western Digital 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F1VVBL9/ref=sr_1_2?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Western Digital 2TB My Passport SSD Portable External Solid State Drive, Gray, Sturdy and …</a>
+    <a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F1VVBL9/ref=sr_1_2?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-2" target="_blank" rel="nofollow sponsored" class="prod-link">Western Digital 2TB My Passport SSD Portable External Solid State Drive, Gray, Sturdy and …</a>
     <div class="prod-brand">Western Digital · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -1007,12 +1070,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F1VVBL9/ref=sr_1_2?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F1VVBL9/ref=sr_1_2?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-2" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0BGKXX9TK" data-tags="1000+ MB/s,USB 3.2 Gen2,Mac Compatible,Amazon Retail">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/71VtTtHU7DL.jpg" alt=" 0.5TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SSK-Portable-External-Transmission-Smartphone/dp/B0BGKXX9TK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-6" target="_blank" rel="nofollow sponsored noopener" class="prod-link">SSK Portable SSD 500GB External Solid State Drives, up to 1050MB/s USB C SSD External Hard…</a>
+    <a href="https://www.amazon.com/SSK-Portable-External-Transmission-Smartphone/dp/B0BGKXX9TK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-6" target="_blank" rel="nofollow sponsored" class="prod-link">SSK Portable SSD 500GB External Solid State Drives, up to 1050MB/s USB C SSD External Hard…</a>
     <div class="prod-brand"> · Portable</div>
   </td>
   <td class="col-essential col-cap">0.5TB</td>
@@ -1027,12 +1090,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.4 </td>
   <td class="col-val col-trust"><span class="score-high">75</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SSK-Portable-External-Transmission-Smartphone/dp/B0BGKXX9TK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-6" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SSK-Portable-External-Transmission-Smartphone/dp/B0BGKXX9TK/ref=sr_1_6?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-6" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B08FSZT2J7" data-tags="500+ MB/s,USB 3.0,PS5 Ready,Xbox Ready,Mac Compatible,Amazon Retail,5yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/41toBPLCXML.jpg" alt="Crucial 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X6SSD9/dp/B08FSZT2J7/ref=sr_1_8?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-8" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Crucial X6 1TB Portable SSD – Up to 800MB/s, USB 3.2 – External Solid State Drive for PC, …</a>
+    <a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X6SSD9/dp/B08FSZT2J7/ref=sr_1_8?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-8" target="_blank" rel="nofollow sponsored" class="prod-link">Crucial X6 1TB Portable SSD – Up to 800MB/s, USB 3.2 – External Solid State Drive for PC, …</a>
     <div class="prod-brand">Crucial · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1047,12 +1110,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">90</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X6SSD9/dp/B08FSZT2J7/ref=sr_1_8?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-8" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Crucial-1TB-Portable-SSD-CT1000X6SSD9/dp/B08FSZT2J7/ref=sr_1_8?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-8" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0874XWW23" data-tags="1000+ MB/s,USB 3.2 Gen2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/91YfRIy7kYL.jpg" alt="Samsung 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SAMSUNG-Portable-SSD-2TB-MU-PC2T0T/dp/B0874XWW23/ref=sr_1_5?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung T7 Portable SSD, 2TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 G…</a>
+    <a href="https://www.amazon.com/SAMSUNG-Portable-SSD-2TB-MU-PC2T0T/dp/B0874XWW23/ref=sr_1_5?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-5" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung T7 Portable SSD, 2TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 G…</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -1067,12 +1130,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.7 </td>
   <td class="col-val col-trust"><span class="score-high">88</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-SSD-2TB-MU-PC2T0T/dp/B0874XWW23/ref=sr_1_5?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-SSD-2TB-MU-PC2T0T/dp/B0874XWW23/ref=sr_1_5?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-5" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B08F1MRQFD" data-tags="Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/61fqaXWw7xL.jpg" alt="WD 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Passport-External-Portable-Drive-WDBAGF0020BBL-WESN/dp/B08F1MRQFD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD 2TB My Passport SSD Portable External Solid State Drive, Blue, Sturdy and Blazing Fast,…</a>
+    <a href="https://www.amazon.com/Passport-External-Portable-Drive-WDBAGF0020BBL-WESN/dp/B08F1MRQFD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-3" target="_blank" rel="nofollow sponsored" class="prod-link">WD 2TB My Passport SSD Portable External Solid State Drive, Blue, Sturdy and Blazing Fast,…</a>
     <div class="prod-brand">WD · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -1087,12 +1150,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-External-Portable-Drive-WDBAGF0020BBL-WESN/dp/B08F1MRQFD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Passport-External-Portable-Drive-WDBAGF0020BBL-WESN/dp/B08F1MRQFD/ref=sr_1_3?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-3" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B08F27QGHX" data-tags="Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/81y8P1up-PL.jpg" alt="Western Digital 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F27QGHX/ref=sr_1_1?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Western Digital 1TB My Passport SSD Portable External Solid State Drive, Gray, Sturdy and …</a>
+    <a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F27QGHX/ref=sr_1_1?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-1" target="_blank" rel="nofollow sponsored" class="prod-link">Western Digital 1TB My Passport SSD Portable External Solid State Drive, Gray, Sturdy and …</a>
     <div class="prod-brand">Western Digital · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1107,12 +1170,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.5 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F27QGHX/ref=sr_1_1?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Western-Digital-Passport-Protection-Encryption/dp/B08F27QGHX/ref=sr_1_1?dib=eyJ2IjoiMSJ9.rXDQZWX1LRUUIXqZo5TOxBjuQDesSAWfA3qslpF3t6yOMccxWra7iyFXe1bZhvUDxfH2kYfnU8A7Uil6vrNZn8mDXW_FJCUxQFtJZGGPtpX2LhuiI5akwluVtYa24csDG2XHmomwWndJ662hk1PymHzSp3AWWZTlWekOw_IQY0eRpofDADOvg_coe79A7BIa2Jf1yhzI75vbol1wd83qJeeY85bIcCVaBp7hYn_BSGY.jXEaYWzJ-sykQf2Oumdg8ry8cavNBnXOfCkMjn_a2kg&dib_tag=se&keywords=WD+My+Passport+SSD+external&qid=1783027467&sr=8-1" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B08GTYFC37" data-tags="1000+ MB/s,USB 3.2 Gen2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/61zuR3UMnWL.jpg" alt="SanDisk 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SanDisk-1TB-Extreme-Portable-SDSSDE61-1T00-G25/dp/B08GTYFC37/ref=sr_1_10?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-10" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Sandisk 1TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 …</a>
+    <a href="https://www.amazon.com/SanDisk-1TB-Extreme-Portable-SDSSDE61-1T00-G25/dp/B08GTYFC37/ref=sr_1_10?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-10" target="_blank" rel="nofollow sponsored" class="prod-link">Sandisk 1TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 …</a>
     <div class="prod-brand">SanDisk · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1127,12 +1190,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.6 </td>
   <td class="col-val col-trust"><span class="score-high">88</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-1TB-Extreme-Portable-SDSSDE61-1T00-G25/dp/B08GTYFC37/ref=sr_1_10?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-10" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SanDisk-1TB-Extreme-Portable-SDSSDE61-1T00-G25/dp/B08GTYFC37/ref=sr_1_10?dib=eyJ2IjoiMSJ9.LpBmwm-OYbz7AYu1CtfAOMSX5jP7O9-u8FgMYZWTCDAcrX6v0oojDOYff1qeTY3y3RhhjGjqOYmpe6IcXke2eQvM7KuKUIcDcDMZvXm1GjKZVQEFHP3OtYh-SoJgXCNJ0u8yUW4XosC6SAYnTDSmEc2dzPwNxlCgvdfeeAorAlkH2em92Y3bBdga1F9oJbHZz9lBMdCqHaHkaaAicxwOOY9RrtZWJOfCdhmBh2JVr6k.9RRWEN_wsTg5FUZkzI_a5irCoedngZALKb-iU0EBosw&dib_tag=se&keywords=Crucial+X8+X9+external+SSD&qid=1783027470&sr=8-10" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0DN7CYYSD" data-tags="2000+ MB/s,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/61uDl4amtnL.jpg" alt=" 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/WD_BLACK-SN7100-Internal-Gaming-Solid/dp/B0DN7CYYSD/ref=sr_1_9?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="prod-link">WD_Black SN7100 1TB NVMe SSD - Gen4 PCIe, M.2 2280, Up to 7,250 MB/s Read Speed, Up to 6,9…</a>
+    <a href="https://www.amazon.com/WD_BLACK-SN7100-Internal-Gaming-Solid/dp/B0DN7CYYSD/ref=sr_1_9?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-9" target="_blank" rel="nofollow sponsored" class="prod-link">WD_Black SN7100 1TB NVMe SSD - Gen4 PCIe, M.2 2280, Up to 7,250 MB/s Read Speed, Up to 6,9…</a>
     <div class="prod-brand"> · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1147,12 +1210,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.8 </td>
   <td class="col-val col-trust"><span class="score-high">93</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/WD_BLACK-SN7100-Internal-Gaming-Solid/dp/B0DN7CYYSD/ref=sr_1_9?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-9" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/WD_BLACK-SN7100-Internal-Gaming-Solid/dp/B0DN7CYYSD/ref=sr_1_9?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-9" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0CHFSWM2P" data-tags="2000+ MB/s,USB 3.2 Gen2x2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/71EESd1deTL.jpg" alt="Samsung 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG1T0B-AM/dp/B0CHFSWM2P/ref=sr_1_3?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung T9 Portable SSD 1TB, USB 3.2 Gen 2x2 External Solid State Drive, Seq. Read Speeds …</a>
+    <a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG1T0B-AM/dp/B0CHFSWM2P/ref=sr_1_3?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-3" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung T9 Portable SSD 1TB, USB 3.2 Gen 2x2 External Solid State Drive, Seq. Read Speeds …</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1167,12 +1230,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.7 </td>
   <td class="col-val col-trust"><span class="score-high">93</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG1T0B-AM/dp/B0CHFSWM2P/ref=sr_1_3?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-3" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG1T0B-AM/dp/B0CHFSWM2P/ref=sr_1_3?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-3" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0CW2616J3" data-tags="USB 3.0,4TB+,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/71lqAx0yX2L.jpg" alt="Samsung 4TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SAMSUNG-MU-PE4T0S-Portable-Converter-Adapter/dp/B0CW2616J3/ref=sr_1_10?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-10" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung MU-PE4T0S/AM T7 4TB Shield Portable SSD, USB 3.2, Black Bundle with Hard Shell Cas…</a>
+    <a href="https://www.amazon.com/SAMSUNG-MU-PE4T0S-Portable-Converter-Adapter/dp/B0CW2616J3/ref=sr_1_10?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-10" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung MU-PE4T0S/AM T7 4TB Shield Portable SSD, USB 3.2, Black Bundle with Hard Shell Cas…</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">4TB</td>
@@ -1187,12 +1250,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.3 </td>
   <td class="col-val col-trust"><span class="score-mid">73</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-MU-PE4T0S-Portable-Converter-Adapter/dp/B0CW2616J3/ref=sr_1_10?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-10" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-MU-PE4T0S-Portable-Converter-Adapter/dp/B0CW2616J3/ref=sr_1_10?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-10" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0CHFS9K14" data-tags="2000+ MB/s,USB 3.2 Gen2x2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/71EESd1deTL.jpg" alt="Samsung 2TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG2T0B-AM/dp/B0CHFS9K14/ref=sr_1_7?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung T9 Portable SSD 2TB, USB 3.2 Gen 2x2 External Solid State Drive, Seq. Read Speeds …</a>
+    <a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG2T0B-AM/dp/B0CHFS9K14/ref=sr_1_7?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-7" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung T9 Portable SSD 2TB, USB 3.2 Gen 2x2 External Solid State Drive, Seq. Read Speeds …</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">2TB</td>
@@ -1207,12 +1270,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.7 </td>
   <td class="col-val col-trust"><span class="score-high">93</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG2T0B-AM/dp/B0CHFS9K14/ref=sr_1_7?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-7" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-Professionals-MU-PG2T0B-AM/dp/B0CHFS9K14/ref=sr_1_7?dib=eyJ2IjoiMSJ9.7NI-x4CJkWg0EvWsMhf43MiBT_gZNNJbpEG_GS_JrWr7jvW-X8l8RI-yM1EEkBklVYlNgQiCVqeQ-hzcU0tPD4o515suqMIkj8IH8NpQXO5iZUpCcBK9gTOyylHIVDI-uJzprUPBFZ8DNLw9LWZOS3MzIooqqWFyahiwf47CJzc02bbwCv4c8oGuRfPjo5W3Beb1g51Y38Xy39RceL0AssK-7unlPHviE9TdiyGimwE.NIpkbCfJ774laNMJhhHNIlFUHs5erggfJ39V6Eh4WXg&dib_tag=se&keywords=portable+external+SSD+USB-C+2TB&qid=1783027460&sr=8-7" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B087DFLF9S" data-tags="USB 3.0,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/A1sHjPpz6fL.jpg" alt="Samsung 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Samsung-T7-Portable-SSD-MU-PC1T0T/dp/B087DFLF9S/ref=sr_1_4?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung T7 Portable SSD - 1 TB - USB 3.2 Gen.2 External SSD Titanium Grey (MU-PC1T0T/WW)</a>
+    <a href="https://www.amazon.com/Samsung-T7-Portable-SSD-MU-PC1T0T/dp/B087DFLF9S/ref=sr_1_4?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-4" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung T7 Portable SSD - 1 TB - USB 3.2 Gen.2 External SSD Titanium Grey (MU-PC1T0T/WW)</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1227,12 +1290,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.7 </td>
   <td class="col-val col-trust"><span class="score-high">78</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Samsung-T7-Portable-SSD-MU-PC1T0T/dp/B087DFLF9S/ref=sr_1_4?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-4" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Samsung-T7-Portable-SSD-MU-PC1T0T/dp/B087DFLF9S/ref=sr_1_4?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-4" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0874XN4D8" data-tags="1000+ MB/s,USB 3.2 Gen2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/91YfRIy7kYL.jpg" alt="Samsung 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SAMSUNG-Portable-SSD-1TB-MU-PC1T0T/dp/B0874XN4D8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung T7 Portable SSD, 1TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 G…</a>
+    <a href="https://www.amazon.com/SAMSUNG-Portable-SSD-1TB-MU-PC1T0T/dp/B0874XN4D8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-1" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung T7 Portable SSD, 1TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 G…</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1247,12 +1310,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.7 </td>
   <td class="col-val col-trust"><span class="score-high">88</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-SSD-1TB-MU-PC1T0T/dp/B0874XN4D8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-1" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Portable-SSD-1TB-MU-PC1T0T/dp/B0874XN4D8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-1" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B0FVMGFPHT" data-tags="2000+ MB/s,Mac Compatible,Rugged,Amazon Retail">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/61mdozgmb9L.jpg" alt=" 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/Corsair-EX400U-Survivor-USB4-External/dp/B0FVMGFPHT/ref=sr_1_5?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Corsair EX400U Survivor 1TB USB4 External SSD – Up to 4000 MB/s, IP55 Rugged Drive, Plug &…</a>
+    <a href="https://www.amazon.com/Corsair-EX400U-Survivor-USB4-External/dp/B0FVMGFPHT/ref=sr_1_5?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-5" target="_blank" rel="nofollow sponsored" class="prod-link">Corsair EX400U Survivor 1TB USB4 External SSD – Up to 4000 MB/s, IP55 Rugged Drive, Plug &…</a>
     <div class="prod-brand"> · Rugged</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1267,12 +1330,12 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.8 </td>
   <td class="col-val col-trust"><span class="score-high">85</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/Corsair-EX400U-Survivor-USB4-External/dp/B0FVMGFPHT/ref=sr_1_5?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-5" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/Corsair-EX400U-Survivor-USB4-External/dp/B0FVMGFPHT/ref=sr_1_5?dib=eyJ2IjoiMSJ9.tDlU70y50pyQ6VD3G2q8c4bS1JiSJyCkTp0zMVEO9af5de_GxbnI7qAnzwgEcro1NR0JdIKKL1xOJuG3-X8z2R1PnOY6XWLhSZYRlQBrVtfZdwNCe9BWNxzqDoJwRt0MYA4irVIVjFplewylknc9ughiw63yQuSfWxtiHIQJrsOD63J3L9SD1n8YjzJekmMMzBRLwPpATerP7icVXPbMsGLaGSgfk-1lTsiZ6XsHEJU.33p9lCaBYXqZWAKXsJRlsI215VYFFyOR8q8DJpu_Kso&dib_tag=se&keywords=best+external+SSD+speed+MB%2Fs+comparison&qid=1783027462&sr=8-5" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
 <tr data-id="B09VLK9W3S" data-tags="1000+ MB/s,USB 3.2 Gen2,Amazon Retail,3yr Warranty">
   <td class="col-essential col-img"><img src="https://m.media-amazon.com/images/I/61CKrZWOcrL.jpg" alt="Samsung 1TB SSD" class="product-thumb" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/44x44/1e293b/34d399?text=SSD'"></td>
   <td class="col-essential col-name">
-    <a href="https://www.amazon.com/SAMSUNG-Photographers-Creators-MU-PE1T0S-AM/dp/B09VLK9W3S/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="prod-link">Samsung T7 Shield 1TB, up to 1050MB/s, USB 3.2 Gen2, Rugged, IP65 Rated, for Photographers…</a>
+    <a href="https://www.amazon.com/SAMSUNG-Photographers-Creators-MU-PE1T0S-AM/dp/B09VLK9W3S/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-2" target="_blank" rel="nofollow sponsored" class="prod-link">Samsung T7 Shield 1TB, up to 1050MB/s, USB 3.2 Gen2, Rugged, IP65 Rated, for Photographers…</a>
     <div class="prod-brand">Samsung · Portable</div>
   </td>
   <td class="col-essential col-cap">1TB</td>
@@ -1287,7 +1350,7 @@ footer p,footer li{font-size:.78rem;color:var(--text-sec);line-height:1.65}
   <td class="col-rely col-cond"><span class="badge badge-ok">✅ Retail</span></td>
   <td class="col-rely col-rating">⭐ 4.7 </td>
   <td class="col-val col-trust"><span class="score-high">88</span></td>
-  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Photographers-Creators-MU-PE1T0S-AM/dp/B09VLK9W3S/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-2" target="_blank" rel="nofollow sponsored noopener" class="buy-btn">Buy →</a></td>
+  <td class="col-essential col-buy"><a href="https://www.amazon.com/SAMSUNG-Photographers-Creators-MU-PE1T0S-AM/dp/B09VLK9W3S/ref=sr_1_2?dib=eyJ2IjoiMSJ9.1e7xIf9mgHwLWvSeT6yTUv102zVUDmsSuIFXZg0VvOqxqYInhF5V-qqYpTzv6HkLEyDhk5G4zv7VBZ-ujNRISiax1wdDutOfQSBwvjzybwrUBUw9D7mizxOx7zj5v3NouKD0nLjUjwYpZz-k2Ux5fGt_dUFhOPMf2oclzlr2s9_pdJWpQ77RV38E9TLNMF8F-hYPGe921Bf5JqBGltYBfSAt2bFls7EvU_60kuJ3vmY.rpmvCr2OyC0L_jAc63GINi_AHESPFl0Lv497hrj3yv8&dib_tag=se&keywords=Samsung+T7+external+SSD+price&qid=1783027465&sr=8-2" target="_blank" rel="nofollow sponsored" class="buy-btn">Buy →</a></td>
 </tr>
             <!-- END_TABLE_ROWS -->
       </tbody>
@@ -1370,6 +1433,52 @@ const TAG_DESC = {
   'Renewed':        'Amazon Renewed — refurbished, 90-day warranty. Lower price but unknown prior use.',
   'Best $/TB':      `≤ $${15}/TB — most cost-effective SSDs in the current tracker.`,
 };
+const TAG_DESCRIPTIONS = TAG_DESC;
+
+const tagCatCounts = {};
+function buildTagCatCounts() {
+  PRODUCTS_DATA.forEach(p => {
+    const cat = p.category || 'Other';
+    if (!tagCatCounts[cat]) tagCatCounts[cat] = {};
+    [...(p.techTags||[]),...(p.useTags||[]),...(p.condTags||[])].forEach(t => {
+      tagCatCounts[cat][t] = (tagCatCounts[cat][t]||0)+1;
+    });
+  });
+}
+function filterTagsByCategory(cat) {
+  document.querySelectorAll('.tag-pill').forEach(pill => {
+    const tag = pill.dataset.tag;
+    const count = tagCatCounts[cat]?.[tag] || 0;
+    pill.style.opacity = count === 0 ? '0.35' : '';
+    const countEl = pill.querySelector('.tag-count');
+    if (countEl) countEl.textContent = count > 0 ? `(${count})` : '';
+  });
+}
+
+function initTagCards() {
+  const counts = {};
+  for (const p of PRODUCTS_DATA) {
+    for (const t of [...(p.techTags||[]), ...(p.useTags||[]), ...(p.condTags||[])]) {
+      counts[t] = (counts[t]||0) + 1;
+    }
+  }
+  document.querySelectorAll('.tag-card').forEach(card => {
+    const tag = card.dataset.filterTag;
+    const cnt = counts[tag] || 0;
+    const cntEl = card.querySelector('.tag-card-count');
+    if (cntEl) cntEl.textContent = `${cnt} drive${cnt !== 1 ? 's' : ''} tracked`;
+    card.addEventListener('click', e => {
+      if (e.target.classList.contains('tag-card-link') || e.target.classList.contains('card-cta')) return;
+      clearAllTags();
+      activeTags.add(tag);
+      const pill = document.querySelector(`.tag-pill[data-tag="${tag}"]`);
+      if (pill) pill.classList.add(`active-${card.dataset.filterType}`);
+      updateActiveTagsSummary();
+      renderTable();
+      document.getElementById('tracker-section').scrollIntoView({behavior:'smooth'});
+    });
+  });
+}
 
 function initTagPills() {
   const counts = {};
@@ -1581,7 +1690,9 @@ function initFAQ() {
 
 document.addEventListener('DOMContentLoaded', () => {
   for (const p of PRODUCTS_DATA) productMap[p.id] = p;
+  buildTagCatCounts();
   initTagPills();
+  initTagCards();
   initColTabs();
   initScrollNav();
   initStickyBar();
