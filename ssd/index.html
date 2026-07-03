@@ -1445,6 +1445,16 @@ function buildTagCatCounts() {
     });
   });
 }
+function filterByTag(tag, type) {
+  clearAllTags();
+  activeTags.add(tag);
+  const pill = document.querySelector(`.tag-pill[data-tag="${tag}"]`);
+  if (pill) pill.classList.add(`active-${type}`);
+  updateActiveTagsSummary();
+  renderTable();
+  document.getElementById('tracker-section')?.scrollIntoView({behavior:'smooth'});
+}
+
 function filterTagsByCategory(cat) {
   document.querySelectorAll('.tag-pill').forEach(pill => {
     const tag = pill.dataset.tag;
