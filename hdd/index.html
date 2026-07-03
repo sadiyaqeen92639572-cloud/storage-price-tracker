@@ -8217,7 +8217,7 @@ function calculateBudget() {
 
   let spent = 0, driveCount = 0, totalTB = 0;
   for (const p of sorted) {
-    if (spent + p.price > budget) break;
+    if (spent + p.price > budget) continue; // skip unaffordable, try next
     spent += p.price; totalTB += p.capacityTB; driveCount++;
   }
 
